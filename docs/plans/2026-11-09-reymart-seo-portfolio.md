@@ -179,7 +179,7 @@ def read_semrush_xlsx(path):
         return rows
 ```
 
-The script writes only derived, publishable values into `assets/data/metrics.json`. Raw client exports stay outside the repository.
+The script writes only derived, publishable values into `assets/data/metrics.json`. Raw client exports stay outside the repository. Include the three deep cases plus every SEO-win card in the design doc: NeuroEndoMKE, Aurit, Kalish, Fanash, Michael Ireland, Omnipress, LJP, Johnson Law Group business impact, and the First Page/iPrice entries.
 
 **Step 4: Run tests**
 
@@ -475,7 +475,7 @@ Expected: FAIL.
 
 **Step 3: Implement**
 
-Build the Armory-style hairline case list with typographic client marks, `//2026` indexes, titles, monospace descriptions, and arrow links. Build the 12 tool flip cards and the 12 sticky capability cards. Selected outcomes use the same row pattern with source labels.
+Build the Armory-style hairline case list with typographic client marks, `//2026` indexes, titles, monospace descriptions, and arrow links. Build the 12 tool flip cards and the 12 sticky capability cards. On `/work/`, add the grouped SEO wins sections from the design doc: Rocket Clicks wins, earlier-role wins, and Johnson Law Group business impact labeled separately. Each win card includes its source, period, and caveat tag.
 
 **Step 4: Run tests**
 

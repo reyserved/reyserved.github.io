@@ -96,24 +96,43 @@ Evidence:
 
 Claim limits: this is an operating-system and opportunity-mapping case, not a traffic-growth case. The keyword snapshot is not presented as improvement; no clean before/after AI-citation trend exists.
 
-### Selected outcomes
+### SEO wins and earlier-role evidence
 
-Short cards, not full case studies:
+These are compact, source-labeled cards, not additional long case studies. Home shows four to six highlights; `/work/` shows the full set. Each card carries a caveat tag where needed: "page-level only," "all traffic," "small base," or "team work."
 
-- **NeuroEndoMKE:** top-3 terms 5 to 10, top-10 terms 13 to 18, local visibility +19.7%, #1 for neurosurgeon and arm/shoulder/neck pain. Window: November 2023 to November 2026.
-- **Aurit Mediation:** top-3 terms 0 to 3, nine keywords gained, #1 for Chandler and Scottsdale divorce mediation, #3 Arizona divorce mediation. Window: May 2024 to November 2026.
-- **Kalish:** 37 top-3 and 44 top-10 terms at the latest snapshot; 32.98% visibility. Window: April to November 2026.
-- **Johnson Law Group:** leads +27.1%, hires +76.9%, hired-to-lead rate 7.18% to 10.00%, September versus August 2026. Caveat: GSC clicks fell 15.8%; this is a conversion-quality result, not an organic-growth result.
-- **Fanash Family Law:** top-10 terms 0 to 2; #4 annulment attorney. Window: July 2025 to November 2026.
-- **First Page:** RELX +105% non-branded organic traffic, Tuttee +273%, The Wee Bean +89% page-1 keywords, New Concept Mandarin +70%, ThreeIC +21 page-1 keywords and +1.6K monthly organic traffic, Lendela +71%. Presented as team work with honest credit.
+**Rocket Clicks wins**
 
-Excluded from growth claims: Bank Five Nine, Service Credit Union local rank tracking, Johnson Law Group rank tracking, Elkus & Sisson. Their tracked windows show net top-10 losses.
+- **NeuroEndoMKE:** top-3 terms 5 to 10, top-10 terms 13 to 18, local visibility +19.7%, #1 for neurosurgeon and arm/shoulder/neck pain. Source: Semrush Position Tracking, November 2023 to November 2026.
+- **Aurit Mediation:** top-3 terms 0 to 3, nine keywords gained, #1 for Chandler and Scottsdale divorce mediation, #3 Arizona divorce mediation. Source: Semrush Position Tracking, May 2024 to November 2026.
+- **Kalish:** 37 top-3 and 44 top-10 terms at the latest snapshot; 32.98% visibility. Source: Semrush Position Tracking, April to November 2026. Framed as maintained category visibility, not growth.
+- **Fanash Family Law:** top-10 terms 0 to 2; #4 annulment attorney. Source: Semrush Position Tracking, July 2025 to November 2026.
+- **Michael Ireland Law:** San Antonio divorce page new users 47 to 225 (+378.7%), sessions 53 to 248, engaged sessions 24 to 93. Source: GA4 landing pages, December 15, 2025 to March 15, 2026 versus the prior period. Tags: all traffic, key events flat at 3.
+- **Omnipress:** publication-printing page clicks 11 to 29 (+163.6%), impressions 4,189 to 6,390 (+52.5%), engaged sessions 21 to 84. Source: GSC and GA4, November 16, 2025 to February 15, 2026 year over year. Tags: page-level only, sitewide metrics declined.
+- **LJP Zero-Landfill:** contact forms 4 to 8, session key-event rate 0.58% to 1.42%. Source: GA4 key-event ledger, April 5 to May 5, 2026 versus March 5 to April 4, 2026. Tags: small base, sessions fell 17.5%.
+
+**Earlier-role wins**
+
+Presented as team work with honest credit unless the artifact is clearly Reymart's own strategy document.
+
+- **First Page — RELX APAC:** +105% non-branded organic traffic after service and blog optimization.
+- **First Page — Tuttee:** +273% organic traffic after content strategy implementation.
+- **First Page — ThreeIC:** +21 first-page keywords and +1.6K monthly organic traffic within six months.
+- **First Page — The Wee Bean:** +89% more target keywords on page 1 after on-page fixes.
+- **First Page — New Concept Mandarin:** +70% more target keywords on page 1 after content strategy.
+- **First Page — Lendela SG:** +71% organic traffic after reducing keyword cannibalization.
+- **iPrice Group:** product landing pages improved by about two average positions after H1 optimization.
+
+**Business impact, labeled separately**
+
+- **Johnson Law Group:** leads +27.1%, hires +76.9%, hired-to-lead rate 7.18% to 10.00%, September versus August 2026. Source: internal Clio and CallRail dashboard. Caveat: GSC clicks fell 15.8%; this is a conversion-quality result, not an organic-growth result.
+
+Excluded from growth claims: Bank Five Nine, Service Credit Union local rank tracking, Johnson Law Group rank tracking, Elkus & Sisson. Their tracked windows show net top-10 losses. The Service Credit Union refinance conversion lift is excluded from SEO wins because the APR offer changed in the same window.
 
 ## 5. Site architecture
 
 ```text
 /                                Home / cover
-/work/                           Case index and selected outcomes
+/work/                           Case index, Rocket Clicks wins, and earlier-role wins
 /work/service-credit-union/      Case 1
 /work/tde-family-law/            Case 2
 /work/dream-assurance/           Case 3
@@ -137,7 +156,7 @@ Naming rule: use **Reymart** for the nav brand, hero wordmark, footer watermark,
 6. Case-study list using Armory's hairline editorial rows.
 7. Tool stack: 12 flip cards.
 8. Capabilities: 12 sticky-scroll cards.
-9. Selected outcomes and a View All Case Studies banner.
+9. SEO wins highlights and a View All Case Studies banner.
 10. Footer with giant low-contrast `Reymart` watermark.
 
 ### Case study template
