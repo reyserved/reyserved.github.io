@@ -109,12 +109,20 @@ def main():
             "visibilityChange": 19.7,
             "period": "Nov 2023 – Nov 2026",
             "source": "Semrush Position Tracking",
+            "series": neuro,
+            "keywordsImproved": 12,
         },
         "aurit": {
             "client": "Aurit Mediation",
             "series": aurit,
             "period": "May 2024 – Nov 2026",
             "source": "Semrush Position Tracking",
+            "topKeywords": [
+                {"keyword": "chandler divorce mediation", "position": 1},
+                {"keyword": "scottsdale divorce mediation", "position": 1},
+                {"keyword": "arizona divorce mediation", "position": 3},
+            ],
+            "snapshotDate": "Nov 6, 2026",
         },
     }
     output = ROOT / "assets/data/dashboard.js"

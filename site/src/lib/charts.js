@@ -181,6 +181,41 @@ export function renderSemiGauge(element, { value, max, label, centerLabel }) {
   });
 }
 
+export function renderKeywordBars(element, { items, label }) {
+  const width = 660;
+  const rowHeight = 58;
+  const height = items.length * rowHeight + 20;
+  const svg = makeSvg(width, height, label);
+  const labelWidth = 300;
+  const barMax = width - labelWidth - 70;
+
+  items.forEach((item, index) => {
+    const y = index * rowHeight + 20;
+    const barLength = (4 - item.position) * (barMax / 3);
+
+    svg.appendChild(svgEl("text", {
+      x: 0, y: y + 16,
+      class: "chart__value",
+      style: "font-size:13px;font-family:var(--font-sans)",
+    }, item.keyword));
+    svg.appendChild(svgEl("rect", {
+      x: labelWidth, y: y, width: barMax, height: 22, rx: 4,
+      fill: "rgba(255,255,255,0.06)",
+    }));
+    svg.appendChild(svgEl("rect", {
+      x: labelWidth, y: y, width: barLength, height: 22, rx: 4,
+      fill: "#e5a93c",
+    }));
+    svg.appendChild(svgEl("text", {
+      x: labelWidth + barMax + 14, y: y + 16,
+      class: "chart__value",
+      style: "font-size:14px",
+    }, `#${item.position}`));
+  });
+
+  element.appendChild(svg);
+}
+
 export function renderLineChart(element, { series, label }) {
   const width = 660;
   const height = 240;

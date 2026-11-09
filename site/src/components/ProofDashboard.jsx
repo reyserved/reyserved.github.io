@@ -2,7 +2,7 @@
 
 import { useEffect, useRef } from "react";
 import { DASHBOARD_DATA } from "../data/dashboard";
-import { renderRadialGauge, renderStemChart, renderSemiGauge, renderLineChart } from "../lib/charts";
+import { renderStemChart, renderSemiGauge, renderLineChart } from "../lib/charts";
 
 export default function ProofDashboard() {
   const citationChart = useRef(null);
@@ -34,8 +34,8 @@ export default function ProofDashboard() {
     }
     if (auritChart.current) {
       renderLineChart(auritChart.current, {
-        label: "Aurit Mediation weekly top-3 and top-10 keyword counts",
-        series: data.aurit.series,
+        label: "NeuroEndoMKE weekly top-3 keyword count over three years",
+        series: data.neuroendo.series,
       });
     }
   }, []);
@@ -117,20 +117,20 @@ export default function ProofDashboard() {
             <div>
               <div className="card__head">
                 <div>
-                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>Rank trajectory</h3>
-                  <p className="card__subtitle">Aurit Mediation · Semrush Position Tracking</p>
+                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>Top-3 growth</h3>
+                  <p className="card__subtitle">NeuroEndoMKE · Semrush Position Tracking, Nov 2023 – Nov 2026</p>
                 </div>
-                <span className="card__top-metric">May 2024 – Nov 2026</span>
+                <span className="card__top-metric">5 → 10</span>
               </div>
-              <div className="metric-big"><span data-count="3">3</span></div>
-              <p className="metric-caption">Top-3 terms, up from 0</p>
+              <div className="metric-big"><span data-count="10">10</span></div>
+              <p className="metric-caption">Top-3 terms, up from 5 in Nov 2023</p>
               <div className="submetrics">
-                <div><div className="submetric-value">9</div><div className="submetric-label">Keywords gained</div></div>
-                <div><div className="submetric-value">#1</div><div className="submetric-label">Chandler &amp; Scottsdale divorce mediation</div></div>
+                <div><div className="submetric-value">12</div><div className="submetric-label">Keywords improved</div></div>
+                <div><div className="submetric-value">#1</div><div className="submetric-label">For “neurosurgeon” · Racine, WI</div></div>
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">Amber: weekly top-3 count. Muted: top-10 count. Rankings fluctuated before the latest snapshot of <strong>3 in the top 3</strong>.</p>
+            <p className="chart-summary">Weekly top-3 keyword count over three years: <strong>5 → 10</strong>. Amber line shows the trend, muted line shows top-10 count.</p>
           </article>
         </div>
 
