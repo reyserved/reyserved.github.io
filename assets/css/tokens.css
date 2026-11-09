@@ -1,0 +1,40 @@
+:root {
+  --paper: #f4f3f0;
+  --surface: #ffffff;
+  --ink: #111111;
+  --ink-soft: #555552;
+  --ink-faint: #8a8a84;
+  --line: rgba(17, 17, 17, 0.09);
+  --line-strong: rgba(17, 17, 17, 0.16);
+
+  --dark: #090a0c;
+  --dark-surface: #121418;
+  --dark-elevated: #1a1d22;
+  --dark-text: #ffffff;
+  --dark-stone: #c6bfae;
+  --dark-muted: #7d828c;
+  --dark-line: rgba(255, 255, 255, 0.09);
+  --dark-line-strong: rgba(255, 255, 255, 0.18);
+
+  --amber: #e5a93c;
+  --amber-deep: #b97f1f;
+  --positive: #2f9e6e;
+  --caveat: #c4503c;
+  --violet: #8b5cf6;
+  --teal: #1f9d8f;
+  --blue: #3b82f6;
+
+  --font-sans: "Public Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "JetBrains Mono", "SFMono-Regular", Consolas, monospace;
+  --font-serif: "Instrument Serif", Georgia, serif;
+
+  --radius-card: 24px;
+  --radius-lg: 32px;
+  --radius-pill: 999px;
+
+  --container: 1360px;
+  --gutter: clamp(20px, 4vw, 48px);
+
+  --ease-out: cubic-bezier(0.22, 1, 0.36, 1);
+  --ease-spring: cubic-bezier(0.16, 1, 0.3, 1);
+}
