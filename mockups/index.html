@@ -4,51 +4,29 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="robots" content="noindex, nofollow, noarchive">
-  <title>Reymart — Prototype mockups</title>
+  <title>Reymart — HTML mockups</title>
   <style>
-    :root { --ink:#111; --muted:#6b6b66; --line:rgba(17,17,17,0.12); }
-    body { margin:0; background:#f4f3f0; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
-    header { padding:28px 32px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
-    h1 { margin:0; font-size:20px; letter-spacing:-0.02em; }
-    .switcher { display:flex; gap:8px; }
-    button { padding:10px 16px; border:1px solid var(--line); border-radius:999px; background:#fff; font:inherit; font-size:13px; cursor:pointer; }
-    button.active { background:#111; color:#fff; border-color:#111; }
-    main { padding:32px; }
-    .stage { display:flex; justify-content:center; }
-    .frame { background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 30px 60px -40px rgba(0,0,0,0.35); transition:width 300ms ease; }
-    iframe { display:block; border:0; width:100%; height:1200px; }
-    .files { margin-top:24px; display:flex; flex-wrap:wrap; gap:16px; justify-content:center; font-size:14px; }
-    .files a { color:var(--ink); }
+    body { margin:0; background:#f4f3f0; color:#111; font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+    main { max-width:860px; margin:0 auto; padding:64px 24px; }
+    h1 { letter-spacing:-0.03em; }
+    p { color:#555552; line-height:1.7; }
+    li { margin:14px 0; font-size:17px; }
+    a { color:#111; }
+    .note { margin-top:28px; padding:18px 20px; background:#fff; border:1px solid rgba(17,17,17,0.1); border-radius:16px; font-size:14px; }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Reymart — Prototype mockups</h1>
-    <div class="switcher" role="group" aria-label="Viewport">
-      <button data-width="1440" class="active">Desktop 1440</button>
-      <button data-width="810">Tablet 810</button>
-      <button data-width="390">Mobile 390</button>
-    </div>
-  </header>
   <main>
-    <div class="stage"><div class="frame" id="frame" style="width:min(1440px,100%)"><iframe src="home-desktop.html" title="Portfolio prototype"></iframe></div></div>
-    <div class="files">
-      <a href="home-desktop.html">Desktop HTML</a>
-      <a href="home-mobile.html">Mobile HTML</a>
-      <a href="proof-dashboard.html">Dashboard-only HTML</a>
-    </div>
+    <h1>Reymart — HTML mockups</h1>
+    <p>Desktop files are self-contained. Mobile files show the same page inside a 390 × 844 device frame. Keep all files in this folder together.</p>
+    <ul>
+      <li><a href="home-desktop.html">Reymart — Home</a> · <a href="home-mobile.html">mobile</a></li>
+      <li><a href="work-desktop.html">Reymart — Case studies</a> · <a href="work-mobile.html">mobile</a></li>
+      <li><a href="case-scu-desktop.html">Reymart — Service Credit Union</a> · <a href="case-scu-mobile.html">mobile</a></li>
+      <li><a href="case-tde-desktop.html">Reymart — TDE Family Law</a> · <a href="case-tde-mobile.html">mobile</a></li>
+      <li><a href="case-da-desktop.html">Reymart — Dream Assurance</a> · <a href="case-da-mobile.html">mobile</a></li>
+    </ul>
+    <div class="note">These mockups are generated from the current build. The production site is being rebuilt in Next.js/React with static export for GitHub Pages.</div>
   </main>
-  <script>
-    const frame = document.getElementById('frame');
-    document.querySelectorAll('button[data-width]').forEach((button) => {
-      button.addEventListener('click', () => {
-        document.querySelectorAll('button[data-width]').forEach((b) => b.classList.remove('active'));
-        button.classList.add('active');
-        const width = parseInt(button.dataset.width, 10);
-        frame.style.width = width >= 1440 ? 'min(1440px,100%)' : width + 'px';
-        frame.style.maxWidth = '100%';
-      });
-    });
-  </script>
 </body>
 </html>
