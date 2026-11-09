@@ -83,7 +83,6 @@ export default function ProofDashboard() {
               <div><div className="submetric-value">888 → 892</div><div className="submetric-label">Citations</div></div>
               <div><div className="submetric-value">39/100</div><div className="submetric-label">AI Overview score</div></div>
             </div>
-            <p className="caveat">AI Overview was the strongest surface. Overall AI Visibility was 17/100 vs a 44 target; claim limits are documented in the case study.</p>
           </article>
 
           <article className="card reveal" aria-labelledby="card-citations">
