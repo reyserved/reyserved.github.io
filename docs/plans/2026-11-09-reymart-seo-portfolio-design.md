@@ -122,6 +122,9 @@ Presented as team work with honest credit unless the artifact is clearly Reymart
 - **First Page — New Concept Mandarin:** +70% more target keywords on page 1 after content strategy.
 - **First Page — Lendela SG:** +71% organic traffic after reducing keyword cannibalization.
 - **iPrice Group:** product landing pages improved by about two average positions after H1 optimization.
+- **Walking On Sunshine:** +17.59% organic traffic in two months, +13.35% new users, and +7.18% bounce-rate improvement after landing-page content, metadata, and Google Business Profile optimization. First-person execution evidence in the source case study.
+
+Leekaja, Walking On Sunshine paid campaigns, Bursa Malaysia, and CellReturn are PPC results and must not appear in SEO wins. If shown later, they require a separately labeled paid-media section.
 
 **Business impact, labeled separately**
 
