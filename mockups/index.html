@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="robots" content="noindex, nofollow, noarchive">
+  <title>Reymart — Prototype mockups</title>
+  <style>
+    :root { --ink:#111; --muted:#6b6b66; --line:rgba(17,17,17,0.12); }
+    body { margin:0; background:#f4f3f0; color:var(--ink); font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif; }
+    header { padding:28px 32px; display:flex; flex-wrap:wrap; gap:16px; align-items:center; justify-content:space-between; border-bottom:1px solid var(--line); }
+    h1 { margin:0; font-size:20px; letter-spacing:-0.02em; }
+    .switcher { display:flex; gap:8px; }
+    button { padding:10px 16px; border:1px solid var(--line); border-radius:999px; background:#fff; font:inherit; font-size:13px; cursor:pointer; }
+    button.active { background:#111; color:#fff; border-color:#111; }
+    main { padding:32px; }
+    .stage { display:flex; justify-content:center; }
+    .frame { background:#fff; border:1px solid var(--line); border-radius:18px; overflow:hidden; box-shadow:0 30px 60px -40px rgba(0,0,0,0.35); transition:width 300ms ease; }
+    iframe { display:block; border:0; width:100%; height:1200px; }
+    .files { margin-top:24px; display:flex; flex-wrap:wrap; gap:16px; justify-content:center; font-size:14px; }
+    .files a { color:var(--ink); }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Reymart — Prototype mockups</h1>
+    <div class="switcher" role="group" aria-label="Viewport">
+      <button data-width="1440" class="active">Desktop 1440</button>
+      <button data-width="810">Tablet 810</button>
+      <button data-width="390">Mobile 390</button>
+    </div>
+  </header>
+  <main>
+    <div class="stage"><div class="frame" id="frame" style="width:min(1440px,100%)"><iframe src="home-desktop.html" title="Portfolio prototype"></iframe></div></div>
+    <div class="files">
+      <a href="home-desktop.html">Desktop HTML</a>
+      <a href="home-mobile.html">Mobile HTML</a>
+      <a href="proof-dashboard.html">Dashboard-only HTML</a>
+    </div>
+  </main>
+  <script>
+    const frame = document.getElementById('frame');
+    document.querySelectorAll('button[data-width]').forEach((button) => {
+      button.addEventListener('click', () => {
+        document.querySelectorAll('button[data-width]').forEach((b) => b.classList.remove('active'));
+        button.classList.add('active');
+        const width = parseInt(button.dataset.width, 10);
+        frame.style.width = width >= 1440 ? 'min(1440px,100%)' : width + 'px';
+        frame.style.maxWidth = '100%';
+      });
+    });
+  </script>
+</body>
+</html>
