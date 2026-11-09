@@ -1,0 +1,100 @@
+.chart {
+  width: 100%;
+  height: auto;
+  overflow: visible;
+}
+
+.chart text {
+  font-family: var(--font-mono);
+  font-size: 10px;
+  fill: var(--dark-muted);
+}
+
+.chart .chart__value {
+  fill: var(--dark-text);
+  font-size: 11px;
+}
+
+.chart .chart__delta--pos {
+  fill: var(--positive);
+}
+
+.chart .chart__delta--neg {
+  fill: var(--caveat);
+}
+
+.chart .chart__grid {
+  stroke: var(--dark-line);
+  stroke-width: 1;
+  stroke-dasharray: 2 4;
+}
+
+.chart .chart__track {
+  stroke: rgba(255, 255, 255, 0.1);
+}
+
+.chart .chart__arc {
+  stroke: var(--dark-text);
+  stroke-linecap: round;
+}
+
+.chart .chart__arc--accent {
+  stroke: var(--amber);
+}
+
+.chart .chart__stem {
+  stroke: rgba(255, 255, 255, 0.35);
+  stroke-width: 1.5;
+}
+
+.chart .chart__dot {
+  fill: var(--dark-text);
+}
+
+.chart .chart__dot--accent {
+  fill: var(--violet);
+}
+
+.chart .chart__line {
+  fill: none;
+  stroke: var(--amber);
+  stroke-width: 2;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.chart .chart__line--muted {
+  stroke: rgba(255, 255, 255, 0.25);
+  stroke-width: 1.5;
+}
+
+.chart .chart__area {
+  fill: url(#chartAreaGradient);
+}
+
+.chart-summary {
+  margin-top: 18px;
+  font-family: var(--font-mono);
+  font-size: 11px;
+  line-height: 1.9;
+  color: var(--dark-muted);
+}
+
+.chart-summary strong {
+  color: var(--dark-text);
+  font-weight: 500;
+}
+
+.chart-summary .pos {
+  color: var(--positive);
+}
+
+.chart-summary .neg {
+  color: var(--caveat);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .chart * {
+    transition: none !important;
+  }
+}

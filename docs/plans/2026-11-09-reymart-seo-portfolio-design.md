@@ -266,6 +266,8 @@ Deliver an updated DOCX, PDF, and preview while preserving the ATS-safe two-page
 - Add verified metrics with "led" or "contributed" labels; do not import PPC results into the SEO summary.
 - Add `reyserved.github.io` to the portfolio links.
 - Trim older roles to keep two pages.
+- INITIA Group dates are **Jan 2020 – Jul 2022**. The 6+ years figure excludes SEO content writing at iPrice and counts dedicated SEO roles from January 2020.
+- Rocket Clicks end date must be confirmed before the resume is finalized; the user has described a last day and loss of tool access.
 
 ## 9. Build sequence
 
