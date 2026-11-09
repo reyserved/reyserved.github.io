@@ -10,7 +10,7 @@
 
 **Project root:** `/Users/reymartjansarigumba/Dream Assurance/content-update/DIGITAL MARKETING/output/reymart-seo-portfolio-2026-11`
 
-**Design doc:** `docs/plans/2026-11-09-reymart-seo-portfolio-design.md`
+**Design doc:** `design/plans/2026-11-09-reymart-seo-portfolio-design.md`
 
 ---
 
@@ -761,7 +761,7 @@ git push
 
 ## Execution handoff
 
-**Plan complete and saved to `docs/plans/2026-11-09-reymart-seo-portfolio.md`. Two execution options:**
+**Plan complete and saved to `design/plans/2026-11-09-reymart-seo-portfolio.md`. Two execution options:**
 
 **1. Subagent-Driven (this session)** - Dispatch fresh subagents per task with review between tasks.
 
