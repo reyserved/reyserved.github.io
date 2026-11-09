@@ -45,6 +45,7 @@ These rules override visual polish whenever they conflict.
 7. Do not publish page-level GSC AI-feature impression shares for Service Credit Union until the 27.8% reconciliation gap in the source export is explained. Page-level citation counts from Semrush may be used with their windows labeled.
 8. Team results are labeled as such. Reymart's role is stated explicitly per case.
 9. The Semrush ranking workbooks are parsed from raw sheet XML because their `dimension ref="A1"` is broken. Do not rely on openpyxl's reported dimensions for these files.
+10. Aggregate only like-for-like evidence. The 654 AI Overview-exposed query count (561 Dream Assurance + 67 TDE + 26 Omnipress) must always be labeled as three clients only, with a note that AI Overview mapping was not completed for the full Rocket Clicks client roster. Never sum outcome metrics across clients.
 
 ## 4. Case study lineup
 
