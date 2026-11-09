@@ -23,9 +23,9 @@ export default function CaseAccordion() {
               <span className="work-row__client">
                 <span className="work-row__brand">
                   <img className={item.logoWide ? "work-row__logo work-row__logo--wide" : "work-row__logo"} src={item.logo} alt={`${item.client} logo`} />
-                  <span>
+                  <span className="work-row__brand-text">
                     <span className="case-pill">{item.pill}</span>
-                    <span>{item.client}</span>
+                    <span className="work-row__name">{item.client}</span>
                   </span>
                 </span>
               </span>
