@@ -72,16 +72,16 @@ export default function ProofDashboard() {
             <div className="card__head">
               <div>
                 <h3 className="card__title" id="card-ai"><span className="card__icon" aria-hidden="true">◔</span>AI feature visibility</h3>
-                <p className="card__subtitle">Service Credit Union · GSC, August 2026</p>
+                <p className="card__subtitle">Service Credit Union · GSC, July – August 2026</p>
               </div>
-              <span className="card__top-metric">180,938</span>
+              <span className="card__top-metric">+7.1% MoM</span>
             </div>
             <div className="metric-big"><span data-count="180938">180,938</span></div>
-            <p className="metric-caption">Generative AI feature impressions</p>
+            <p className="metric-caption">Generative AI feature impressions · August 2026</p>
             <div className="submetrics">
+              <div><div className="submetric-value">169,000</div><div className="submetric-label">July 2026</div></div>
               <div><div className="submetric-value">363 → 382</div><div className="submetric-label">Cited pages</div></div>
               <div><div className="submetric-value">888 → 892</div><div className="submetric-label">Citations</div></div>
-              <div><div className="submetric-value">39/100</div><div className="submetric-label">AI Overview score</div></div>
             </div>
           </article>
 
