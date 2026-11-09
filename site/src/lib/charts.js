@@ -22,7 +22,7 @@ function makeSvg(width, height, label) {
   });
 }
 
-export function animateNumber(node, target, formatter, duration = 1200) {
+export function animateNumber(node, target, formatter, duration = 2400) {
   if (prefersReducedMotion()) {
     node.textContent = formatter(target);
     return;
@@ -97,7 +97,7 @@ export function renderRadialGauge(element, { value, max, label, centerLabel }) {
   element.appendChild(svg);
 
   onVisible(element, () => {
-    arc.style.transition = "stroke-dashoffset 1200ms cubic-bezier(0.16,1,0.3,1)";
+    arc.style.transition = "stroke-dashoffset 2400ms cubic-bezier(0.16,1,0.3,1)";
     requestAnimationFrame(() => { arc.style.strokeDashoffset = circumference * arcFraction * (1 - value / max); });
     animateNumber(valueText, value, (v) => Math.round(v).toString());
   });
@@ -175,7 +175,7 @@ export function renderSemiGauge(element, { value, max, label, centerLabel }) {
   element.appendChild(svg);
 
   onVisible(element, () => {
-    arc.style.transition = "stroke-dashoffset 1200ms cubic-bezier(0.16,1,0.3,1)";
+    arc.style.transition = "stroke-dashoffset 2400ms cubic-bezier(0.16,1,0.3,1)";
     requestAnimationFrame(() => { arc.style.strokeDashoffset = arcLength * (1 - value / max); });
     animateNumber(valueText, value, (v) => Math.round(v).toString());
   });
@@ -227,7 +227,7 @@ export function renderLineChart(element, { series, label }) {
     const length = line.getTotalLength();
     line.style.strokeDasharray = length;
     line.style.strokeDashoffset = length;
-    line.style.transition = "stroke-dashoffset 1400ms cubic-bezier(0.16,1,0.3,1)";
+    line.style.transition = "stroke-dashoffset 2600ms cubic-bezier(0.16,1,0.3,1)";
     requestAnimationFrame(() => { line.style.strokeDashoffset = 0; });
   });
 }

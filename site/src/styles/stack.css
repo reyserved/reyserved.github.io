@@ -1,0 +1,123 @@
+.stack {
+  padding: 100px 0 110px;
+  background: var(--paper);
+}
+
+.stack__grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.stack-card {
+  position: relative;
+  display: block;
+  min-height: 190px;
+  padding: 0;
+  background: transparent;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  perspective: 1000px;
+  text-align: center;
+}
+
+.stack-card__inner {
+  position: absolute;
+  inset: 0;
+  display: block;
+  transform-style: preserve-3d;
+  transition: transform 600ms var(--ease-out);
+}
+
+.stack-card.is-flipped .stack-card__inner {
+  transform: rotateY(180deg);
+}
+
+.stack-card__face {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 22px;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+}
+
+.stack-card__front {
+  background: transparent;
+  transition: background 250ms var(--ease-out);
+}
+
+.stack-card:hover .stack-card__front {
+  background: rgba(255, 255, 255, 0.5);
+}
+
+.stack-card__logo {
+  width: 46px;
+  height: 46px;
+  object-fit: contain;
+}
+
+.stack-card__name {
+  font-size: 15px;
+  font-weight: 600;
+  letter-spacing: -0.02em;
+}
+
+.stack-card__hint {
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.stack-card__back {
+  transform: rotateY(180deg);
+  background: var(--ink);
+  color: var(--paper);
+  align-items: flex-start;
+  text-align: left;
+  justify-content: center;
+}
+
+.stack-card__back-name {
+  font-family: var(--font-mono);
+  font-size: 11px;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--amber);
+}
+
+.stack-card__desc {
+  font-size: 13px;
+  line-height: 1.65;
+  color: rgba(244, 243, 240, 0.85);
+}
+
+@media (max-width: 1024px) {
+  .stack__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 700px) {
+  .stack__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .stack-card {
+    min-height: 170px;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .stack-card__inner {
+    transition: none;
+  }
+}

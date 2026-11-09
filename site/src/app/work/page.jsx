@@ -35,13 +35,18 @@ export default function WorkIndex() {
         </div>
       </section>
 
-      <div className="container">
+      <div className="container container--full">
         <div className="work-list">
           {CASE_LIST.map((item) => (
-            <a className="work-row" href={`/work/${item.slug}/`} key={item.slug}>
+            <a className="work-row" href={`/work/${item.slug}/`} key={item.slug} style={{ "--row-tint": item.tint }}>
               <div className="work-row__client">
-                <span className="case-pill">{item.pill}</span><br />
-                {item.client}
+                <div className="work-row__brand">
+                  <img className={item.logoWide ? "work-row__logo work-row__logo--wide" : "work-row__logo"} src={item.logo} alt={`${item.client} logo`} />
+                  <div>
+                    <span className="case-pill">{item.pill}</span>
+                    <div>{item.client}</div>
+                  </div>
+                </div>
               </div>
               <div className="work-row__year">{item.year}</div>
               <div className="work-row__title">{item.title}</div>

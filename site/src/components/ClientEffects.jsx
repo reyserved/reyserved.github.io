@@ -56,7 +56,7 @@ export default function ClientEffects() {
       tickerTimer = window.setInterval(() => {
         index = (index + 1) % items.length;
         ticker.style.transform = `translateY(-${index * 24}px)`;
-      }, 2600);
+      }, 3400);
     }
 
     let dot;

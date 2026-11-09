@@ -51,7 +51,7 @@ export default function ProofDashboard() {
 
   return (
     <section className="proof" id="proof" aria-labelledby="proof-title">
-      <div className="container">
+      <div className="container container--full">
         <div className="proof__header reveal">
           <div>
             <span className="eyebrow">Evidence</span>

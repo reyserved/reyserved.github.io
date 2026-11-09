@@ -4,6 +4,7 @@ import "../styles/components.css";
 import "../styles/home.css";
 import "../styles/case-study.css";
 import "../styles/charts.css";
+import "../styles/stack.css";
 import SiteNav from "../components/SiteNav";
 import ClientEffects from "../components/ClientEffects";
 

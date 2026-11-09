@@ -8,15 +8,14 @@
   display: inline-flex;
   align-items: center;
   gap: 8px;
-  padding: 7px 14px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
+  padding: 0;
+  background: transparent;
+  border: 0;
   font-family: var(--font-mono);
   font-size: 11px;
-  letter-spacing: 0.1em;
+  letter-spacing: 0.12em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
 }
 
 .case-pill::before {
@@ -25,6 +24,12 @@
   height: 7px;
   border-radius: 50%;
   background: var(--amber);
+  flex: 0 0 auto;
+}
+
+.container--full {
+  max-width: none;
+  padding-inline: clamp(20px, 3vw, 48px);
 }
 
 .case-title {
@@ -271,17 +276,56 @@
 }
 
 .work-row {
+  position: relative;
   display: grid;
   grid-template-columns: 0.24fr 0.07fr 0.3fr 0.33fr auto;
   gap: 24px;
   align-items: center;
-  padding: 30px 0;
+  padding: 34px 24px;
   border-bottom: 1px solid var(--line);
-  transition: background 200ms var(--ease-out);
+  isolation: isolate;
+  transition: background 250ms var(--ease-out);
+}
+
+.work-row::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+  background: var(--row-tint, radial-gradient(circle at 20% 50%, rgba(59, 130, 246, 0.35), transparent 65%));
+  filter: blur(46px);
+  opacity: 0;
+  transform: scale(1.06);
+  transition: opacity 450ms var(--ease-out), transform 450ms var(--ease-out);
+}
+
+.work-row:hover::before,
+.work-row:focus-visible::before {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .work-row:hover {
-  background: rgba(17, 17, 17, 0.025);
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.work-row__brand {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.work-row__logo {
+  width: 44px;
+  height: 44px;
+  object-fit: contain;
+  flex: 0 0 auto;
+}
+
+.work-row__logo--wide {
+  width: 64px;
+  height: auto;
+  max-height: 44px;
 }
 
 .work-row__client {
@@ -331,14 +375,21 @@
 .win-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 16px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
 }
 
 .win-card {
-  padding: 22px;
-  background: var(--surface);
-  border: 1px solid var(--line);
-  border-radius: var(--radius-card);
+  padding: 26px 24px;
+  background: transparent;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  border-radius: 0;
+  transition: background 250ms var(--ease-out);
+}
+
+.win-card:hover {
+  background: rgba(255, 255, 255, 0.45);
 }
 
 .win-card__client {
@@ -371,15 +422,25 @@
 .win-card__tag {
   display: inline-block;
   margin-top: 12px;
-  margin-right: 6px;
-  padding: 4px 9px;
-  border-radius: var(--radius-pill);
-  background: rgba(17, 17, 17, 0.05);
+  margin-right: 14px;
+  padding: 0 0 0 12px;
+  position: relative;
   font-family: var(--font-mono);
   font-size: 9px;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.1em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink-faint);
+}
+
+.win-card__tag::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 4px;
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background: var(--amber);
 }
 
 @media (max-width: 1024px) {
