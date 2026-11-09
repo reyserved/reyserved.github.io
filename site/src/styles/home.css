@@ -266,7 +266,7 @@
 
 .proof__ribbon {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
+  grid-template-columns: repeat(3, 1fr);
   border-top: 1px solid var(--dark-line);
   border-bottom: 1px solid var(--dark-line);
   margin-bottom: 20px;

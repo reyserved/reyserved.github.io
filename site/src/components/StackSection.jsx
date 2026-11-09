@@ -55,7 +55,7 @@ const TOOLS = [
   },
   {
     name: "Claude",
-    logo: "/logos/tools/anthropic.svg",
+    logo: "/logos/tools/claude.svg",
     desc: "My thinking partner for audits, briefs, and analysis. I use it to accelerate work, then verify claims against sources.",
   },
   {

@@ -266,6 +266,119 @@
   color: var(--ink-faint);
 }
 
+/* Expandable case tiles */
+.case-tile {
+  border-bottom: 1px solid var(--line);
+}
+
+.case-tile__summary {
+  display: grid;
+  grid-template-columns: 0.24fr 0.07fr 0.3fr 0.33fr auto;
+  gap: 24px;
+  align-items: center;
+  width: 100%;
+  padding: 30px 24px;
+  text-align: left;
+  background: transparent;
+  transition: background 250ms var(--ease-out);
+}
+
+.case-tile__summary:hover {
+  background: rgba(255, 255, 255, 0.35);
+}
+
+.case-tile__chevron {
+  justify-self: end;
+  font-size: 22px;
+  color: var(--ink-faint);
+}
+
+.case-tile__panel {
+  display: grid;
+  grid-template-columns: 0.32fr 0.68fr;
+  gap: 32px;
+  padding: 0 24px 34px;
+  animation: case-open 400ms var(--ease-out);
+}
+
+.case-tile__panel[hidden] {
+  display: none;
+}
+
+@keyframes case-open {
+  from { opacity: 0; transform: translateY(-8px); }
+  to { opacity: 1; transform: none; }
+}
+
+.case-tile__visual {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: 230px;
+  border-radius: 18px;
+  overflow: hidden;
+  background: var(--row-tint);
+}
+
+.case-tile__visual::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: var(--row-tint);
+  filter: blur(34px);
+  transform: scale(1.25);
+}
+
+.case-tile__visual img {
+  position: relative;
+  width: min(62%, 190px);
+  max-height: 90px;
+  object-fit: contain;
+  filter: drop-shadow(0 12px 24px rgba(17, 17, 17, 0.25));
+}
+
+.case-tile__detail h3 {
+  margin-top: 14px;
+  font-size: 22px;
+  letter-spacing: -0.03em;
+}
+
+.case-tile__detail p {
+  margin-top: 12px;
+  color: var(--ink-soft);
+  line-height: 1.7;
+}
+
+.case-tile__detail ul {
+  margin: 18px 0 22px;
+}
+
+.case-tile__detail li {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: var(--ink-soft);
+}
+
+.case-tile__detail li span {
+  color: var(--ink-faint);
+  font-size: 12px;
+}
+
+@media (max-width: 1024px) {
+  .case-tile__summary {
+    grid-template-columns: 0.3fr 0.7fr auto;
+  }
+
+  .case-tile__summary .work-row__year,
+  .case-tile__summary .work-row__desc {
+    display: none;
+  }
+
+  .case-tile__panel {
+    grid-template-columns: 1fr;
+  }
+}
+
 /* Work index */
 .work-hero {
   padding: 150px 0 56px;

@@ -1,4 +1,4 @@
-import { CASE_LIST } from "../../data/cases";
+import CaseAccordion from "../../components/CaseAccordion";
 import { ROCKET_WINS, EARLIER_WINS, BUSINESS_IMPACT } from "../../data/wins";
 
 export const metadata = {
@@ -36,25 +36,7 @@ export default function WorkIndex() {
       </section>
 
       <div className="container container--full">
-        <div className="work-list">
-          {CASE_LIST.map((item) => (
-            <a className="work-row" href={`/work/${item.slug}/`} key={item.slug} style={{ "--row-tint": item.tint }}>
-              <div className="work-row__client">
-                <div className="work-row__brand">
-                  <img className={item.logoWide ? "work-row__logo work-row__logo--wide" : "work-row__logo"} src={item.logo} alt={`${item.client} logo`} />
-                  <div>
-                    <span className="case-pill">{item.pill}</span>
-                    <div>{item.client}</div>
-                  </div>
-                </div>
-              </div>
-              <div className="work-row__year">{item.year}</div>
-              <div className="work-row__title">{item.title}</div>
-              <div className="work-row__desc">{item.desc}</div>
-              <span className="work-row__arrow" aria-hidden="true">»</span>
-            </a>
-          ))}
-        </div>
+        <CaseAccordion />
 
         <h2 className="work-group-label">Rocket Clicks wins</h2>
         <WinCards items={ROCKET_WINS} />

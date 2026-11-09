@@ -5,21 +5,12 @@ import { DASHBOARD_DATA } from "../data/dashboard";
 import { renderRadialGauge, renderStemChart, renderSemiGauge, renderLineChart } from "../lib/charts";
 
 export default function ProofDashboard() {
-  const aiGauge = useRef(null);
   const citationChart = useRef(null);
   const localGauge = useRef(null);
   const auritChart = useRef(null);
 
   useEffect(() => {
     const data = DASHBOARD_DATA;
-    if (aiGauge.current) {
-      renderRadialGauge(aiGauge.current, {
-        value: data.scu.aiOverviewScore,
-        max: 100,
-        label: "AI Overview score 39 out of 100 for Service Credit Union",
-        centerLabel: "AI Overview /100",
-      });
-    }
     if (citationChart.current) {
       renderStemChart(citationChart.current, {
         label: "Cited prompts by Service Credit Union page",
@@ -63,10 +54,6 @@ export default function ProofDashboard() {
 
         <div className="proof__ribbon reveal-group" aria-label="Portfolio evidence scope">
           <div className="ribbon-item">
-            <div className="ribbon-value" data-count="1014">1,014</div>
-            <div className="ribbon-label">Keyword rows analyzed · 12 Semrush workbooks</div>
-          </div>
-          <div className="ribbon-item">
             <div className="ribbon-value" data-count="654">654</div>
             <div className="ribbon-label">AI Overview-exposed queries mapped · 3 clients only</div>
           </div>
@@ -84,27 +71,28 @@ export default function ProofDashboard() {
           <article className="card reveal" aria-labelledby="card-ai">
             <div className="card__head">
               <div>
-                <h3 className="card__title" id="card-ai"><span className="card__icon" aria-hidden="true">◔</span>AI Overview</h3>
-                <p className="card__subtitle">Service Credit Union · Jul 12 – Aug 11, 2026</p>
+                <h3 className="card__title" id="card-ai"><span className="card__icon" aria-hidden="true">◔</span>AI feature visibility</h3>
+                <p className="card__subtitle">Service Credit Union · GSC, August 2026</p>
               </div>
-              <span className="card__top-metric">39/100</span>
+              <span className="card__top-metric">180,938</span>
             </div>
-            <div ref={aiGauge}></div>
+            <div className="metric-big"><span data-count="180938">180,938</span></div>
+            <p className="metric-caption">Generative AI feature impressions</p>
             <div className="submetrics">
-              <div><div className="submetric-value">17/100</div><div className="submetric-label">AI Visibility</div></div>
-              <div><div className="submetric-value">44</div><div className="submetric-label">Target</div></div>
-              <div><div className="submetric-value">180,938</div><div className="submetric-label">AI feature impressions</div></div>
+              <div><div className="submetric-value">363 → 382</div><div className="submetric-label">Cited pages</div></div>
+              <div><div className="submetric-value">888 → 892</div><div className="submetric-label">Citations</div></div>
+              <div><div className="submetric-value">39/100</div><div className="submetric-label">AI Overview score</div></div>
             </div>
-            <p className="caveat">Below target overall. The evidence is page-level citation gains and AI feature visibility, not a finished GEO win.</p>
+            <p className="caveat">AI Overview was the strongest surface. Overall AI Visibility was 17/100 vs a 44 target; claim limits are documented in the case study.</p>
           </article>
 
           <article className="card reveal" aria-labelledby="card-citations">
             <div className="card__head">
               <div>
-                <h3 className="card__title" id="card-citations"><span className="card__icon" aria-hidden="true">≣</span>Cited prompts</h3>
-                <p className="card__subtitle">Semrush · Aug 8 – Sep 7 vs Jul 12 – Aug 11</p>
+                <h3 className="card__title" id="card-citations"><span className="card__icon" aria-hidden="true">≣</span>Cited prompts by page</h3>
+                <p className="card__subtitle">Semrush · Aug 8 – Sep 7 vs Jul 12 – Aug 11, 2026</p>
               </div>
-              <span className="card__top-metric">888 → 892</span>
+              <span className="card__top-metric">888 → 892 total</span>
             </div>
             <div ref={citationChart}></div>
             <p className="chart-summary">Become a member <strong>40 → 63</strong> · Auto loans <strong>8 → 26</strong> · Vehicle hub <strong>65 → 49</strong></p>
@@ -120,9 +108,9 @@ export default function ProofDashboard() {
             </div>
             <div ref={localGauge}></div>
             <div className="submetrics">
-              <div><div className="submetric-value">5 → 10</div><div className="submetric-label">Top-3 terms</div></div>
+              <div><div className="submetric-value">5 → 10</div><div className="submetric-label">Top-3 terms (24 tracked)</div></div>
               <div><div className="submetric-value">13 → 18</div><div className="submetric-label">Top-10 terms</div></div>
-              <div><div className="submetric-value">#1</div><div className="submetric-label">Neurosurgeon</div></div>
+              <div><div className="submetric-value">#1</div><div className="submetric-label">For “neurosurgeon” · Racine, WI</div></div>
             </div>
           </article>
 
@@ -139,7 +127,7 @@ export default function ProofDashboard() {
               <p className="metric-caption">Top-3 terms, up from 0</p>
               <div className="submetrics">
                 <div><div className="submetric-value">9</div><div className="submetric-label">Keywords gained</div></div>
-                <div><div className="submetric-value">#1</div><div className="submetric-label">Chandler &amp; Scottsdale</div></div>
+                <div><div className="submetric-value">#1</div><div className="submetric-label">Chandler &amp; Scottsdale divorce mediation</div></div>
               </div>
             </div>
             <div ref={auritChart}></div>
