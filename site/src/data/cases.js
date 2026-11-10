@@ -132,7 +132,7 @@ export const CASES = {
       {
         label: "02 · Insight",
         heading: "AI Overviews touched most of the query set",
-        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. Only <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
+        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. Only <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 65 in March 2026</strong>. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>, with data available only from May 2026 onward.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
       },
       {
         label: "03 · Strategy",
@@ -148,8 +148,8 @@ export const CASES = {
     metricCards: [
       ["+63.0%", "Organic clicks, 324 → 528", "GSC · Dec 2025 – Feb 2026 vs Sep–Nov 2025"],
       ["+104.8%", "Impressions, 116,744 → 239,084", "GSC · same periods"],
-      ["+30.1%", "Clicks in the following quarter, 687", "GSC · Mar–May 2026 vs Dec 2025 – Feb 2026"],
-      ["561", "Queries triggering AI Overviews", "81.9% of the tracked set · Semrush, Feb 2026"],
+      ["4 → 65", "AI Overview keywords, July 2025 → March 2026", "Semrush SERP Features Trend"],
+      ["78.3K", "Generative AI feature impressions", "GSC · data available from May 2026 onward"],
       ["107", "AI Overview queries also ranking top 10", "Semrush · February 2026"],
       ["18", "Contractor child pages in the cluster", "Program implementation"],
     ],
@@ -162,8 +162,9 @@ export const CASES = {
     limits: [
       "CTR fell from 0.27% to 0.20% as impressions broadened; this is not a CTR win.",
       "GSC cannot attribute growth to a single change; this is migration-led evidence, not proof that every tactic worked.",
-      "No clean before-and-after AI citation trend is available for Dream Assurance.",
       "The February 2026 keyword snapshot is a point-in-time export, not a growth metric.",
+      "The Semrush trend has no value for December 2025 and no quantified values for April–November 2026 in the source screenshots; GSC Generative AI features data starts in May 2026.",
+      "AI Overview presence is not a citation; no clean before-and-after AI citation trend is available for Dream Assurance.",
     ],
     next: "service-credit-union",
     nextTitle: "Service Credit Union",

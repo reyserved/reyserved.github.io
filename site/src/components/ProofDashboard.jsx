@@ -91,17 +91,17 @@ export default function ProofDashboard() {
           <article className="card reveal" aria-labelledby="card-local">
             <div className="card__head">
               <div>
-                <h3 className="card__title" id="card-local"><span className="card__icon" aria-hidden="true">◠</span>Organic growth</h3>
-                <p className="card__subtitle">Dream Assurance · GSC, Dec 2025 – Feb 2026 vs Sep–Nov 2025</p>
+                <h3 className="card__title" id="card-local"><span className="card__icon" aria-hidden="true">◠</span>AI Overview coverage</h3>
+                <p className="card__subtitle">Dream Assurance · Semrush SERP Features Trend</p>
               </div>
-              <span className="card__top-metric">+104.8%</span>
+              <span className="card__top-metric">4 → 65</span>
             </div>
-            <div className="metric-big"><span data-count="104.8" data-decimals="1" data-prefix="+" data-suffix="%">+104.8%</span></div>
-            <p className="metric-caption">Impressions, Dec 2025 – Feb 2026 vs previous quarter</p>
+            <div className="metric-big"><span data-count="65">65</span></div>
+            <p className="metric-caption">AI Overview keywords in March 2026, up from 4 in July 2025</p>
             <div className="submetrics">
-              <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks</div></div>
-              <div><div className="submetric-value">324 → 528</div><div className="submetric-label">Clicks by quarter</div></div>
-              <div><div className="submetric-value">687</div><div className="submetric-label">Clicks, Mar–May 2026</div></div>
+              <div><div className="submetric-value">78.3K</div><div className="submetric-label">AI feature impressions, May–Nov 2026</div></div>
+              <div><div className="submetric-value">11 → 194</div><div className="submetric-label">People also ask</div></div>
+              <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks, Dec 2025 – Feb 2026</div></div>
             </div>
           </article>
 
