@@ -119,7 +119,7 @@ export const CASES = {
     lede: "A site migration, architecture rebuild, and answer-first SEO and GEO program that preceded a 63% lift in organic clicks and a 104.8% lift in impressions.",
     meta: [
       ["Client", "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"],
-      ["My role", "End-to-end ownership<br>Dec 2024 – Dec 2025"],
+      ["My role", "Part-time, project-to-project<br>Dec 2023 – Dec 2025"],
       ["Period", "Migration and optimization through Dec 2025<br>GSC results Sep 2025 – Oct 2026"],
       ["Sources", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
     ],
