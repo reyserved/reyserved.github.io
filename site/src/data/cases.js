@@ -163,7 +163,7 @@ export const CASES = {
       "CTR fell from 0.27% to 0.20% as impressions broadened; this is not a CTR win.",
       "GSC cannot attribute growth to a single change; this is migration-led evidence, not proof that every tactic worked.",
       "The February 2026 keyword snapshot is a point-in-time export, not a growth metric.",
-      "The Semrush trend has no quantified values for April–November 2026 in the source screenshots; the trend is capped at March 2026 to keep the evidence within the migration and optimization window.",
+      "The Semrush trend has no quantified values for April–November 2026 in the source screenshots.",
       "AI Overview presence is not a citation; no clean before-and-after AI citation trend is available for Dream Assurance.",
     ],
     next: "service-credit-union",

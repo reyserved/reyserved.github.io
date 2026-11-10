@@ -122,7 +122,7 @@ export default function ProofDashboard() {
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026. The trend is capped at March 2026 to keep the evidence within the migration and optimization window.</p>
+            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026.</p>
           </article>
         </div>
 
