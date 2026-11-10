@@ -9,17 +9,17 @@ const TOOLS = [
     desc: "Position tracking, AI Visibility, keyword research, and backlink analysis. I use it to connect rankings, citations, and content priorities.",
   },
   {
-    name: "Search Console",
+    name: "Google Search Console",
     logo: "/logos/tools/googlesearchconsole.svg",
     desc: "My source of truth for queries, pages, CTR, and Generative AI feature impressions. I use it to separate business-relevant demand from noise.",
   },
   {
-    name: "GA4",
+    name: "Google Analytics 4",
     logo: "/logos/tools/googleanalytics.svg",
     desc: "Where I validate engagement, landing-page performance, and key events, always checking whether the data is organic-only or all traffic.",
   },
   {
-    name: "Tag Manager",
+    name: "Google Tag Manager",
     logo: "/logos/tools/googletagmanager.svg",
     desc: "My conversion tracking layer. I implement and troubleshoot GA4 events, form tracking, and phone or email click tracking.",
   },
@@ -39,7 +39,7 @@ const TOOLS = [
     desc: "Dashboards that turn GSC, GA4, and Semrush exports into readable client reporting with clear periods and claim limits.",
   },
   {
-    name: "Surfer",
+    name: "Surfer SEO",
     logo: "/logos/tools/surfer.png",
     desc: "Content optimization support for coverage and on-page structure, always secondary to intent and source quality.",
   },
@@ -49,7 +49,7 @@ const TOOLS = [
     desc: "Where I implement most client content, schema, and page-structure changes, including Divi, Elementor, Yoast, and RankMath.",
   },
   {
-    name: "Business Profile",
+    name: "Google Business Profile",
     logo: "/logos/tools/googlebusinessprofile.png",
     desc: "Local visibility, categories, services, and call tracking. I connect GBP performance to landing pages and first-time callers.",
   },
