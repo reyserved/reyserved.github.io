@@ -216,6 +216,53 @@ export function renderKeywordBars(element, { items, label }) {
   element.appendChild(svg);
 }
 
+export function renderTrendChart(element, { series, label }) {
+  const width = 660;
+  const height = 240;
+  const padding = { top: 24, right: 16, bottom: 30, left: 16 };
+  const svg = makeSvg(width, height, label);
+  const maxValue = Math.max(...series.map((point) => point.clicks)) * 1.1;
+  const innerWidth = width - padding.left - padding.right;
+  const innerHeight = height - padding.top - padding.bottom;
+
+  const x = (index) => padding.left + (index / (series.length - 1)) * innerWidth;
+  const y = (value) => padding.top + innerHeight - (value / maxValue) * innerHeight;
+
+  for (let i = 0; i <= 4; i += 1) {
+    const gy = padding.top + (i / 4) * innerHeight;
+    svg.appendChild(svgEl("line", { x1: padding.left, y1: gy, x2: width - padding.right, y2: gy, class: "chart__grid" }));
+  }
+
+  const defs = svgEl("defs");
+  const gradient = svgEl("linearGradient", { id: "chartAreaGradient", x1: "0", y1: "0", x2: "0", y2: "1" });
+  gradient.appendChild(svgEl("stop", { offset: "0%", "stop-color": "#e5a93c", "stop-opacity": 0.35 }));
+  gradient.appendChild(svgEl("stop", { offset: "100%", "stop-color": "#e5a93c", "stop-opacity": 0 }));
+  defs.appendChild(gradient);
+  svg.appendChild(defs);
+
+  const linePath = series.map((point, index) => `${index === 0 ? "M" : "L"} ${x(index)} ${y(point.clicks)}`).join(" ");
+  const areaPath = `${linePath} L ${x(series.length - 1)} ${y(0)} L ${x(0)} ${y(0)} Z`;
+  svg.appendChild(svgEl("path", { d: areaPath, class: "chart__area" }));
+  const line = svgEl("path", { d: linePath, class: "chart__line" });
+  svg.appendChild(line);
+
+  const last = series[series.length - 1];
+  svg.appendChild(svgEl("circle", { cx: x(series.length - 1), cy: y(last.clicks), r: 4, fill: "#e5a93c" }));
+  svg.appendChild(svgEl("text", { x: x(series.length - 1) - 4, y: y(last.clicks) - 12, "text-anchor": "end", class: "chart__value" }, `${last.clicks} clicks`));
+  svg.appendChild(svgEl("text", { x: padding.left, y: height - 8 }, series[0].date.slice(0, 7)));
+  svg.appendChild(svgEl("text", { x: width - padding.right, y: height - 8, "text-anchor": "end" }, last.date.slice(0, 7)));
+
+  element.appendChild(svg);
+
+  onVisible(element, () => {
+    const length = line.getTotalLength();
+    line.style.strokeDasharray = length;
+    line.style.strokeDashoffset = length;
+    line.style.transition = "stroke-dashoffset 2600ms cubic-bezier(0.16,1,0.3,1)";
+    requestAnimationFrame(() => { line.style.strokeDashoffset = 0; });
+  });
+}
+
 export function renderLineChart(element, { series, label }) {
   const width = 660;
   const height = 240;

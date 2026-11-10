@@ -2,11 +2,10 @@
 
 import { useEffect, useRef } from "react";
 import { DASHBOARD_DATA } from "../data/dashboard";
-import { renderStemChart, renderSemiGauge, renderLineChart } from "../lib/charts";
+import { renderStemChart, renderTrendChart } from "../lib/charts";
 
 export default function ProofDashboard() {
   const citationChart = useRef(null);
-  const localGauge = useRef(null);
   const auritChart = useRef(null);
 
   useEffect(() => {
@@ -24,18 +23,10 @@ export default function ProofDashboard() {
         ],
       });
     }
-    if (localGauge.current) {
-      renderSemiGauge(localGauge.current, {
-        value: data.neuroendo.top3Current,
-        max: data.neuroendo.trackedKeywords,
-        label: "NeuroEndoMKE top-3 keywords 10 of 24 tracked",
-        centerLabel: "Top-3 / 24 terms",
-      });
-    }
     if (auritChart.current) {
-      renderLineChart(auritChart.current, {
-        label: "NeuroEndoMKE weekly top-3 keyword count over three years",
-        series: data.neuroendo.series,
+      renderTrendChart(auritChart.current, {
+        label: "Dream Assurance monthly organic clicks, September 2025 to October 2026",
+        series: data.dreamAssurance.series,
       });
     }
   }, []);
@@ -100,16 +91,17 @@ export default function ProofDashboard() {
           <article className="card reveal" aria-labelledby="card-local">
             <div className="card__head">
               <div>
-                <h3 className="card__title" id="card-local"><span className="card__icon" aria-hidden="true">◠</span>Local rankings</h3>
-                <p className="card__subtitle">NeuroEndoMKE · Semrush Position Tracking</p>
+                <h3 className="card__title" id="card-local"><span className="card__icon" aria-hidden="true">◠</span>Organic growth</h3>
+                <p className="card__subtitle">Dream Assurance · GSC, Dec 2025 – Feb 2026 vs Sep–Nov 2025</p>
               </div>
-              <span className="card__top-metric">+19.7%</span>
+              <span className="card__top-metric">+104.8%</span>
             </div>
-            <div ref={localGauge}></div>
+            <div className="metric-big"><span data-count="104.8" data-decimals="1" data-prefix="+" data-suffix="%">+104.8%</span></div>
+            <p className="metric-caption">Impressions, Dec 2025 – Feb 2026 vs previous quarter</p>
             <div className="submetrics">
-              <div><div className="submetric-value">5 → 10</div><div className="submetric-label">Top-3 terms (24 tracked)</div></div>
-              <div><div className="submetric-value">13 → 18</div><div className="submetric-label">Top-10 terms</div></div>
-              <div><div className="submetric-value">#1</div><div className="submetric-label">For “neurosurgeon” · Racine, WI</div></div>
+              <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks</div></div>
+              <div><div className="submetric-value">324 → 528</div><div className="submetric-label">Clicks by quarter</div></div>
+              <div><div className="submetric-value">687</div><div className="submetric-label">Clicks, Mar–May 2026</div></div>
             </div>
           </article>
 
@@ -117,20 +109,20 @@ export default function ProofDashboard() {
             <div>
               <div className="card__head">
                 <div>
-                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>Top-3 growth</h3>
-                  <p className="card__subtitle">NeuroEndoMKE · Semrush Position Tracking, Nov 2023 – Nov 2026</p>
+                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>Organic growth trend</h3>
+                  <p className="card__subtitle">Dream Assurance · GSC, Sep 2025 – Oct 2026</p>
                 </div>
-                <span className="card__top-metric">5 → 10</span>
+                <span className="card__top-metric">+63.0% clicks</span>
               </div>
-              <div className="metric-big"><span data-count="10">10</span></div>
-              <p className="metric-caption">Top-3 terms, up from 5 in Nov 2023</p>
+              <div className="metric-big"><span data-count="528">528</span></div>
+              <p className="metric-caption">Clicks, Dec 2025 – Feb 2026, up from 324 in Sep–Nov 2025</p>
               <div className="submetrics">
-                <div><div className="submetric-value">12</div><div className="submetric-label">Keywords improved</div></div>
-                <div><div className="submetric-value">#1</div><div className="submetric-label">For “neurosurgeon” · Racine, WI</div></div>
+                <div><div className="submetric-value">+104.8%</div><div className="submetric-label">Impressions</div></div>
+                <div><div className="submetric-value">+30.1%</div><div className="submetric-label">Clicks, next quarter</div></div>
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">Weekly top-3 keyword count over three years: <strong>5 → 10</strong>. Amber line shows the trend, muted line shows top-10 count.</p>
+            <p className="chart-summary">Monthly organic clicks from September 2025 to October 2026. Growth followed the migration, architecture, and answer-first content work.</p>
           </article>
         </div>
 

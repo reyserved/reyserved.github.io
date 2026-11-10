@@ -742,5 +742,98 @@ window.DASHBOARD_DATA = {
       }
     ],
     "snapshotDate": "Nov 6, 2026"
+  },
+  "dreamAssurance": {
+    "client": "Dream Assurance Group",
+    "series": [
+      {
+        "date": "2025-09-01",
+        "clicks": 27,
+        "impressions": 13124
+      },
+      {
+        "date": "2025-10-01",
+        "clicks": 130,
+        "impressions": 41231
+      },
+      {
+        "date": "2025-11-01",
+        "clicks": 167,
+        "impressions": 62389
+      },
+      {
+        "date": "2025-12-01",
+        "clicks": 165,
+        "impressions": 62090
+      },
+      {
+        "date": "2026-01-01",
+        "clicks": 167,
+        "impressions": 81062
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 196,
+        "impressions": 95932
+      },
+      {
+        "date": "2026-03-01",
+        "clicks": 238,
+        "impressions": 129607
+      },
+      {
+        "date": "2026-04-01",
+        "clicks": 221,
+        "impressions": 129891
+      },
+      {
+        "date": "2026-05-01",
+        "clicks": 228,
+        "impressions": 132851
+      },
+      {
+        "date": "2026-06-01",
+        "clicks": 237,
+        "impressions": 111939
+      },
+      {
+        "date": "2026-07-01",
+        "clicks": 238,
+        "impressions": 106870
+      },
+      {
+        "date": "2026-08-01",
+        "clicks": 215,
+        "impressions": 126262
+      },
+      {
+        "date": "2026-09-01",
+        "clicks": 240,
+        "impressions": 102441
+      },
+      {
+        "date": "2026-10-01",
+        "clicks": 210,
+        "impressions": 100011
+      }
+    ],
+    "previousPeriod": {
+      "label": "Sep\u2013Nov 2025",
+      "clicks": 324,
+      "impressions": 116744
+    },
+    "currentPeriod": {
+      "label": "Dec 2025 \u2013 Feb 2026",
+      "clicks": 528,
+      "impressions": 239084
+    },
+    "nextPeriod": {
+      "label": "Mar\u2013May 2026",
+      "clicks": 687,
+      "impressions": 392349
+    },
+    "clicksChange": 63.0,
+    "impressionsChange": 104.8,
+    "source": "Google Search Console"
   }
 };

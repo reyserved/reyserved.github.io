@@ -76,9 +76,27 @@ def weekly_series(path, sample_every=3):
     return series
 
 
+def da_monthly_series():
+    import openpyxl
+    from collections import defaultdict
+    path = DOWNLOADS / "https___dreamassurancegroup.com_-Performance-on-Search-2026-11-10.xlsx"
+    wb = openpyxl.load_workbook(path, data_only=True)
+    monthly = defaultdict(lambda: {"clicks": 0, "impressions": 0})
+    for date, clicks, impressions, _, _ in wb["Chart"].iter_rows(min_row=2, values_only=True):
+        key = str(date)[:7]
+        monthly[key]["clicks"] += clicks or 0
+        monthly[key]["impressions"] += impressions or 0
+    series = [
+        {"date": f"{key}-01", "clicks": int(value["clicks"]), "impressions": int(value["impressions"])}
+        for key, value in sorted(monthly.items())
+    ]
+    return [point for point in series if not point["date"].startswith("2026-11")]
+
+
 def main():
     aurit = weekly_series(DOWNLOADS / "17139700_1911025_position_tracking_rankings_overview_20261106 (3).xlsx")
     neuro = weekly_series(DOWNLOADS / "2624964_position_tracking_rankings_overview_20261106.xlsx")
+    da = da_monthly_series()
     payload = {
         "scu": {
             "client": "Service Credit Union",
@@ -124,6 +142,16 @@ def main():
             ],
             "snapshotDate": "Nov 6, 2026",
         },
+    }
+    payload["dreamAssurance"] = {
+        "client": "Dream Assurance Group",
+        "series": da,
+        "previousPeriod": {"label": "Sep–Nov 2025", "clicks": 324, "impressions": 116744},
+        "currentPeriod": {"label": "Dec 2025 – Feb 2026", "clicks": 528, "impressions": 239084},
+        "nextPeriod": {"label": "Mar–May 2026", "clicks": 687, "impressions": 392349},
+        "clicksChange": 63.0,
+        "impressionsChange": 104.8,
+        "source": "Google Search Console",
     }
     output = ROOT / "assets/data/dashboard.js"
     output.parent.mkdir(parents=True, exist_ok=True)
