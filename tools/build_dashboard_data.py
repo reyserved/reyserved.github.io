@@ -146,6 +146,17 @@ def main():
     payload["dreamAssurance"] = {
         "client": "Dream Assurance Group",
         "series": da,
+        "aiOverviewSeries": [
+            {"date": "2025-07-01", "clicks": 4},
+            {"date": "2025-08-01", "clicks": 3},
+            {"date": "2025-09-01", "clicks": 3},
+            {"date": "2025-10-01", "clicks": 3},
+            {"date": "2025-11-01", "clicks": 2},
+            {"date": "2025-12-01", "clicks": 21},
+            {"date": "2026-01-01", "clicks": 35},
+            {"date": "2026-02-01", "clicks": 38},
+            {"date": "2026-03-01", "clicks": 65},
+        ],
         "previousPeriod": {"label": "Sep–Nov 2025", "clicks": 324, "impressions": 116744},
         "currentPeriod": {"label": "Dec 2025 – Feb 2026", "clicks": 528, "impressions": 239084},
         "nextPeriod": {"label": "Mar–May 2026", "clicks": 687, "impressions": 392349},

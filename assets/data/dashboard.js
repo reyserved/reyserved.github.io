@@ -817,6 +817,44 @@ window.DASHBOARD_DATA = {
         "impressions": 100011
       }
     ],
+    "aiOverviewSeries": [
+      {
+        "date": "2025-07-01",
+        "clicks": 4
+      },
+      {
+        "date": "2025-08-01",
+        "clicks": 3
+      },
+      {
+        "date": "2025-09-01",
+        "clicks": 3
+      },
+      {
+        "date": "2025-10-01",
+        "clicks": 3
+      },
+      {
+        "date": "2025-11-01",
+        "clicks": 2
+      },
+      {
+        "date": "2025-12-01",
+        "clicks": 21
+      },
+      {
+        "date": "2026-01-01",
+        "clicks": 35
+      },
+      {
+        "date": "2026-02-01",
+        "clicks": 38
+      },
+      {
+        "date": "2026-03-01",
+        "clicks": 65
+      }
+    ],
     "previousPeriod": {
       "label": "Sep\u2013Nov 2025",
       "clicks": 324,

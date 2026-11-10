@@ -120,7 +120,7 @@ export const CASES = {
     meta: [
       ["Client", "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"],
       ["My role", "Part-time, project-to-project<br>Dec 2023 – Dec 2025"],
-      ["Period", "Migration and optimization through Dec 2025<br>GSC results Sep 2025 – Oct 2026"],
+      ["Period", "Migration and optimization through Dec 2025<br>GSC results Sep 2025 – Mar 2026"],
       ["Sources", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
     ],
     sections: [
@@ -163,7 +163,7 @@ export const CASES = {
       "CTR fell from 0.27% to 0.20% as impressions broadened; this is not a CTR win.",
       "GSC cannot attribute growth to a single change; this is migration-led evidence, not proof that every tactic worked.",
       "The February 2026 keyword snapshot is a point-in-time export, not a growth metric.",
-      "The Semrush trend has no quantified values for April–November 2026 in the source screenshots; GSC Generative AI features data starts in May 2026.",
+      "The Semrush trend has no quantified values for April–November 2026 in the source screenshots; the trend is capped at March 2026 to keep the evidence within the migration and optimization window.",
       "AI Overview presence is not a citation; no clean before-and-after AI citation trend is available for Dream Assurance.",
     ],
     next: "service-credit-union",

@@ -25,8 +25,8 @@ export default function ProofDashboard() {
     }
     if (auritChart.current) {
       renderTrendChart(auritChart.current, {
-        label: "Dream Assurance monthly organic clicks, September 2025 to October 2026",
-        series: data.dreamAssurance.series,
+        label: "Dream Assurance AI Overview keyword coverage, July 2025 to March 2026",
+        series: data.dreamAssurance.aiOverviewSeries,
       });
     }
   }, []);
@@ -109,20 +109,20 @@ export default function ProofDashboard() {
             <div>
               <div className="card__head">
                 <div>
-                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>Organic growth trend</h3>
-                  <p className="card__subtitle">Dream Assurance · GSC, Sep 2025 – Oct 2026</p>
+                  <h3 className="card__title" id="card-aurit"><span className="card__icon" aria-hidden="true">⌁</span>AI Overview trend</h3>
+                  <p className="card__subtitle">Dream Assurance · Semrush SERP Features Trend, Jul 2025 – Mar 2026</p>
                 </div>
-                <span className="card__top-metric">+63.0% clicks</span>
+                <span className="card__top-metric">4 → 65</span>
               </div>
-              <div className="metric-big"><span data-count="528">528</span></div>
-              <p className="metric-caption">Clicks, Dec 2025 – Feb 2026, up from 324 in Sep–Nov 2025</p>
+              <div className="metric-big"><span data-count="65">65</span></div>
+              <p className="metric-caption">AI Overview keywords in March 2026, up from 4 in July 2025 and 21 in December 2025</p>
               <div className="submetrics">
-                <div><div className="submetric-value">+104.8%</div><div className="submetric-label">Impressions</div></div>
-                <div><div className="submetric-value">+30.1%</div><div className="submetric-label">Clicks, next quarter</div></div>
+                <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks, Dec 2025 – Feb 2026</div></div>
+                <div><div className="submetric-value">78.3K</div><div className="submetric-label">AI feature impressions, May–Nov 2026</div></div>
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">Monthly organic clicks from September 2025 to October 2026. Growth followed the migration, architecture, and answer-first content work.</p>
+            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026. The trend is capped at March 2026 to keep the evidence within the migration and optimization window.</p>
           </article>
         </div>
 
