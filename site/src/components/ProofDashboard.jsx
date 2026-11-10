@@ -97,7 +97,7 @@ export default function ProofDashboard() {
               <span className="card__top-metric">4 → 65</span>
             </div>
             <div className="metric-big"><span data-count="65">65</span></div>
-            <p className="metric-caption">AI Overview keywords in March 2026, up from 4 in July 2025</p>
+            <p className="metric-caption">AI Overview keywords in March 2026, up from 4 in July 2025 and 21 in December 2025</p>
             <div className="submetrics">
               <div><div className="submetric-value">78.3K</div><div className="submetric-label">AI feature impressions, May–Nov 2026</div></div>
               <div><div className="submetric-value">11 → 194</div><div className="submetric-label">People also ask</div></div>
