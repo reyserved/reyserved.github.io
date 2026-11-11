@@ -1,7 +1,38 @@
 /* Case study pages */
 .case-hero {
+  position: relative;
   padding: 150px 0 64px;
   border-bottom: 1px solid var(--line);
+  background-image: linear-gradient(110deg, rgba(9, 10, 12, 0.88) 0%, rgba(9, 10, 12, 0.62) 45%, rgba(9, 10, 12, 0.35) 100%), var(--case-hero-image);
+  background-size: cover;
+  background-position: center;
+  color: var(--dark-text);
+}
+
+.case-hero .case-pill {
+  color: var(--dark-stone);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: rgba(255, 255, 255, 0.18);
+}
+
+.case-hero .case-title {
+  color: var(--dark-text);
+}
+
+.case-hero .case-lede {
+  color: var(--dark-stone);
+}
+
+.case-hero .case-meta {
+  border-top-color: var(--dark-line);
+}
+
+.case-hero .case-meta dt {
+  color: var(--dark-muted);
+}
+
+.case-hero .case-meta dd {
+  color: var(--dark-text);
 }
 
 .case-pill {
@@ -568,6 +599,59 @@
   height: 5px;
   border-radius: 50%;
   background: var(--amber);
+}
+
+.win-card--interactive {
+  position: relative;
+  text-align: left;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  border: 0;
+  overflow: hidden;
+}
+
+.win-card__visual {
+  display: block;
+  position: absolute;
+  inset: 0;
+  padding: 18px;
+  background: var(--dark-surface);
+  opacity: 0;
+  transform: translateY(10px);
+  transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out);
+  pointer-events: none;
+  z-index: 2;
+}
+
+.win-card--interactive.is-open .win-card__visual {
+  opacity: 1;
+  transform: none;
+}
+
+.win-card__visual .chart {
+  width: 100%;
+  height: 100%;
+  min-height: 140px;
+}
+
+.win-card__visual img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+@media (hover: none) {
+  .win-card--interactive .win-card__visual {
+    position: relative;
+    margin-top: 16px;
+    opacity: 0;
+  }
+
+  .win-card--interactive.is-open .win-card__visual {
+    opacity: 1;
+  }
 }
 
 @media (max-width: 1024px) {

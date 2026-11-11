@@ -1,7 +1,7 @@
 export default function CaseStudy({ data }) {
   return (
     <>
-      <section className="case-hero">
+      <section className={`case-hero case-hero--${data.slug}`} style={{ "--case-hero-image": `url(${data.heroImage})` }}>
         <div className="container">
           <span className="case-pill">{data.pill}</span>
           <h1 className="case-title">{data.title}</h1>

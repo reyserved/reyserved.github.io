@@ -1,5 +1,7 @@
 export const CASES = {
   "service-credit-union": {
+    slug: "service-credit-union",
+    heroImage: "/images/heroes/scu.png",
     pill: "Credit union · Financial services",
     title: "Building and measuring an AI-answer visibility program",
     lede: "How Service Credit Union's product and membership pages earned citations in AI Overviews and LLM answers, and what the data still cannot prove.",
@@ -57,6 +59,8 @@ export const CASES = {
   },
 
   "tde-family-law": {
+    slug: "tde-family-law",
+    heroImage: "/images/heroes/tde.png",
     pill: "Family law · Legal services",
     title: "An answer-first content system for a family law firm",
     lede: "Mapping 151 family-law queries to AI Overview exposure, then rebuilding content so each page answers the query in its first paragraph.",
@@ -114,6 +118,8 @@ export const CASES = {
   },
 
   "dream-assurance": {
+    slug: "dream-assurance",
+    heroImage: "/images/heroes/da.png",
     pill: "Insurance · Independent agency",
     title: "Migration-led growth for an independent insurance agency",
     lede: "A site migration, architecture rebuild, and answer-first SEO and GEO program that preceded a 63% lift in organic clicks and a 104.8% lift in impressions.",

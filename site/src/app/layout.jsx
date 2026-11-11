@@ -5,6 +5,7 @@ import "../styles/home.css";
 import "../styles/case-study.css";
 import "../styles/charts.css";
 import "../styles/stack.css";
+import "../styles/home-v2.css";
 import SiteNav from "../components/SiteNav";
 import ClientEffects from "../components/ClientEffects";
 

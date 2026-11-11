@@ -1,4 +1,5 @@
 import CaseAccordion from "../../components/CaseAccordion";
+import WinCard from "../../components/WinCard";
 import { ROCKET_WINS, EARLIER_WINS, BUSINESS_IMPACT } from "../../data/wins";
 
 export const metadata = {
@@ -10,15 +11,7 @@ function WinCards({ items }) {
   return (
     <div className="win-grid">
       {items.map((item) => (
-        <div className="win-card" key={item.client}>
-          <div className="win-card__client">{item.client}</div>
-          <div className="win-card__metric">{item.metric}</div>
-          <div className="win-card__desc">{item.desc}</div>
-          <div className="win-card__meta">{item.source}</div>
-          {item.tags.map((tag) => (
-            <span className="win-card__tag" key={tag}>{tag}</span>
-          ))}
-        </div>
+        <WinCard item={item} key={item.client} />
       ))}
     </div>
   );
