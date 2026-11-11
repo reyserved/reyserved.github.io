@@ -1,20 +1,9 @@
 "use client";
 
 import { useEffect, useState } from "react";
+import SkillsCarousel from "./SkillsCarousel";
 
 const WORDS = ["quote.", "cite.", "recommend."];
-const SKILLS = [
-  "AEO",
-  "GEO",
-  "Technical SEO",
-  "Local SEO",
-  "Content Strategy",
-  "Schema",
-  "GA4",
-  "Google Search Console",
-  "Semrush",
-  "Internal Linking",
-];
 
 export default function HeroSplit() {
   const [index, setIndex] = useState(0);
@@ -82,14 +71,7 @@ export default function HeroSplit() {
           </div>
         </div>
 
-        <div className="hero-skills" aria-label="Specialties">
-          {SKILLS.map((skill) => (
-            <div className="hero-skills__cell" key={skill}>
-              <span className="hero-skills__dot" aria-hidden="true" />
-              <span>{skill}</span>
-            </div>
-          ))}
-        </div>
+        <SkillsCarousel />
       </div>
     </section>
   );
