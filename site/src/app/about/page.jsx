@@ -1,3 +1,5 @@
+import StackGrid from "../../components/StackGrid";
+
 export const metadata = {
   title: "About — Reymart",
   description: "Background, experience, tools, and contact details for Reymart Sarigumba.",
@@ -31,20 +33,7 @@ const ROLES = [
   },
 ];
 
-const TOOLS = [
-  "Google Search Console",
-  "GA4",
-  "Google Tag Manager",
-  "Semrush",
-  "Ahrefs",
-  "Screaming Frog",
-  "Looker Studio",
-  "Surfer",
-  "WordPress",
-  "Google Business Profile",
-  "Claude / ChatGPT",
-  "HTML / CSS",
-];
+
 
 export default function AboutPage() {
   return (
@@ -76,11 +65,8 @@ export default function AboutPage() {
         </div>
 
         <h2 className="work-group-label">Tools</h2>
-        <div>
-          {TOOLS.map((tool) => (
-            <span className="win-card__tag" key={tool} style={{ fontSize: "11px", padding: "8px 12px", marginBottom: "8px" }}>{tool}</span>
-          ))}
-        </div>
+        <p className="win-card__desc" style={{ marginBottom: "18px" }}>The same stack I use across the case studies. Tap a card to see how I use each one.</p>
+        <StackGrid />
 
         <h2 className="work-group-label" id="contact">Contact</h2>
         <div className="win-grid">
