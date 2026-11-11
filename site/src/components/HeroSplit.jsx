@@ -56,8 +56,8 @@ export default function HeroSplit() {
             </div>
             <div className="hero-split__kpi reveal" aria-label="Portfolio at a glance">
               <div><strong>6+</strong><span>years in SEO</span></div>
-              <div><strong>3</strong><span>deep case studies</span></div>
-              <div><strong>654</strong><span>AI Overview queries mapped · 3 clients</span></div>
+              <div><strong className="hero-split__kpi-text">Agency + in-house</strong><span>experience</span></div>
+              <div><strong className="hero-split__kpi-text">US + APAC</strong><span>client markets</span></div>
             </div>
           </div>
 

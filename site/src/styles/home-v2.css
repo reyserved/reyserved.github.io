@@ -418,3 +418,9 @@
     font-size: 1.75rem;
   }
 }
+
+.hero-split__kpi-text {
+  font-size: clamp(1.2rem, 1.8vw, 1.55rem) !important;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+}
