@@ -44,7 +44,6 @@ export default function HeroSplit() {
             <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
             <h1 className="hero-split__title reveal" id="hero-split-title">
               I develop <span className="hero-split__nowrap">search-optimized</span> content that AI answer engines can{" "}
-              <br />
               <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
             </h1>
             <p className="hero-split__bio reveal">
