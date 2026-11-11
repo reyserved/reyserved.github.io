@@ -139,7 +139,7 @@ export const CASES = {
       {
         label: "01 · Objective",
         heading: "Migrate and restructure without losing search equity",
-        body: "<p>Dream Assurance is an independent insurance agency in Overland Park, Kansas. Between November 2024 and December 2025, I owned the site migration, information architecture, brand intelligence, and answer-first SEO and GEO work for the business.</p><p>The goal was not just to preserve rankings during the migration. It was to rebuild the site so that service pages and blogs could rank for featured snippets and become a primary source or recommendation in LLM answers.</p>",
+        body: "<p>Dream Assurance is an independent insurance agency in Overland Park, Kansas. Between November 2024 and December 2025, I worked with the CEO on strategy and led the day-to-day execution of the site migration, information architecture, brand intelligence, and answer-first SEO and GEO work for the business.</p><p>The goal was not just to preserve rankings during the migration. It was to rebuild the site so that service pages and blogs could rank for featured snippets and become a primary source or recommendation in LLM answers.</p>",
       },
       {
         label: "02 · Insight",

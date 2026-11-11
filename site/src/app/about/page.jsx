@@ -16,7 +16,7 @@ const ROLES = [
     role: "SEO & GEO Specialist",
     company: "Dream Assurance Group",
     period: "2023 – 2025 · Part-time, project-to-project",
-    detail: "End-to-end in-house SEO: technical, content, schema, internal linking, local, tracking, and AI content operations.",
+    detail: "End-to-end in-house SEO, partnering with the CEO on strategy: technical, content, schema, internal linking, local, tracking, and AI content operations.",
   },
   {
     role: "SEO & SGE Specialist",
