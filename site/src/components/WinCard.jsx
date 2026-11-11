@@ -62,17 +62,6 @@ export default function WinCard({ item }) {
     </>
   );
 
-  if (item.inlineVisual && visual) {
-    return (
-      <div className="win-card win-card--inline">
-        {content}
-        <div className="win-card__inline-visual">
-          <MiniBars items={visual.items} />
-        </div>
-      </div>
-    );
-  }
-
   return (
     <button
       type="button"

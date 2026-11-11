@@ -131,7 +131,6 @@ export const BUSINESS_IMPACT = [
     desc: "Hires 13 → 23; leads +27.1%; hired-to-lead rate 7.18% → 10.00%.",
     source: "Clio and CallRail · September vs August 2026",
     tags: ["Business outcome"],
-    inlineVisual: true,
     visual: { type: "bars", items: [{ label: "Hires", previous: 13, current: 23 }, { label: "Leads", previous: 181, current: 230 }] },
   },
 ];

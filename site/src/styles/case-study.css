@@ -861,23 +861,6 @@
   }
 }
 
-.win-card--inline {
-  grid-column: 1 / -1;
-  max-width: 420px;
-}
-
-.win-card__inline-visual {
-  margin-top: 18px;
-  padding: 16px;
-  border-radius: 12px;
-  background: var(--dark-surface);
-}
-
-.win-card__inline-visual .chart {
-  width: 100%;
-  height: auto;
-}
-
 .work-group-note {
   max-width: 60ch;
   margin: -6px 0 18px;
