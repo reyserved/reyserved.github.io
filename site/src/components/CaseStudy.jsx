@@ -39,7 +39,7 @@ export default function CaseStudy({ data }) {
           <span /><span /><span /><span />
         </div>
         <div className="container case-hero__inner">
-          <img className="case-hero__logo reveal" src={data.logo} alt={`${data.clientName} logo`} />
+          <img className={`case-hero__logo case-hero__logo--${data.slug} reveal`} src={data.logo} alt={`${data.clientName} logo`} />
           <span className="case-hero__eyebrow reveal">{data.pill}</span>
           <h1 className="case-hero__title reveal">{data.title}</h1>
           <p className="case-hero__lede reveal">{data.lede}</p>
