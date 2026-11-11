@@ -85,6 +85,7 @@
 .case-hero__meta-wrap {
   position: relative;
   z-index: 2;
+  padding-bottom: 48px;
 }
 
 .case-hero__meta {
@@ -157,6 +158,10 @@
 
   .case-hero__meta-cell {
     padding: 18px 20px;
+  }
+
+  .case-hero__meta-wrap {
+    padding-bottom: 32px;
   }
 }
 
