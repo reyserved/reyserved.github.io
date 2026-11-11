@@ -17,7 +17,7 @@
   background-size: cover;
   background-position: center;
   opacity: 0.72;
-  filter: saturate(0.8) contrast(1.1) brightness(0.92);
+  filter: saturate(0.8) contrast(1.1) brightness(0.9);
   transform: scale(1.04);
 }
 
@@ -28,7 +28,7 @@
     radial-gradient(55% 45% at 50% 46%, rgba(45, 212, 191, 0.14) 0%, transparent 70%),
     radial-gradient(120% 80% at 50% 0%, rgba(16, 90, 78, 0.3) 0%, transparent 62%),
     radial-gradient(80% 70% at 50% 55%, transparent 35%, rgba(4, 10, 9, 0.55) 100%),
-    linear-gradient(180deg, rgba(6, 16, 14, 0.5) 0%, rgba(6, 10, 9, 0.9) 72%, #060a09 100%);
+    linear-gradient(181deg, rgba(6, 10, 9, 0) 41.0508%, #060a09 96.912%);
 }
 
 .case-hero__dots {
@@ -43,9 +43,49 @@
   opacity: 0.55;
 }
 
+.case-hero__halftone {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 0.5px, transparent 0.6px);
+  background-size: 4px 4px;
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+  mask-image: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.5) 55%, transparent 100%);
+}
+
+.case-hero__grain {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.13;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 93.5px auto;
+  mix-blend-mode: soft-light;
+}
+
+.case-hero__columns {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  pointer-events: none;
+}
+
+.case-hero__columns span {
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.case-hero__columns span:last-child {
+  border-right: 0;
+}
+
 .case-hero__inner {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -92,7 +132,7 @@
 
 .case-hero__meta-wrap {
   position: relative;
-  z-index: 2;
+  z-index: 4;
   padding-bottom: 48px;
 }
 
@@ -106,9 +146,29 @@
 }
 
 .case-hero__meta-cell {
-  padding: 24px 26px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 28px;
+  min-height: 220px;
+  padding: 28px 26px;
   border-right: 1px solid rgba(255, 255, 255, 0.12);
   border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.case-hero__meta-icon {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  background: rgba(255, 255, 255, 0.05);
+  color: rgba(255, 255, 255, 0.85);
+}
+
+.case-hero__meta-icon svg {
+  width: 22px;
+  height: 22px;
 }
 
 .case-hero__meta-label {
@@ -143,7 +203,47 @@
     padding-top: 120px;
   }
 
-  .case-hero__inner {
+  .case-hero__halftone {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  background-image: radial-gradient(rgba(255, 255, 255, 0.16) 0.5px, transparent 0.6px);
+  background-size: 4px 4px;
+  opacity: 0.16;
+  mix-blend-mode: soft-light;
+  mask-image: linear-gradient(to bottom, black 0%, rgba(0, 0, 0, 0.5) 55%, transparent 100%);
+}
+
+.case-hero__grain {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.13;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='256' height='256'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='256' height='256' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
+  background-size: 93.5px auto;
+  mix-blend-mode: soft-light;
+}
+
+.case-hero__columns {
+  position: absolute;
+  inset: 0;
+  z-index: 3;
+  display: flex;
+  pointer-events: none;
+}
+
+.case-hero__columns span {
+  flex: 1;
+  border-right: 1px solid rgba(255, 255, 255, 0.07);
+}
+
+.case-hero__columns span:last-child {
+  border-right: 0;
+}
+
+.case-hero__inner {
     padding-bottom: 40px;
   }
 
@@ -165,7 +265,18 @@
   }
 
   .case-hero__meta-cell {
-    padding: 18px 20px;
+    min-height: 150px;
+    gap: 18px;
+    padding: 20px;
+  }
+
+  .case-hero__meta-icon {
+    width: 38px;
+    height: 38px;
+  }
+
+  .case-hero__columns {
+    display: none;
   }
 
   .case-hero__meta-wrap {

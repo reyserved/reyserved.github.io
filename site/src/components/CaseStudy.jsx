@@ -1,3 +1,31 @@
+const META_ICONS = {
+  Client: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <path d="M4 21V6l8-3 8 3v15" />
+      <path d="M9 21v-5h6v5M9 10h.01M15 10h.01M9 13h.01M15 13h.01" />
+    </svg>
+  ),
+  "My role": (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <circle cx="12" cy="8" r="4" />
+      <path d="M4 21c0-4 3.6-7 8-7s8 3 8 7" />
+    </svg>
+  ),
+  Period: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <rect x="3" y="5" width="18" height="16" rx="2" />
+      <path d="M8 3v4M16 3v4M3 10h18" />
+    </svg>
+  ),
+  Data: (
+    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+      <ellipse cx="12" cy="5" rx="8" ry="3" />
+      <path d="M4 5v7c0 1.7 3.6 3 8 3s8-1.3 8-3V5" />
+      <path d="M4 12v7c0 1.7 3.6 3 8 3s8-1.3 8-3v-7" />
+    </svg>
+  ),
+};
+
 export default function CaseStudy({ data }) {
   return (
     <>
@@ -5,18 +33,26 @@ export default function CaseStudy({ data }) {
         <div className="case-hero__bg" style={{ backgroundImage: `url(${data.heroImage})` }} />
         <div className="case-hero__overlay" aria-hidden="true" />
         <div className="case-hero__dots" aria-hidden="true" />
+        <div className="case-hero__halftone" aria-hidden="true" />
+        <div className="case-hero__grain" aria-hidden="true" />
+        <div className="case-hero__columns" aria-hidden="true">
+          <span /><span /><span /><span />
+        </div>
         <div className="container case-hero__inner">
-          <img className="case-hero__logo" src={data.logo} alt={`${data.clientName} logo`} />
-          <span className="case-hero__eyebrow">{data.pill}</span>
-          <h1 className="case-hero__title">{data.title}</h1>
-          <p className="case-hero__lede">{data.lede}</p>
+          <img className="case-hero__logo reveal" src={data.logo} alt={`${data.clientName} logo`} />
+          <span className="case-hero__eyebrow reveal">{data.pill}</span>
+          <h1 className="case-hero__title reveal">{data.title}</h1>
+          <p className="case-hero__lede reveal">{data.lede}</p>
         </div>
         <div className="container container--full case-hero__meta-wrap">
-          <div className="case-hero__meta">
+          <div className="case-hero__meta reveal-group">
             {data.meta.map(([key, value]) => (
               <div className="case-hero__meta-cell" key={key}>
-                <span className="case-hero__meta-label">{key}</span>
-                <div className="case-hero__meta-value" dangerouslySetInnerHTML={{ __html: value }} />
+                <span className="case-hero__meta-icon" aria-hidden="true">{META_ICONS[key]}</span>
+                <div>
+                  <span className="case-hero__meta-label">{key}</span>
+                  <div className="case-hero__meta-value" dangerouslySetInnerHTML={{ __html: value }} />
+                </div>
               </div>
             ))}
           </div>
