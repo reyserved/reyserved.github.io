@@ -216,7 +216,7 @@ export function renderKeywordBars(element, { items, label }) {
   element.appendChild(svg);
 }
 
-export function renderTrendChart(element, { series, label, valueLabel = "clicks", annotation }) {
+export function renderTrendChart(element, { series, label, valueLabel = "clicks", annotations = [] }) {
   const width = 660;
   const height = 240;
   const padding = { top: 24, right: 16, bottom: 30, left: 16 };
@@ -251,7 +251,7 @@ export function renderTrendChart(element, { series, label, valueLabel = "clicks"
   svg.appendChild(svgEl("circle", { cx: x(series.length - 1), cy: y(last.clicks), r: 4, fill: "#e5a93c", class: "chart__endpoint" }));
   svg.appendChild(svgEl("text", { x: x(series.length - 1) - 4, y: y(last.clicks) - 12, "text-anchor": "end", class: "chart__value chart__endlabel" }, `${last.clicks} ${valueLabel}`));
 
-  if (annotation?.date) {
+  annotations.forEach((annotation) => {
     const markerIndex = series.findIndex((point) => point.date.startsWith(annotation.date));
     if (markerIndex !== -1) {
       const markerX = x(markerIndex);
@@ -276,7 +276,7 @@ export function renderTrendChart(element, { series, label, valueLabel = "clicks"
         class: "chart__marker-label",
       }, annotation.label));
     }
-  }
+  });
 
   const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
   series.forEach((point, index) => {
