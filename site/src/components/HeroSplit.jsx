@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import SkillsCarousel from "./SkillsCarousel";
 
-const WORDS = ["quote.", "cite.", "recommend."];
+const WORDS = ["cite.", "surface.", "recommend."];
 
 export default function HeroSplit() {
   const [index, setIndex] = useState(0);
@@ -43,12 +43,12 @@ export default function HeroSplit() {
             </div>
             <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
             <h1 className="hero-split__title reveal" id="hero-split-title">
-              I build search content answer engines can
+              I develop <span className="hero-split__nowrap">search-optimized</span> content that AI answer engines can
               <br />
               <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
             </h1>
             <p className="hero-split__bio reveal">
-              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them.
+              From research and strategy to writing and building pages in the CMS, I help businesses get discovered and recommended in AI-generated answers.
             </p>
             <div className="hero-split__ctas reveal">
               <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>

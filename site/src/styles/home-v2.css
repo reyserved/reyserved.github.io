@@ -55,10 +55,14 @@
 .hero-split__title {
   margin-top: 18px;
   max-width: 640px;
-  font-size: clamp(2.5rem, 4.6vw, 4.2rem);
+  font-size: clamp(2.25rem, 4.1vw, 3.5rem);
   font-weight: 600;
   letter-spacing: -0.04em;
-  line-height: 1.04;
+  line-height: 1.06;
+}
+
+.hero-split__nowrap {
+  white-space: nowrap;
 }
 
 .hero-split__dynamic {
@@ -395,7 +399,7 @@
   }
 
   .hero-split__title {
-    font-size: 2rem;
+    font-size: clamp(1.75rem, 7.5vw, 2.25rem);
   }
 
   .hero-split__bio {
