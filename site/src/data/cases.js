@@ -9,7 +9,7 @@ export const CASES = {
     lede: "How Service Credit Union's product and membership pages earned citations in AI Overviews and LLM answers.",
     meta: [
       ["Client", "Service Credit Union<br>servicecu.org · New Hampshire"],
-      ["My role", "Led strategy and page audits"],
+      ["My role", "Strategy and page audits with SEO leads"],
       ["Period", "Jul 12 – Sep 7, 2026 (Semrush)<br>August 2026 (GSC)"],
       ["Data", "Semrush AI Visibility<br>GSC Generative AI Features"],
     ],
@@ -32,7 +32,7 @@ export const CASES = {
       {
         label: "04 · Execution",
         heading: "Page audits plus a two-source measurement model",
-        body: "<p>I led the strategy and audited eight priority pages, reviewing metadata, H1 to H4 structure, body copy, tables, FAQ content, JSON-LD, canonicals, robots, and llms.txt. Recommendations covered definitional intros, question headings, source citations, and FAQPage markup gaps.</p><p>Measurement paired <strong>Semrush Cited Pages</strong> with <strong>GSC Generative AI Features</strong>, so a page had to show citations in one system and AI feature visibility in the other before it counted as a strong asset.</p>",
+        body: "<p>I helped shape the strategy with SEO leads, directors, and account managers, then audited eight priority pages, reviewing metadata, H1 to H4 structure, body copy, tables, FAQ content, JSON-LD, canonicals, robots, and llms.txt. Recommendations covered definitional intros, question headings, source citations, and FAQPage markup gaps.</p><p>Measurement paired <strong>Semrush Cited Pages</strong> with <strong>GSC Generative AI Features</strong>, so a page had to show citations in one system and AI feature visibility in the other before it counted as a strong asset.</p>",
       },
     ],
     metricCards: [
@@ -70,7 +70,7 @@ export const CASES = {
     lede: "Mapping 151 family-law queries to AI Overview exposure, then rebuilding content so each page answers the query in its first paragraph.",
     meta: [
       ["Client", "TDE Family Law<br>tdefamilylaw.com · Georgia"],
-      ["My role", "Led content and local strategy"],
+      ["My role", "Content and local strategy with SEO leads"],
       ["Period", "Mar 7 – Apr 3, 2026<br>vs Feb 7 – Mar 6, 2026"],
       ["Data", "GSC, GA4, CallRail, GBP<br>AI Overview content map"],
     ],
@@ -93,7 +93,7 @@ export const CASES = {
       {
         label: "04 · Execution",
         heading: "Content map, briefs, page optimization, and GBP work",
-        body: "<p>I led the content and local strategy: building the AI Overview content map, shaping briefs around answer-first structure, and optimizing pages for snippet and intent match.</p><p>The prenup guide is the clearest example. Clicks went from <strong>4 to 14</strong> and CTR from <strong>0.39% to 1.04%</strong> while average position slipped from 11.91 to 13.0. That is a <strong>snippet and intent-match gain</strong>, not a ranking jump.</p>",
+        body: "<p>I helped shape the content and local strategy with SEO leads, directors, and account managers, building the AI Overview content map, shaping briefs around answer-first structure, and optimizing pages for snippet and intent match.</p><p>The prenup guide is the clearest example. Clicks went from <strong>4 to 14</strong> and CTR from <strong>0.39% to 1.04%</strong> while average position slipped from 11.91 to 13.0. That is a <strong>snippet and intent-match gain</strong>, not a ranking jump.</p>",
       },
     ],
     metricCards: [

@@ -9,8 +9,8 @@ const ROLES = [
   {
     role: "Senior SEO & GEO Specialist",
     company: "Rocket Clicks",
-    period: "2024 – 2026",
-    detail: "Client SEO strategy, AEO/GEO content systems, technical audits, local SEO, and AI visibility measurement.",
+    period: "Dec 2024 – Nov 2026",
+    detail: "Partners with SEO leads, directors, and account managers on client SEO strategy, AEO/GEO content systems, technical audits, local SEO, and AI visibility measurement.",
   },
   {
     role: "SEO & GEO Specialist",
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <span className="eyebrow">About</span>
             <h1 className="case-title">SEO and GEO, tied to business outcomes</h1>
             <p className="case-lede">
-              Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that ties SEO and GEO results to calls, leads, and pipeline.
+              Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that ties SEO and GEO results to calls, leads, and pipeline. At Rocket Clicks, I work alongside SEO leads, directors, and account managers to plan and execute client strategy.
             </p>
             <div className="hero__ctas" style={{ marginTop: "28px", justifyContent: "flex-start" }}>
               <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf">Download CV <span className="arrow" aria-hidden="true">→</span></a>
