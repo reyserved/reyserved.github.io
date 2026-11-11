@@ -424,3 +424,69 @@
   line-height: 1.2;
   letter-spacing: -0.02em;
 }
+
+/* Aligned cover KPI strip */
+.hero-split__kpi {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 24px;
+  margin-top: 28px;
+  padding-top: 22px;
+  border-top: 1px solid var(--line);
+  align-items: start;
+}
+
+.hero-split__kpi > div {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+
+.hero-split__kpi strong {
+  display: flex;
+  align-items: flex-end;
+  min-height: 34px;
+  font-size: clamp(1.4rem, 1.9vw, 1.8rem);
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1;
+}
+
+.hero-split__kpi-text {
+  font-size: clamp(1rem, 1.3vw, 1.2rem) !important;
+  line-height: 1.2 !important;
+  letter-spacing: -0.01em !important;
+  white-space: nowrap;
+}
+
+.hero-split__kpi span {
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--ink-soft);
+}
+
+@media (max-width: 700px) {
+  .hero-split__kpi {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 12px;
+  }
+
+  .hero-split__kpi > div {
+    min-width: 0;
+  }
+
+  .hero-split__kpi strong {
+    min-height: 28px;
+    font-size: 1.25rem;
+  }
+
+  .hero-split__kpi-text {
+    font-size: 0.9rem !important;
+    white-space: normal;
+  }
+
+  .hero-split__kpi span {
+    font-size: 10px;
+  }
+}
