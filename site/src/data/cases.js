@@ -1,6 +1,8 @@
 export const CASES = {
   "service-credit-union": {
     slug: "service-credit-union",
+    clientName: "Service Credit Union",
+    logo: "/logos/clients/servicecu.png",
     heroImage: "/images/heroes/scu.png",
     pill: "Credit union · Financial services",
     title: "Building and measuring an AI-answer visibility program",
@@ -60,6 +62,8 @@ export const CASES = {
 
   "tde-family-law": {
     slug: "tde-family-law",
+    clientName: "TDE Family Law",
+    logo: "/logos/clients/tde.webp",
     heroImage: "/images/heroes/tde.png",
     pill: "Family law · Legal services",
     title: "An answer-first content system for a family law firm",
@@ -119,6 +123,8 @@ export const CASES = {
 
   "dream-assurance": {
     slug: "dream-assurance",
+    clientName: "Dream Assurance Group",
+    logo: "/logos/clients/dream-assurance.png",
     heroImage: "/images/heroes/da.png",
     pill: "Insurance · Independent agency",
     title: "Migration-led growth for an independent insurance agency",

@@ -1,19 +1,25 @@
 export default function CaseStudy({ data }) {
   return (
     <>
-      <section className={`case-hero case-hero--${data.slug}`} style={{ "--case-hero-image": `url(${data.heroImage})` }}>
-        <div className="container">
-          <span className="case-pill">{data.pill}</span>
-          <h1 className="case-title">{data.title}</h1>
-          <p className="case-lede">{data.lede}</p>
-          <dl className="case-meta">
+      <section className={`case-hero case-hero--${data.slug}`}>
+        <div className="case-hero__bg" style={{ backgroundImage: `url(${data.heroImage})` }} />
+        <div className="case-hero__overlay" aria-hidden="true" />
+        <div className="case-hero__dots" aria-hidden="true" />
+        <div className="container case-hero__inner">
+          <img className="case-hero__logo" src={data.logo} alt={`${data.clientName} logo`} />
+          <span className="case-hero__eyebrow">{data.pill}</span>
+          <h1 className="case-hero__title">{data.title}</h1>
+          <p className="case-hero__lede">{data.lede}</p>
+        </div>
+        <div className="container container--full case-hero__meta-wrap">
+          <div className="case-hero__meta">
             {data.meta.map(([key, value]) => (
-              <div key={key}>
-                <dt>{key}</dt>
-                <dd dangerouslySetInnerHTML={{ __html: value }} />
+              <div className="case-hero__meta-cell" key={key}>
+                <span className="case-hero__meta-label">{key}</span>
+                <div className="case-hero__meta-value" dangerouslySetInnerHTML={{ __html: value }} />
               </div>
             ))}
-          </dl>
+          </div>
         </div>
       </section>
 
