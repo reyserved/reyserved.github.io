@@ -63,11 +63,12 @@
 
 .hero-split__dynamic {
   display: inline-block;
-  min-width: 4.5ch;
+  min-width: 0;
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
   color: var(--amber-deep);
+  line-height: 1.08;
 }
 
 .hero-split__cursor {
