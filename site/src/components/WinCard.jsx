@@ -70,7 +70,11 @@ export default function WinCard({ item }) {
       ))}
 
       {visual && (
-        <span className="win-card__visual" aria-hidden={!open}>
+        <span
+          className="win-card__visual"
+          style={{ opacity: open ? 1 : 0, transform: open ? "none" : "translateY(10px)" }}
+          aria-hidden={!open}
+        >
           {visual.type === "line" && <MiniLineChart series={DASHBOARD_DATA.neuroendo.series} />}
           {visual.type === "bars" && <MiniBars items={visual.items} />}
           {visual.type === "image" && <img src={visual.src} alt={`${item.client} case study`} />}
