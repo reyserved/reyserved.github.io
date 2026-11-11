@@ -6,8 +6,10 @@ import "../styles/case-study.css";
 import "../styles/charts.css";
 import "../styles/stack.css";
 import "../styles/home-v2.css";
+import Script from "next/script";
 import SiteNav from "../components/SiteNav";
 import ClientEffects from "../components/ClientEffects";
+import AnalyticsEvents from "../components/AnalyticsEvents";
 
 export const metadata = {
   title: "Reymart — SEO & GEO Specialist",
@@ -27,11 +29,25 @@ export default function RootLayout({ children }) {
           href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500&family=Instrument+Serif:ital@0;1&display=swap"
           rel="stylesheet"
         />
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-7FQVEZGK52"
+          strategy="afterInteractive"
+        />
+        <Script id="ga4-init" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            window.gtag = gtag;
+            gtag('js', new Date());
+            gtag('config', 'G-7FQVEZGK52');
+          `}
+        </Script>
       </head>
       <body>
         <SiteNav />
         <main>{children}</main>
         <ClientEffects />
+        <AnalyticsEvents />
       </body>
     </html>
   );
