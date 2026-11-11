@@ -42,8 +42,14 @@ export default function WorkIndex() {
       </div>
 
       <div className="container case-nav">
-        <a href="/">← Home</a>
-        <a href="/method/">My method →<span>How the work is done</span></a>
+        <a className="case-nav__link" href="/">
+          <span className="case-nav__label">← Home</span>
+          <span className="case-nav__sub">Back to start</span>
+        </a>
+        <a className="case-nav__link" href="/method/">
+          <span className="case-nav__label">My method →</span>
+          <span className="case-nav__sub">How the work is done</span>
+        </a>
       </div>
     </>
   );

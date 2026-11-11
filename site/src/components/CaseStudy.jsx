@@ -63,8 +63,14 @@ export default function CaseStudy({ data }) {
       </section>
 
       <div className="container case-nav">
-        <a href="/work/">← All case studies<span>Work index</span></a>
-        <a href={`/work/${data.next}/`}>{data.nextTitle} →<span>Next case study</span></a>
+        <a className="case-nav__link" href="/work/">
+          <span className="case-nav__label">← All case studies</span>
+          <span className="case-nav__sub">Work index</span>
+        </a>
+        <a className="case-nav__link" href={`/work/${data.next}/`}>
+          <span className="case-nav__label">{data.nextTitle} →</span>
+          <span className="case-nav__sub">Next case study</span>
+        </a>
       </div>
     </>
   );

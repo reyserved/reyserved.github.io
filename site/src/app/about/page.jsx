@@ -92,8 +92,14 @@ export default function AboutPage() {
       </div>
 
       <div className="container case-nav">
-        <a href="/method/">← Method</a>
-        <a href="/work/">Case studies →<span>See the evidence</span></a>
+        <a className="case-nav__link" href="/method/">
+          <span className="case-nav__label">← Method</span>
+          <span className="case-nav__sub">How the work is done</span>
+        </a>
+        <a className="case-nav__link" href="/work/">
+          <span className="case-nav__label">Case studies →</span>
+          <span className="case-nav__sub">See the evidence</span>
+        </a>
       </div>
     </>
   );

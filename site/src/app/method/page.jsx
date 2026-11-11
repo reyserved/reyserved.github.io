@@ -61,8 +61,14 @@ export default function MethodPage() {
       </div>
 
       <div className="container case-nav">
-        <a href="/work/">← Case studies</a>
-        <a href="/about/">About Reymart →<span>Background and contact</span></a>
+        <a className="case-nav__link" href="/work/">
+          <span className="case-nav__label">← Case studies</span>
+          <span className="case-nav__sub">See the evidence</span>
+        </a>
+        <a className="case-nav__link" href="/about/">
+          <span className="case-nav__label">About Reymart →</span>
+          <span className="case-nav__sub">Background and contact</span>
+        </a>
       </div>
     </>
   );
