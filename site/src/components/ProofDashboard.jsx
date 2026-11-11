@@ -30,7 +30,7 @@ export default function ProofDashboard() {
         valueLabel: "AI Overview keywords",
         annotations: [
           { date: "2025-10", label: "OPTIMIZATION" },
-          { date: "2025-12", label: "MIGRATION" },
+          { date: "2025-11", label: "MIGRATION" },
         ],
       });
     }
@@ -128,7 +128,7 @@ export default function ProofDashboard() {
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026. Optimization ran in October 2025; the site migration followed in December 2025.</p>
+            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026. Optimization ran in October 2025; the site migration followed in November 2025.</p>
           </article>
         </div>
       </div>

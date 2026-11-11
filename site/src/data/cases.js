@@ -132,19 +132,19 @@ export const CASES = {
     meta: [
       ["Client", "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"],
       ["My role", "Part-time, project-to-project<br>Dec 2023 – Dec 2025"],
-      ["Period", "Migration and optimization through Dec 2025<br>GSC results Sep 2025 – Mar 2026"],
+      ["Period", "Optimization Oct 2025 · Migration Nov 2025<br>GSC results Sep 2025 – Mar 2026"],
       ["Data", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
     ],
     sections: [
       {
         label: "01 · Objective",
         heading: "Migrate and restructure without losing search equity",
-        body: "<p>Dream Assurance is an independent insurance agency in Overland Park, Kansas. Between November 2024 and December 2025, I worked with the CEO on strategy and led the day-to-day execution of the site migration, information architecture, brand intelligence, and answer-first SEO and GEO work for the business.</p><p>The goal was not just to preserve rankings during the migration. It was to rebuild the site so that service pages and blogs could rank for featured snippets and become a primary source or recommendation in LLM answers.</p>",
+        body: "<p>Dream Assurance is an independent insurance agency in Overland Park, Kansas. Between November 2024 and December 2025, I worked with the CEO on strategy and led the day-to-day execution of the site migration, information architecture, brand intelligence, and answer-first SEO and GEO work for the business. The migration went live in November 2025.</p><p>The goal was not just to preserve rankings during the migration. It was to rebuild the site so that service pages and blogs could rank for featured snippets and become a primary source or recommendation in LLM answers.</p>",
       },
       {
         label: "02 · Insight",
         heading: "AI Overviews touched most of the query set",
-        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. Only <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 21 in December 2025 and 65 in March 2026</strong>, with the inflection beginning immediately after the migration and optimization work. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>, with data available only from May 2026 onward.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
+        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. Only <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 21 in December 2025 and 65 in March 2026</strong>, with the inflection beginning immediately after the October optimization and November migration. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>, with data available only from May 2026 onward.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
       },
       {
         label: "03 · Strategy",
@@ -154,7 +154,7 @@ export const CASES = {
       {
         label: "04 · Execution",
         heading: "Migration work plus page-level optimization",
-        body: "<p>Execution included the site migration and redirect mapping, architecture and internal-link updates, schema graphs and validation, FAQ and schema parity checks, and answer-first rewrites across service pages and blogs.</p><p>I also built the contractor hub with 18 child pages, produced AI supporting content calendars and briefs using brand-intelligence and persona inputs, and maintained GTM/GA4 conversion tracking throughout.</p>",
+        body: "<p>Execution included the November 2025 site migration and redirect mapping, architecture and internal-link updates, schema graphs and validation, FAQ and schema parity checks, and answer-first rewrites across service pages and blogs.</p><p>I also built the contractor hub with 18 child pages, produced AI supporting content calendars and briefs using brand-intelligence and persona inputs, and maintained GTM/GA4 conversion tracking throughout.</p>",
       },
     ],
     metricCards: [
@@ -169,7 +169,7 @@ export const CASES = {
       "Organic clicks and impressions grew materially after the migration and optimization work.",
       "The growth continued into the following quarter rather than being a one-month spike.",
       "The site has extensive AI Overview exposure, making answer-first structure commercially relevant.",
-      "The program combined migration, architecture, schema, content, and measurement under one owner.",
+      "The program combined migration, architecture, schema, content, and measurement in one coordinated workstream.",
     ],
     limits: [
       "CTR fell from 0.27% to 0.20% as impressions broadened; this is not a CTR win.",
