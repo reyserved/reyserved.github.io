@@ -47,9 +47,9 @@ export default function AboutPage() {
         <div className="container about-hero__grid">
           <div className="about-hero__content">
             <span className="eyebrow">About</span>
-            <h1 className="case-title">Search work tied to business outcomes</h1>
+            <h1 className="case-title">SEO and GEO, tied to business outcomes</h1>
             <p className="case-lede">
-              Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that connects search work to business outcomes.
+              Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that ties SEO and GEO results to calls, leads, and pipeline.
             </p>
             <div className="hero__ctas" style={{ marginTop: "28px", justifyContent: "flex-start" }}>
               <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf">Download CV <span className="arrow" aria-hidden="true">→</span></a>
