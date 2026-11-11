@@ -616,12 +616,24 @@
   transform: translateY(10px);
   transition: opacity 300ms var(--ease-out), transform 300ms var(--ease-out);
   pointer-events: none;
+  overflow-y: auto;
+  overscroll-behavior: contain;
+  scrollbar-width: thin;
+  scrollbar-color: rgba(255, 255, 255, 0.35) transparent;
   z-index: 2;
 }
 
 .win-card--interactive.is-open .win-card__visual {
   opacity: 1;
   transform: none;
+  pointer-events: auto;
+}
+
+@media (hover: hover) {
+  .win-card--interactive:hover .win-card__visual,
+  .win-card--interactive:focus-visible .win-card__visual {
+    pointer-events: auto;
+  }
 }
 
 .win-card__visual .chart {
@@ -631,10 +643,11 @@
 }
 
 .win-card__visual img {
+  display: block;
   width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: top center;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
   border-radius: 10px;
 }
 
@@ -791,8 +804,10 @@
     display: none;
     position: relative;
     inset: auto;
+    max-height: 380px;
     margin-top: 16px;
     padding: 16px;
+    overflow-y: auto;
   }
 
   .win-card--interactive.is-open .win-card__visual {
@@ -805,9 +820,8 @@
 
   .win-card__visual img {
     height: auto;
-    max-height: 220px;
-    object-fit: cover;
-    object-position: top center;
+    max-height: none;
+    object-fit: contain;
   }
 }
 
