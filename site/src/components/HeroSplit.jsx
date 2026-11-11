@@ -65,11 +65,11 @@ export default function HeroSplit() {
             <div className="hero-card__photo-fade" aria-hidden="true" />
             <div className="hero-card__badge reveal">
               <div>
-                <span className="hero-card__badge-label">Open to roles</span>
+                <span className="hero-card__badge-label">Availability</span>
                 <span className="hero-card__badge-title">Open to SEO roles</span>
-                <span className="hero-card__badge-copy">AEO, GEO, and measurable search performance.</span>
+                <span className="hero-card__badge-copy">Content strategy, AI search visibility, and hands-on page development.</span>
               </div>
-              <a className="hero-card__badge-arrow" href="/about/#contact" aria-label="Contact Reymart">
+              <a className="hero-card__badge-arrow" href="/about/#contact" aria-label="Contact me about SEO roles">
                 <span aria-hidden="true">↗</span>
               </a>
             </div>
