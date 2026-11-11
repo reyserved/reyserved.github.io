@@ -48,7 +48,7 @@ export default function HeroSplit() {
               <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
             </h1>
             <p className="hero-split__bio reveal">
-              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them. Three programs, documented with dates and results.
+              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them.
             </p>
             <div className="hero-split__ctas reveal">
               <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
