@@ -1132,3 +1132,24 @@
     padding: 16px;
   }
 }
+
+
+/* Interactive card hover colors */
+.case-tile__summary:hover .work-row__title,
+.case-tile__summary:hover .work-row__name,
+.case-tile__summary:hover .case-tile__chevron,
+.case-tile__summary:active .work-row__title,
+.case-tile__summary:active .work-row__name,
+.case-tile__summary:active .case-tile__chevron {
+  color: var(--amber-deep);
+}
+
+.win-card--interactive:hover .win-card__client,
+.win-card--interactive:active .win-card__client {
+  color: var(--amber-deep);
+}
+
+.stack-card:hover .stack-card__name,
+.stack-card:active .stack-card__name {
+  color: var(--amber-deep);
+}
