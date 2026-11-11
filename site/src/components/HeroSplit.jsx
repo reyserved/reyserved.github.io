@@ -37,6 +37,10 @@ export default function HeroSplit() {
       <div className="container hero-split__shell">
         <div className="hero-card">
           <div className="hero-card__content">
+            <div className="hero-mobile-profile">
+              <img src="/images/reymart.jpg" alt="Reymart Sarigumba" className="hero-mobile-avatar" />
+              <span className="hero-mobile-status"><span aria-hidden="true" /> Available for projects</span>
+            </div>
             <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
             <h1 className="hero-split__title reveal" id="hero-split-title">
               I build search content answer engines can
