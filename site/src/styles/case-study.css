@@ -868,3 +868,11 @@
   line-height: 1.6;
   color: var(--ink-soft);
 }
+
+@media (hover: hover) {
+  .win-card--interactive:hover .win-card__visual,
+  .win-card--interactive:focus-visible .win-card__visual {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+}

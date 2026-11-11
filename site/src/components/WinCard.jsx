@@ -67,10 +67,6 @@ export default function WinCard({ item }) {
       type="button"
       className={`win-card win-card--interactive${open ? " is-open" : ""}`}
       onClick={() => setOpen((value) => !value)}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
-      onFocus={() => setOpen(true)}
-      onBlur={() => setOpen(false)}
       aria-expanded={open}
     >
       {content}
