@@ -213,28 +213,7 @@
 }
 
 .skills-carousel {
-  margin-top: 16px;
-}
-
-.skills-carousel__head {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 16px;
-  margin-bottom: 10px;
-}
-
-.skills-carousel__label,
-.skills-carousel__hint {
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  color: var(--ink-faint);
-}
-
-.skills-carousel__hint {
-  opacity: 0.7;
+  margin-top: 14px;
 }
 
 .skills-carousel__viewport {
@@ -285,21 +264,21 @@
   align-items: center;
   gap: 12px;
   flex: 0 0 auto;
-  min-height: 62px;
-  padding: 16px 26px;
+  min-height: 70px;
+  padding: 18px 30px;
   border-right: 1px solid var(--line);
   border-bottom: 1px solid var(--line);
   font-family: var(--font-mono);
-  font-size: 11px;
-  letter-spacing: 0.1em;
+  font-size: 13px;
+  letter-spacing: 0.08em;
   text-transform: uppercase;
-  color: var(--ink-soft);
+  color: var(--ink);
   white-space: nowrap;
 }
 
 .skills-carousel__dot {
-  width: 7px;
-  height: 7px;
+  width: 8px;
+  height: 8px;
   flex: 0 0 auto;
   border-radius: 50%;
   background: var(--amber);

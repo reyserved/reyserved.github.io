@@ -14,10 +14,6 @@ const SKILLS = [
 export default function SkillsCarousel() {
   return (
     <div className="skills-carousel">
-      <div className="skills-carousel__head">
-        <span className="skills-carousel__label">Capabilities</span>
-        <span className="skills-carousel__hint">Hover to pause</span>
-      </div>
       <div className="skills-carousel__viewport">
         <div className="skills-carousel__track">
           <div className="skills-carousel__set">
