@@ -39,11 +39,20 @@ const STAGES = [
 export default function MethodPage() {
   return (
     <>
-      <section className="work-hero">
-        <div className="container">
-          <span className="eyebrow">Method</span>
-          <h1 className="case-title">How the work gets done</h1>
-          <p className="case-lede">A six-stage operating model for SEO, AEO, and GEO programs, from intent discovery to measurement and reporting.</p>
+      <section className="method-hero">
+        <div className="method-hero__dots" aria-hidden="true" />
+        <div className="container method-hero__inner">
+          <span className="method-hero__eyebrow">Method</span>
+          <h1 className="method-hero__title">How the work gets done</h1>
+          <p className="method-hero__lede">A six-stage operating model for SEO, AEO, and GEO programs, from intent discovery to measurement and reporting.</p>
+          <div className="method-hero__nodes">
+            {STAGES.map((stage) => (
+              <div className="method-hero__node" key={stage.label}>
+                <span>{stage.label}</span>
+                <strong>{stage.title}</strong>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 
