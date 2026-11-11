@@ -72,6 +72,29 @@
   fill: url(#chartAreaGradient);
 }
 
+.chart .chart__axis-label {
+  font-size: 9px;
+  letter-spacing: 0.04em;
+}
+
+.chart .chart__marker {
+  stroke: rgba(255, 255, 255, 0.28);
+  stroke-width: 1;
+  stroke-dasharray: 3 4;
+}
+
+.chart .chart__marker-dot {
+  fill: var(--amber);
+  stroke: #090a0c;
+  stroke-width: 1.5;
+}
+
+.chart .chart__marker-label {
+  fill: var(--dark-stone);
+  font-size: 8px;
+  letter-spacing: 0.1em;
+}
+
 /* Armory-style draw-in for the AI Overview trend chart */
 .chart--trend .chart__line {
   stroke-dasharray: 1;

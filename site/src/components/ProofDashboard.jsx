@@ -28,6 +28,7 @@ export default function ProofDashboard() {
         label: "Dream Assurance AI Overview keyword coverage, July 2025 to March 2026",
         series: data.dreamAssurance.aiOverviewSeries,
         valueLabel: "AI Overview keywords",
+        annotation: { date: "2025-12", label: "OPTIMIZATION" },
       });
     }
   }, []);
@@ -124,7 +125,7 @@ export default function ProofDashboard() {
               </div>
             </div>
             <div ref={auritChart}></div>
-            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026.</p>
+            <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026. Dashed line marks migration and optimization completion in December 2025.</p>
           </article>
         </div>
       </div>
