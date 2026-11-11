@@ -13,10 +13,10 @@ function MiniLineChart({ series }) {
   const path = series.map((p, i) => `${i === 0 ? "M" : "L"} ${x(i)} ${y(p.top3)}`).join(" ");
   return (
     <svg viewBox={`0 0 ${width} ${height}`} className="chart" role="img" aria-label="Top-3 keyword trend">
-      <path d={`${path} L ${x(series.length - 1)} ${height - pad} L ${x(0)} ${height - pad} Z`} fill="rgba(229,169,60,0.18)" />
-      <path d={path} fill="none" stroke="#e5a93c" strokeWidth="2" />
-      <circle cx={x(series.length - 1)} cy={y(series[series.length - 1].top3)} r="4" fill="#e5a93c" />
-      <text x={x(series.length - 1) - 6} y={y(series[series.length - 1].top3) - 10} textAnchor="end" fill="#fff" fontSize="12">{series[series.length - 1].top3} in top 3</text>
+      <path className="mini-line__area" d={`${path} L ${x(series.length - 1)} ${height - pad} L ${x(0)} ${height - pad} Z`} fill="rgba(229,169,60,0.18)" />
+      <path className="chart__line mini-line__line" pathLength="1" d={path} fill="none" stroke="#e5a93c" strokeWidth="2" />
+      <circle className="mini-line__dot" cx={x(series.length - 1)} cy={y(series[series.length - 1].top3)} r="4" fill="#e5a93c" />
+      <text className="mini-line__label" x={x(series.length - 1) - 6} y={y(series[series.length - 1].top3) - 10} textAnchor="end" fill="#fff" fontSize="12">{series[series.length - 1].top3} in top 3</text>
     </svg>
   );
 }
