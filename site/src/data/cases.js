@@ -6,12 +6,12 @@ export const CASES = {
     heroImage: "/images/heroes/scu.png",
     pill: "Credit union · Financial services",
     title: "Building and measuring an AI-answer visibility program",
-    lede: "How Service Credit Union's product and membership pages earned citations in AI Overviews and LLM answers, and what the data still cannot prove.",
+    lede: "How Service Credit Union's product and membership pages earned citations in AI Overviews and LLM answers.",
     meta: [
       ["Client", "Service Credit Union<br>servicecu.org · New Hampshire"],
       ["My role", "Led strategy and page audits"],
       ["Period", "Jul 12 – Sep 7, 2026 (Semrush)<br>August 2026 (GSC)"],
-      ["Sources", "Semrush AI Visibility<br>GSC Generative AI Features"],
+      ["Data", "Semrush AI Visibility<br>GSC Generative AI Features"],
     ],
     sections: [
       {
@@ -32,7 +32,7 @@ export const CASES = {
       {
         label: "04 · Execution",
         heading: "Page audits plus a two-source measurement model",
-        body: "<p>I led the strategy and audited eight pages with at least good evidence, reviewing metadata, H1 to H4 structure, body copy, tables, FAQ content, JSON-LD, canonicals, robots, and llms.txt. Recommendations covered definitional intros, question headings, source citations, and FAQPage markup gaps.</p><p>Measurement paired <strong>Semrush Cited Pages</strong> with <strong>GSC Generative AI Features</strong>, so a page had to show citation evidence in one system and AI feature visibility in the other before it counted as a strong asset.</p>",
+        body: "<p>I led the strategy and audited eight priority pages, reviewing metadata, H1 to H4 structure, body copy, tables, FAQ content, JSON-LD, canonicals, robots, and llms.txt. Recommendations covered definitional intros, question headings, source citations, and FAQPage markup gaps.</p><p>Measurement paired <strong>Semrush Cited Pages</strong> with <strong>GSC Generative AI Features</strong>, so a page had to show citations in one system and AI feature visibility in the other before it counted as a strong asset.</p>",
       },
     ],
     metricCards: [
@@ -72,7 +72,7 @@ export const CASES = {
       ["Client", "TDE Family Law<br>tdefamilylaw.com · Georgia"],
       ["My role", "Led content and local strategy"],
       ["Period", "Mar 7 – Apr 3, 2026<br>vs Feb 7 – Mar 6, 2026"],
-      ["Sources", "GSC, GA4, CallRail, GBP<br>AI Overview content map"],
+      ["Data", "GSC, GA4, CallRail, GBP<br>AI Overview content map"],
     ],
     sections: [
       {
@@ -133,7 +133,7 @@ export const CASES = {
       ["Client", "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"],
       ["My role", "Part-time, project-to-project<br>Dec 2023 – Dec 2025"],
       ["Period", "Migration and optimization through Dec 2025<br>GSC results Sep 2025 – Mar 2026"],
-      ["Sources", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
+      ["Data", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
     ],
     sections: [
       {

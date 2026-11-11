@@ -43,7 +43,7 @@ export default function AboutPage() {
           <span className="eyebrow">About</span>
           <h1 className="case-title">SEO that survives a skeptical review</h1>
           <p className="case-lede">
-            Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that distinguishes real evidence from convenient numbers.
+            Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that connects search work to business outcomes.
           </p>
           <div className="hero__ctas" style={{ marginTop: "28px", justifyContent: "flex-start" }}>
             <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf">Download CV <span className="arrow" aria-hidden="true">→</span></a>
@@ -98,7 +98,7 @@ export default function AboutPage() {
         </a>
         <a className="case-nav__link" href="/work/">
           <span className="case-nav__label">Case studies →</span>
-          <span className="case-nav__sub">See the evidence</span>
+          <span className="case-nav__sub">Selected client work</span>
         </a>
       </div>
     </>

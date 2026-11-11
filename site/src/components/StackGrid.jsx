@@ -36,7 +36,7 @@ const TOOLS = [
   {
     name: "Looker Studio",
     logo: "/logos/tools/lookerstudio.png",
-    desc: "Dashboards that turn GSC, GA4, and Semrush exports into readable client reporting with clear periods and claim limits.",
+    desc: "Dashboards that turn GSC, GA4, and Semrush exports into readable client reporting with clear periods and attribution.",
   },
   {
     name: "Surfer SEO",

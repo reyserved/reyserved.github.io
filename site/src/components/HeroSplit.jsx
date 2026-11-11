@@ -39,7 +39,7 @@ export default function HeroSplit() {
           <div className="hero-card__content">
             <div className="hero-mobile-profile">
               <img src="/images/reymart.jpg" alt="Reymart Sarigumba" className="hero-mobile-avatar" />
-              <span className="hero-mobile-status"><span aria-hidden="true" /> Available for projects</span>
+              <span className="hero-mobile-status"><span aria-hidden="true" /> Open to SEO roles</span>
             </div>
             <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
             <h1 className="hero-split__title reveal" id="hero-split-title">
@@ -48,7 +48,7 @@ export default function HeroSplit() {
               <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
             </h1>
             <p className="hero-split__bio reveal">
-              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them. Three programs, documented with sources and limits.
+              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them. Three programs, documented with dates and results.
             </p>
             <div className="hero-split__ctas reveal">
               <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
@@ -57,7 +57,7 @@ export default function HeroSplit() {
             <div className="hero-split__kpi reveal" aria-label="Portfolio at a glance">
               <div><strong>6+</strong><span>years in SEO</span></div>
               <div><strong>3</strong><span>deep case studies</span></div>
-              <div><strong>654</strong><span>AI Overview queries mapped</span></div>
+              <div><strong>654</strong><span>AI Overview queries mapped · 3 clients</span></div>
             </div>
           </div>
 
@@ -67,7 +67,7 @@ export default function HeroSplit() {
             <div className="hero-card__badge reveal">
               <div>
                 <span className="hero-card__badge-label">Open to roles</span>
-                <span className="hero-card__badge-title">Available for projects</span>
+                <span className="hero-card__badge-title">Open to SEO roles</span>
                 <span className="hero-card__badge-copy">AEO, GEO, and measurable search performance.</span>
               </div>
               <a className="hero-card__badge-arrow" href="/about/#contact" aria-label="Contact Reymart">

@@ -24,7 +24,7 @@ export default function WorkIndex() {
         <div className="container">
           <span className="eyebrow">Case studies</span>
           <h1 className="case-title">Client work and SEO wins</h1>
-          <p className="case-lede">Three detailed case studies, plus a wider set of source-labeled results. Every entry includes its period and its claim limits.</p>
+          <p className="case-lede">Three detailed case studies, plus a wider set of documented client results. Every entry is dated and attributed.</p>
         </div>
       </section>
 

@@ -31,8 +31,8 @@ const STAGES = [
   },
   {
     label: "//06",
-    title: "Measurement with claim limits",
-    body: "Semrush AI Visibility, GSC Generative AI Features, citation logs, GA4, and CRM context. Every result carries what it proves and what it does not.",
+    title: "Measurement and reporting",
+    body: "Semrush AI Visibility, GSC Generative AI Features, citation logs, GA4, and CRM context, reported with dates and attribution.",
   },
 ];
 
@@ -43,7 +43,7 @@ export default function MethodPage() {
         <div className="container">
           <span className="eyebrow">Method</span>
           <h1 className="case-title">How the work gets done</h1>
-          <p className="case-lede">A six-stage operating model for SEO, AEO, and GEO programs, from intent discovery to measurement with claim limits.</p>
+          <p className="case-lede">A six-stage operating model for SEO, AEO, and GEO programs, from intent discovery to measurement and reporting.</p>
         </div>
       </section>
 
@@ -63,7 +63,7 @@ export default function MethodPage() {
       <div className="container case-nav">
         <a className="case-nav__link" href="/work/">
           <span className="case-nav__label">← Case studies</span>
-          <span className="case-nav__sub">See the evidence</span>
+          <span className="case-nav__sub">Selected client work</span>
         </a>
         <a className="case-nav__link" href="/about/">
           <span className="case-nav__label">About Reymart →</span>

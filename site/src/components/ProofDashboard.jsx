@@ -37,21 +37,21 @@ export default function ProofDashboard() {
       <div className="container container--full">
         <div className="proof__header reveal">
           <div>
-            <span className="eyebrow">Evidence</span>
+            <span className="eyebrow">Results</span>
             <h2 className="proof__title" id="proof-title">Proof, not promises.</h2>
-            <p className="proof__subtitle">Selected results from client SEO and AI-visibility programs. Every figure has a source, a period, and a stated claim limit.</p>
+            <p className="proof__subtitle">Selected results from client SEO and AI-visibility programs, dated and attributed.</p>
           </div>
           <a className="proof__link" href="/work/">All case studies →</a>
         </div>
 
-        <div className="proof__ribbon reveal-group" aria-label="Portfolio evidence scope">
+        <div className="proof__ribbon reveal-group" aria-label="Portfolio results scope">
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="654">654</div>
             <div className="ribbon-label">AI Overview-exposed queries mapped · 3 clients only</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="3">3</div>
-            <div className="ribbon-label">Deep case studies · sources and claim limits</div>
+            <div className="ribbon-label">Deep case studies · role, period, results</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="6" data-suffix="+">6+</div>
@@ -127,8 +127,6 @@ export default function ProofDashboard() {
             <p className="chart-summary">AI Overview keyword coverage by month, July 2025 to March 2026.</p>
           </article>
         </div>
-
-        <p className="proof__footnote">The ribbon aggregates the portfolio's evidence base, not client outcomes. AI Overview mapping was completed for Dream Assurance, TDE, and Omnipress only, not for every Rocket Clicks client. Client results appear in the cards below with their own sources and periods: Semrush AI Visibility, Semrush Position Tracking, Google Search Console Generative AI Features, GA4, Clio/CallRail. JLG hires reflect conversion quality, not organic growth.</p>
       </div>
     </section>
   );
