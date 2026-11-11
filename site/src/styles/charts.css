@@ -72,78 +72,61 @@
   fill: url(#chartAreaGradient);
 }
 
-/* Armory-style draw-in for the win-card line chart */
-.mini-line__line {
+/* Armory-style draw-in for the AI Overview trend chart */
+.chart--trend .chart__line {
   stroke-dasharray: 1;
   stroke-dashoffset: 1;
 }
 
-.mini-line__area {
+.chart--trend .chart__area,
+.chart--trend .chart__endpoint,
+.chart--trend .chart__endlabel {
   opacity: 0;
 }
 
-.mini-line__dot,
-.mini-line__label {
-  opacity: 0;
+.chart--trend.is-drawn .chart__line {
+  animation: trendLineDraw 1500ms cubic-bezier(0.16, 1, 0.3, 1) 120ms forwards;
 }
 
-.win-card.is-open .mini-line__line {
-  animation: miniLineDraw 1500ms cubic-bezier(0.16, 1, 0.3, 1) 120ms forwards;
+.chart--trend.is-drawn .chart__area {
+  animation: trendFade 700ms ease-out 850ms forwards;
 }
 
-.win-card.is-open .mini-line__area {
-  animation: miniLineFade 700ms ease-out 850ms forwards;
+.chart--trend.is-drawn .chart__endpoint {
+  animation: trendFade 260ms ease-out 1400ms forwards;
 }
 
-.win-card.is-open .mini-line__dot {
-  animation: miniLineFade 260ms ease-out 1400ms forwards;
+.chart--trend.is-drawn .chart__endlabel {
+  animation: trendFade 320ms ease-out 1480ms forwards;
 }
 
-.win-card.is-open .mini-line__label {
-  animation: miniLineFade 320ms ease-out 1480ms forwards;
-}
-
-@media (hover: hover) {
-  .win-card--interactive:hover .mini-line__line,
-  .win-card--interactive:focus-visible .mini-line__line {
-    animation: miniLineDraw 1500ms cubic-bezier(0.16, 1, 0.3, 1) 120ms forwards;
-  }
-
-  .win-card--interactive:hover .mini-line__area,
-  .win-card--interactive:focus-visible .mini-line__area {
-    animation: miniLineFade 700ms ease-out 850ms forwards;
-  }
-
-  .win-card--interactive:hover .mini-line__dot,
-  .win-card--interactive:focus-visible .mini-line__dot {
-    animation: miniLineFade 260ms ease-out 1400ms forwards;
-  }
-
-  .win-card--interactive:hover .mini-line__label,
-  .win-card--interactive:focus-visible .mini-line__label {
-    animation: miniLineFade 320ms ease-out 1480ms forwards;
-  }
-}
-
-@keyframes miniLineDraw {
+@keyframes trendLineDraw {
   to {
     stroke-dashoffset: 0;
   }
 }
 
-@keyframes miniLineFade {
+@keyframes trendFade {
   to {
     opacity: 1;
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .mini-line__line,
-  .mini-line__area,
-  .mini-line__dot,
-  .mini-line__label {
-    opacity: 1;
+  .chart--trend .chart__line {
     stroke-dashoffset: 0;
+  }
+
+  .chart--trend .chart__area,
+  .chart--trend .chart__endpoint,
+  .chart--trend .chart__endlabel {
+    opacity: 1;
+  }
+
+  .chart--trend.is-drawn .chart__line,
+  .chart--trend.is-drawn .chart__area,
+  .chart--trend.is-drawn .chart__endpoint,
+  .chart--trend.is-drawn .chart__endlabel {
     animation: none;
   }
 }
