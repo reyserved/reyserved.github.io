@@ -3,6 +3,18 @@
 import { useEffect, useState } from "react";
 
 const WORDS = ["quote.", "cite.", "recommend."];
+const SKILLS = [
+  "AEO",
+  "GEO",
+  "Technical SEO",
+  "Local SEO",
+  "Content Strategy",
+  "Schema",
+  "GA4",
+  "Google Search Console",
+  "Semrush",
+  "Internal Linking",
+];
 
 export default function HeroSplit() {
   const [index, setIndex] = useState(0);
@@ -33,39 +45,49 @@ export default function HeroSplit() {
 
   return (
     <section className="hero-split" aria-labelledby="hero-split-title">
-      <div className="hero-split__wordmark" aria-hidden="true">Reymart</div>
-      <div className="container hero-split__grid">
-        <div className="hero-split__content">
-          <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
-          <h1 className="hero-split__title reveal" id="hero-split-title">
-            I build search content answer engines can <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
-          </h1>
-          <p className="hero-split__bio reveal">
-            <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them. This portfolio documents three programs: AI-answer visibility for a credit union, an answer-first content system for a family law firm, and an in-house SEO and GEO operating system for an insurance agency.
-          </p>
-          <div className="hero-split__ctas reveal">
-            <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
-            <a className="btn btn--light" href="/Reymart-Sarigumba-Resume.pdf">Download CV</a>
+      <div className="container hero-split__shell">
+        <div className="hero-card">
+          <div className="hero-card__content">
+            <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
+            <h1 className="hero-split__title reveal" id="hero-split-title">
+              I build search content answer engines can <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
+            </h1>
+            <p className="hero-split__bio reveal">
+              <strong>Reymart Sarigumba</strong> is an SEO &amp; GEO specialist who builds answer-first content systems and measures whether AI surfaces actually cite them. Three programs, documented with sources and limits.
+            </p>
+            <div className="hero-split__ctas reveal">
+              <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
+              <a className="btn btn--light" href="/Reymart-Sarigumba-Resume.pdf">Download CV</a>
+            </div>
+            <div className="hero-split__kpi reveal" aria-label="Portfolio at a glance">
+              <div><strong>6+</strong><span>years in SEO</span></div>
+              <div><strong>3</strong><span>deep case studies</span></div>
+              <div><strong>654</strong><span>AI Overview queries mapped</span></div>
+            </div>
+          </div>
+
+          <div className="hero-card__visual">
+            <img src="/images/reymart.jpg" alt="Reymart Sarigumba" className="hero-card__photo" />
+            <div className="hero-card__photo-fade" aria-hidden="true" />
+            <div className="hero-card__badge reveal">
+              <div>
+                <span className="hero-card__badge-label">Open to roles</span>
+                <span className="hero-card__badge-title">Available for projects</span>
+                <span className="hero-card__badge-copy">AEO, GEO, and measurable search performance.</span>
+              </div>
+              <a className="hero-card__badge-arrow" href="/about/#contact" aria-label="Contact Reymart">
+                <span aria-hidden="true">↗</span>
+              </a>
+            </div>
           </div>
         </div>
 
-        <div className="hero-split__side reveal">
-          <div className="hero-split__card hero-split__card--photo">
-            <img src="/images/reymart.jpg" alt="Reymart Sarigumba" className="hero-split__photo" />
-            <span className="hero-split__card-caption">SEO · AEO · GEO</span>
-          </div>
-          <div className="hero-split__kpi" aria-label="Portfolio at a glance">
-            <div><strong>6+</strong><span>years in SEO</span></div>
-            <div><strong>3</strong><span>deep case studies</span></div>
-            <div><strong>654</strong><span>AI Overview queries mapped · 3 clients only</span></div>
-          </div>
-        </div>
-      </div>
-
-      <div className="hero-split__marquee" aria-label="Specialties">
-        <div className="hero-split__marquee-track">
-          {["AEO", "GEO", "Technical SEO", "Local SEO", "Content Strategy", "Schema", "GA4", "GSC", "Semrush", "AEO", "GEO", "Technical SEO", "Local SEO", "Content Strategy", "Schema", "GA4", "GSC", "Semrush"].map((item, i) => (
-            <span key={i}>{item}</span>
+        <div className="hero-skills" aria-label="Specialties">
+          {SKILLS.map((skill) => (
+            <div className="hero-skills__cell" key={skill}>
+              <span className="hero-skills__dot" aria-hidden="true" />
+              <span>{skill}</span>
+            </div>
           ))}
         </div>
       </div>

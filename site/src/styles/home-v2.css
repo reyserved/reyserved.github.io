@@ -1,48 +1,42 @@
 /* Split hero */
 .hero-split {
-  position: relative;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  overflow: hidden;
-  padding: 140px 0 0;
+  padding: 120px 0 40px;
 }
 
-.hero-split__wordmark {
-  position: absolute;
-  top: 44%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 0;
-  font-size: clamp(7rem, 22vw, 21rem);
-  font-weight: 800;
-  letter-spacing: -0.075em;
-  line-height: 0.9;
-  color: rgba(17, 17, 17, 0.07);
-  white-space: nowrap;
-  user-select: none;
-  pointer-events: none;
+.hero-split__shell {
+  max-width: 1360px;
 }
 
-.hero-split__grid {
+.hero-card {
   position: relative;
-  z-index: 1;
   display: grid;
   grid-template-columns: 1.15fr 0.85fr;
-  gap: 56px;
-  align-items: center;
-  flex: 1;
+  min-height: 620px;
+  border: 1px solid var(--line);
+  border-radius: 32px;
+  background: #efeee9;
+  box-shadow: 0 40px 80px -50px rgba(17, 17, 17, 0.35);
+  overflow: hidden;
+}
+
+.hero-card__content {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: clamp(32px, 5vw, 64px);
 }
 
 .hero-split__pill {
   display: inline-flex;
   align-items: center;
   gap: 8px;
+  align-self: flex-start;
   padding: 7px 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.6);
+  background: rgba(255, 255, 255, 0.55);
   font-family: var(--font-mono);
   font-size: 11px;
   letter-spacing: 0.12em;
@@ -60,20 +54,20 @@
 
 .hero-split__title {
   margin-top: 24px;
-  max-width: 760px;
-  font-size: clamp(2.75rem, 5.5vw, 4.75rem);
+  max-width: 640px;
+  font-size: clamp(2.5rem, 4.6vw, 4.2rem);
   font-weight: 600;
-  letter-spacing: -0.035em;
-  line-height: 1.06;
+  letter-spacing: -0.04em;
+  line-height: 1.04;
 }
 
 .hero-split__dynamic {
+  display: inline-block;
+  min-width: 4.5ch;
   font-family: var(--font-serif);
   font-style: italic;
   font-weight: 400;
   color: var(--amber-deep);
-  display: inline-block;
-  min-width: 5ch;
 }
 
 .hero-split__cursor {
@@ -87,9 +81,9 @@
 }
 
 .hero-split__bio {
-  max-width: 620px;
+  max-width: 540px;
   margin-top: 24px;
-  font-size: clamp(1rem, 1.15vw, 1.125rem);
+  font-size: clamp(1rem, 1.1vw, 1.0625rem);
   line-height: 1.65;
   color: var(--ink-soft);
 }
@@ -103,140 +97,205 @@
   display: flex;
   flex-wrap: wrap;
   gap: 12px;
-  margin-top: 32px;
-}
-
-.hero-split__side {
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-}
-
-.hero-split__card {
-  position: relative;
-  width: 100%;
-  max-width: 320px;
-  aspect-ratio: 4 / 4.4;
-  margin-left: auto;
-  border-radius: 28px;
-  background: #121418;
-  box-shadow: 0 32px 60px -32px rgba(17, 17, 17, 0.45), inset 0 1px 0 rgba(255, 255, 255, 0.08);
-  display: grid;
-  place-items: center;
-  color: #fff;
-}
-
-.hero-split__card-letter {
-  font-size: 120px;
-  font-weight: 800;
-  letter-spacing: -0.08em;
-  line-height: 1;
-  transform: translateX(-6px);
-}
-
-.hero-split__card-caption {
-  position: absolute;
-  bottom: 18px;
-  left: 0;
-  right: 0;
-  text-align: center;
-  font-family: var(--font-mono);
-  font-size: 10px;
-  letter-spacing: 0.18em;
-  text-transform: uppercase;
-  color: rgba(255, 255, 255, 0.82);
-  z-index: 2;
-}
-
-.hero-split__card--photo {
-  background: #121418;
-  overflow: hidden;
-}
-
-.hero-split__card--photo::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  background: linear-gradient(to top, rgba(10, 10, 12, 0.85), transparent 45%);
-  pointer-events: none;
-}
-
-.hero-split__photo {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  object-position: center 22%;
-  display: block;
+  margin-top: 30px;
 }
 
 .hero-split__kpi {
-  display: grid;
-  grid-template-columns: 1fr auto 1fr auto 1fr;
-  align-items: center;
-  gap: 16px;
-  padding: 20px 24px;
-  border: 1px solid var(--line);
-  border-radius: 20px;
-  background: rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  margin-top: 40px;
+  padding-top: 26px;
+  border-top: 1px solid var(--line);
 }
 
 .hero-split__kpi > div {
   display: flex;
   flex-direction: column;
   gap: 4px;
-}
-
-.hero-split__kpi > div:not(:last-child) {
-  border-right: 1px solid var(--line);
-  padding-right: 16px;
+  min-width: 120px;
 }
 
 .hero-split__kpi strong {
   font-size: clamp(1.75rem, 2.8vw, 2.5rem);
   font-weight: 600;
-  letter-spacing: -0.03em;
+  letter-spacing: -0.035em;
   line-height: 1;
 }
 
 .hero-split__kpi span {
+  max-width: 16ch;
   font-size: 12px;
+  line-height: 1.4;
   color: var(--ink-soft);
 }
 
-.hero-split__marquee {
+.hero-card__visual {
   position: relative;
-  z-index: 1;
-  margin-top: 56px;
-  padding: 28px 0 36px;
-  border-top: 1px solid var(--line);
   overflow: hidden;
-  mask-image: linear-gradient(to right, transparent 0%, black 12%, black 88%, transparent 100%);
 }
 
-.hero-split__marquee-track {
+.hero-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 18%;
+  display: block;
+}
+
+.hero-card__photo-fade {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(to right, #efeee9 0%, rgba(239, 238, 233, 0.6) 16%, transparent 44%),
+    linear-gradient(to top, rgba(10, 10, 12, 0.55) 0%, transparent 38%);
+  pointer-events: none;
+}
+
+.hero-card__badge {
+  position: absolute;
+  right: 24px;
+  bottom: 24px;
+  z-index: 2;
   display: flex;
-  width: max-content;
-  gap: 16px;
-  animation: marquee 26s linear infinite;
+  align-items: center;
+  gap: 18px;
+  max-width: 340px;
+  padding: 16px 18px;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  border-radius: 18px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 20px 40px -22px rgba(17, 17, 17, 0.4);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
 }
 
-.hero-split__marquee-track span {
-  padding: 10px 20px;
-  border: 1px solid var(--line);
-  border-radius: var(--radius-pill);
-  background: rgba(255, 255, 255, 0.5);
+.hero-card__badge-label {
+  display: block;
+  font-family: var(--font-mono);
+  font-size: 9px;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-faint);
+}
+
+.hero-card__badge-title {
+  display: block;
+  margin-top: 4px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.hero-card__badge-copy {
+  display: block;
+  margin-top: 4px;
+  font-size: 12px;
+  line-height: 1.45;
   color: var(--ink-soft);
-  font-size: 14px;
-  white-space: nowrap;
 }
 
-@keyframes marquee {
-  from { transform: translate3d(0, 0, 0); }
-  to { transform: translate3d(-50%, 0, 0); }
+.hero-card__badge-arrow {
+  display: grid;
+  place-items: center;
+  width: 38px;
+  height: 38px;
+  flex: 0 0 auto;
+  border-radius: 10px;
+  background: var(--ink);
+  color: var(--paper);
+  font-size: 16px;
+  transition: transform 200ms var(--ease-out);
 }
 
-.hero-split__marquee:hover .hero-split__marquee-track {
-  animation-play-state: paused;
+.hero-card__badge-arrow:hover {
+  transform: translate(3px, -3px);
+}
+
+.hero-skills {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  margin-top: 20px;
+  border-top: 1px solid var(--line);
+  border-left: 1px solid var(--line);
+}
+
+.hero-skills__cell {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 18px;
+  border-right: 1px solid var(--line);
+  border-bottom: 1px solid var(--line);
+  font-family: var(--font-mono);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+}
+
+.hero-skills__dot {
+  width: 6px;
+  height: 6px;
+  flex: 0 0 auto;
+  border-radius: 50%;
+  background: var(--amber);
+}
+
+@media (max-width: 1024px) {
+  .hero-card {
+    grid-template-columns: 1fr;
+  }
+
+  .hero-card__visual {
+    min-height: 420px;
+  }
+
+  .hero-split__kpi {
+    gap: 24px;
+  }
+
+  .hero-skills {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 560px) {
+  .hero-split {
+    padding-top: 100px;
+  }
+
+  .hero-card {
+    border-radius: 24px;
+  }
+
+  .hero-card__content {
+    padding: 28px 22px 32px;
+  }
+
+  .hero-split__title {
+    font-size: 2.25rem;
+  }
+
+  .hero-card__visual {
+    min-height: 340px;
+  }
+
+  .hero-card__badge {
+    right: 16px;
+    bottom: 16px;
+    left: 16px;
+    max-width: none;
+  }
+
+  .hero-split__kpi > div {
+    min-width: calc(50% - 12px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-split__cursor {
+    animation: none;
+  }
 }
 
 /* Benefits bento */
