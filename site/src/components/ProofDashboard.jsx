@@ -27,6 +27,7 @@ export default function ProofDashboard() {
       renderTrendChart(auritChart.current, {
         label: "Dream Assurance AI Overview keyword coverage, July 2025 to March 2026",
         series: data.dreamAssurance.aiOverviewSeries,
+        valueLabel: "AI Overview keywords",
       });
     }
   }, []);

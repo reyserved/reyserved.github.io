@@ -216,7 +216,7 @@ export function renderKeywordBars(element, { items, label }) {
   element.appendChild(svg);
 }
 
-export function renderTrendChart(element, { series, label }) {
+export function renderTrendChart(element, { series, label, valueLabel = "clicks" }) {
   const width = 660;
   const height = 240;
   const padding = { top: 24, right: 16, bottom: 30, left: 16 };
@@ -248,7 +248,7 @@ export function renderTrendChart(element, { series, label }) {
 
   const last = series[series.length - 1];
   svg.appendChild(svgEl("circle", { cx: x(series.length - 1), cy: y(last.clicks), r: 4, fill: "#e5a93c" }));
-  svg.appendChild(svgEl("text", { x: x(series.length - 1) - 4, y: y(last.clicks) - 12, "text-anchor": "end", class: "chart__value" }, `${last.clicks} clicks`));
+  svg.appendChild(svgEl("text", { x: x(series.length - 1) - 4, y: y(last.clicks) - 12, "text-anchor": "end", class: "chart__value" }, `${last.clicks} ${valueLabel}`));
   svg.appendChild(svgEl("text", { x: padding.left, y: height - 8 }, series[0].date.slice(0, 7)));
   svg.appendChild(svgEl("text", { x: width - padding.right, y: height - 8, "text-anchor": "end" }, last.date.slice(0, 7)));
 
