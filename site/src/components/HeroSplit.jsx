@@ -55,9 +55,9 @@ export default function HeroSplit() {
               <a className="btn btn--light" href="/Reymart-Sarigumba-Resume.pdf">Download CV</a>
             </div>
             <div className="hero-split__kpi reveal" aria-label="Portfolio at a glance">
-              <div><strong>6+</strong><span>years in SEO</span></div>
-              <div><strong className="hero-split__kpi-text">Agency + in-house</strong><span>experience</span></div>
-              <div><strong className="hero-split__kpi-text">US + APAC</strong><span>client markets</span></div>
+              <div><strong>6</strong><span>years in SEO</span></div>
+              <div><strong className="hero-split__kpi-text">Agency &amp; in-house</strong><span>experience</span></div>
+              <div><strong className="hero-split__kpi-text">US &amp; APAC</strong><span>client markets</span></div>
             </div>
           </div>
 

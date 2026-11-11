@@ -427,17 +427,18 @@
 
 /* Aligned cover KPI strip */
 .hero-split__kpi {
-  display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 24px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 24px 48px;
   margin-top: 28px;
   padding-top: 22px;
   border-top: 1px solid var(--line);
-  align-items: start;
 }
 
 .hero-split__kpi > div {
   display: flex;
+  flex: 0 0 auto;
   flex-direction: column;
   gap: 6px;
   min-width: 0;
@@ -468,8 +469,7 @@
 
 @media (max-width: 700px) {
   .hero-split__kpi {
-    grid-template-columns: repeat(3, minmax(0, 1fr));
-    gap: 12px;
+    gap: 18px 22px;
   }
 
   .hero-split__kpi > div {
@@ -478,15 +478,33 @@
 
   .hero-split__kpi strong {
     min-height: 28px;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
   }
 
   .hero-split__kpi-text {
     font-size: 0.9rem !important;
-    white-space: normal;
+    white-space: nowrap;
   }
 
   .hero-split__kpi span {
     font-size: 10px;
+  }
+}
+
+@media (max-width: 420px) {
+  .hero-split__kpi {
+    gap: 16px 12px;
+  }
+
+  .hero-split__kpi strong {
+    font-size: 1.1rem;
+  }
+
+  .hero-split__kpi-text {
+    font-size: 0.85rem !important;
+  }
+
+  .hero-split__kpi span {
+    font-size: 9.5px;
   }
 }
