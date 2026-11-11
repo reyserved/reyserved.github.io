@@ -50,6 +50,29 @@ export default function WinCard({ item }) {
   const [open, setOpen] = useState(false);
   const visual = item.visual;
 
+  const content = (
+    <>
+      <div className="win-card__client">{item.client}</div>
+      <div className="win-card__metric">{item.metric}</div>
+      <div className="win-card__desc">{item.desc}</div>
+      <div className="win-card__meta">{item.source}</div>
+      {item.tags.map((tag) => (
+        <span className="win-card__tag" key={tag}>{tag}</span>
+      ))}
+    </>
+  );
+
+  if (item.inlineVisual && visual) {
+    return (
+      <div className="win-card win-card--inline">
+        {content}
+        <div className="win-card__inline-visual">
+          <MiniBars items={visual.items} />
+        </div>
+      </div>
+    );
+  }
+
   return (
     <button
       type="button"
@@ -61,13 +84,7 @@ export default function WinCard({ item }) {
       onBlur={() => setOpen(false)}
       aria-expanded={open}
     >
-      <div className="win-card__client">{item.client}</div>
-      <div className="win-card__metric">{item.metric}</div>
-      <div className="win-card__desc">{item.desc}</div>
-      <div className="win-card__meta">{item.source}</div>
-      {item.tags.map((tag) => (
-        <span className="win-card__tag" key={tag}>{tag}</span>
-      ))}
+      {content}
 
       {visual && (
         <span

@@ -37,7 +37,8 @@ export default function WorkIndex() {
         <h2 className="work-group-label">Earlier-role wins</h2>
         <WinCards items={EARLIER_WINS} />
 
-        <h2 className="work-group-label">Business impact, labeled separately</h2>
+        <h2 className="work-group-label">Business outcomes</h2>
+        <p className="work-group-note">Pipeline and conversion results, shown separately from the SEO wins above.</p>
         <WinCards items={BUSINESS_IMPACT} />
       </div>
 
