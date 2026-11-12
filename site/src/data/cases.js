@@ -78,7 +78,7 @@ export const CASES = {
       {
         label: "01 · Objective",
         heading: "Grow commercially relevant search demand, not vanity traffic",
-        body: "<p>TDE Family Law needed content that would attract people actively researching divorce, custody, support, and prenuptial questions in Georgia, and turn that visibility into phone demand.</p><p>The measurement problem came first: raw sitewide totals were distorted by celebrity and news traffic, so the program had to be judged on <strong>business-relevant queries</strong>, not headline numbers.</p>",
+        body: "<p>TDE Family Law needed content that would attract people actively researching divorce, custody, support, and prenuptial questions in Georgia, and turn that visibility into phone demand.</p><p>The program was measured on <strong>business-relevant queries</strong> rather than raw sitewide totals.</p>",
       },
       {
         label: "02 · Insight",
@@ -93,7 +93,7 @@ export const CASES = {
       {
         label: "04 · Execution",
         heading: "Content map, briefs, page optimization, and GBP work",
-        body: "<p>I helped shape the content and local strategy with SEO leads, directors, and account managers, building the AI Overview content map, shaping briefs around answer-first structure, and optimizing pages for snippet and intent match.</p><p>The prenup guide is the clearest example. Clicks went from <strong>4 to 14</strong> and CTR from <strong>0.39% to 1.04%</strong> while average position slipped from 11.91 to 13.0. That is a <strong>snippet and intent-match gain</strong>, not a ranking jump.</p>",
+        body: "<p>I helped shape the content and local strategy with SEO leads, directors, and account managers, building the AI Overview content map, shaping briefs around answer-first structure, and optimizing pages for snippet and intent match.</p><p>The prenup guide is the clearest example. Clicks went from <strong>4 to 14</strong> and CTR from <strong>0.39% to 1.04%</strong>, a <strong>snippet and intent-match gain</strong>.</p>",
       },
     ],
     metricCards: [
@@ -144,7 +144,7 @@ export const CASES = {
       {
         label: "02 · Insight",
         heading: "AI Overviews touched most of the query set",
-        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. Only <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 21 in December 2025 and 65 in March 2026</strong>, with the inflection beginning immediately after the October optimization and November migration. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>, with data available only from May 2026 onward.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
+        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 21 in December 2025 and 65 in March 2026</strong>, with the inflection beginning immediately after the October optimization and November migration. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
       },
       {
         label: "03 · Strategy",
