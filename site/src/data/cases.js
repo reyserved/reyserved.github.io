@@ -21,8 +21,8 @@ export const CASES = {
       },
       {
         label: "02 · Insight",
-        heading: "AI Overview was the strongest surface, but the program was behind target",
-        body: "<p>In the July to August Semrush snapshot, AI Overview scored <strong>39/100</strong>, well ahead of ChatGPT, Gemini, and AI Mode. Overall AI Visibility was <strong>17/100 against a 44 target</strong>. Treating this as a finished GEO win would have been wrong.</p><p>The useful signal was at page level: citations moved from <strong>888 to 892</strong> and cited pages from <strong>363 to 382</strong> between the two rolling windows, with gains concentrated in definitional, membership, and product content. Google Generative AI feature impressions also rose from <strong>169,000 in July to 180,938 in August (+7.1%)</strong>.</p>",
+        heading: "AI Overview was the strongest AI surface",
+        body: "<p>In the July to August Semrush snapshot, AI Overview scored <strong>39/100</strong>, well ahead of ChatGPT, Gemini, and AI Mode. The useful signal was at page level: citations moved from <strong>888 to 892</strong> and cited pages from <strong>363 to 382</strong> between the two rolling windows, with gains concentrated in definitional, membership, and product content. Google Generative AI feature impressions also rose from <strong>169,000 in July to 180,938 in August (+7.1%)</strong>.</p>",
       },
       {
         label: "03 · Strategy",
