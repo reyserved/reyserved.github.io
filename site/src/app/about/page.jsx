@@ -1,8 +1,9 @@
 import StackGrid from "../../components/StackGrid";
+import AboutPageCarousel from "../../components/AboutPageCarousel";
 
 export const metadata = {
   title: "About — Reymart",
-  description: "Background, experience, tools, and contact details for Reymart Sarigumba.",
+  description: "Background, experience, page builds, tools, and contact details for Reymart Sarigumba.",
 };
 
 const ROLES = [
@@ -37,8 +38,6 @@ const ROLES = [
     detail: "SEO content, keyword research, and on-page experiments across product and editorial pages.",
   },
 ];
-
-
 
 export default function AboutPage() {
   return (
@@ -75,6 +74,21 @@ export default function AboutPage() {
           ))}
         </div>
 
+        <section className="about-pages">
+          <div className="about-pages__copy">
+            <h2 className="work-group-label">Page builds</h2>
+            <p className="about-pages__statement">I build the pages, not just the brief.</p>
+            <p className="about-pages__lede">
+              Nine client builds across legal, finance, manufacturing, home services, and B2B. I write the page, build
+              the responsive layout, and hand it off in the client's CMS.
+            </p>
+            <a className="about-pages__link" href="/work/landing-pages/">
+              Browse the landing page gallery <span aria-hidden="true">→</span>
+            </a>
+          </div>
+          <AboutPageCarousel />
+        </section>
+
         <h2 className="work-group-label">Tools</h2>
         <p className="win-card__desc" style={{ marginBottom: "18px" }}>The same stack I use across the case studies. Tap a card to see how I use each one.</p>
         <StackGrid />
@@ -105,7 +119,7 @@ export default function AboutPage() {
       <div className="container case-nav">
         <a className="case-nav__link" href="/method/">
           <span className="case-nav__label">← Method</span>
-          <span className="case-nav__sub">How the work is done</span>
+          <span className="case-nav__sub">How I approach the work</span>
         </a>
         <a className="case-nav__link" href="/work/">
           <span className="case-nav__label">Case studies →</span>

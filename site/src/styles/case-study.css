@@ -317,6 +317,11 @@
   padding-inline: clamp(20px, 3vw, 48px);
 }
 
+.work-index__body {
+  max-width: var(--container);
+  margin-inline: auto;
+}
+
 .case-title {
   max-width: 900px;
   margin-top: 24px;

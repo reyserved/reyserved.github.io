@@ -28,7 +28,7 @@ export default function WorkIndex() {
         </div>
       </section>
 
-      <div className="container container--full">
+      <div className="container container--full work-index__body">
         <CaseAccordion />
 
         <h2 className="work-group-label">Rocket Clicks wins</h2>
@@ -49,7 +49,7 @@ export default function WorkIndex() {
         </a>
         <a className="case-nav__link" href="/method/">
           <span className="case-nav__label">My method →</span>
-          <span className="case-nav__sub">How the work is done</span>
+          <span className="case-nav__sub">How I approach the work</span>
         </a>
       </div>
     </>

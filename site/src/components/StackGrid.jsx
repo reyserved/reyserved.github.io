@@ -44,9 +44,19 @@ const TOOLS = [
     desc: "Content optimization support for coverage and on-page structure, always secondary to intent and source quality.",
   },
   {
+    name: "Figma",
+    logo: "/logos/tools/figma.svg",
+    desc: "Design and prototype pages before they get built. I use it for landing page mockups, layout systems, and design-to-build handoff.",
+  },
+  {
     name: "WordPress",
     logo: "/logos/tools/wordpress.svg",
     desc: "Where I implement most client content, schema, and page-structure changes, including Divi, Elementor, Yoast, and RankMath.",
+  },
+  {
+    name: "Elementor",
+    logo: "/logos/tools/elementor.svg",
+    desc: "A WordPress builder for service pages and landing page sections. I use it for responsive layouts, reusable sections, and client-friendly edits.",
   },
   {
     name: "Google Business Profile",
@@ -54,9 +64,20 @@ const TOOLS = [
     desc: "Local visibility, categories, services, and call tracking. I connect GBP performance to landing pages and first-time callers.",
   },
   {
+    name: "Local Brand Manager",
+    logo: "/logos/tools/localbrandmanager.png",
+    logoWide: true,
+    desc: "Local visibility and geogrid rank tracking around service areas. I use it to spot neighborhood gaps and watch competitor movement.",
+  },
+  {
     name: "Claude",
     logo: "/logos/tools/claude.svg",
     desc: "My thinking partner for audits, briefs, and analysis. I use it to accelerate work, then verify claims against sources.",
+  },
+  {
+    name: "Gemini",
+    logo: "/logos/tools/gemini.svg",
+    desc: "A second research and analysis assistant. I use it to pressure-test briefs, compare sources, and check work before it ships.",
   },
   {
     name: "ChatGPT",
@@ -83,7 +104,7 @@ export default function StackGrid() {
           >
             <span className="stack-card__inner">
               <span className="stack-card__face stack-card__front">
-                <img src={tool.logo} alt="" className="stack-card__logo" />
+                <img src={tool.logo} alt="" className={`stack-card__logo${tool.logoWide ? " stack-card__logo--wide" : ""}`} />
                 <span className="stack-card__name">{tool.name}</span>
                 <span className="stack-card__hint">Tap to flip</span>
               </span>
