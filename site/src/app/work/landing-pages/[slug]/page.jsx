@@ -58,7 +58,7 @@ export default async function LandingPageDetail({ params }) {
               <div className="lp-detail__tags">
                 <span>{project.pageType}</span>
                 <span>{project.sector}</span>
-                <span>{project.year}</span>
+                <span>{project.builtShort}</span>
               </div>
             </div>
 
@@ -99,7 +99,7 @@ export default async function LandingPageDetail({ params }) {
             </div>
             <div>
               <dt>Build</dt>
-              <dd>{project.year}</dd>
+              <dd>{project.built}</dd>
             </div>
           </dl>
 

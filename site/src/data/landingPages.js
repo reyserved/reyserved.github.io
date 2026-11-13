@@ -17,7 +17,6 @@ export const LANDING_PAGES = [
     "sector": "Print and fulfillment",
     "sectorGroup": "B2B",
     "pageType": "Service landing page",
-    "year": "2026",
     "summary": "A conference printing page that helps event teams compare formats, plan around deadlines, and request a quote.",
     "intro": "Omnipress prints the programs, booklets, signage, and delegate materials that conference teams need. The page follows the way teams plan an event, from choosing what to print to getting it delivered.",
     "challenge": "The event date sets the schedule. Teams still need to choose formats for sessions and sponsors, review proofs, and coordinate delivery. The page had to answer those questions early and give buyers a clear way to start a quote.",
@@ -123,7 +122,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/omnipress-conference/section-3.webp",
         "caption": "Format options and pricing factors appear before the closing quote CTA."
       }
-    ]
+    ],
+    "built": "May 22, 2026",
+    "builtShort": "May 2026"
   },
   {
     "slug": "badger-hvac",
@@ -134,7 +135,6 @@ export const LANDING_PAGES = [
     "sector": "Manufacturing and instrumentation",
     "sectorGroup": "Manufacturing",
     "pageType": "Paid landing page",
-    "year": "2026",
     "summary": "A paid landing page that helps HVAC teams compare flow metering options for hydronic systems and talk to an expert.",
     "intro": "Badger Meter offers several ways to measure flow in HVAC systems. The page helps technical buyers narrow down their options by application and installation requirements.",
     "challenge": "A chilled water loop, a retrofit, and a system that needs BMS integration each raise different questions. The page needed enough engineering detail for buyers to assess fit, with a quick way to find the section that applied to their system.",
@@ -248,7 +248,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/badger-hvac/section-3.webp",
         "caption": "The closing section connects meter data to HVAC decisions and related solution areas."
       }
-    ]
+    ],
+    "built": "Mar 17, 2026",
+    "builtShort": "Mar 2026"
   },
   {
     "slug": "blacktop-gallery",
@@ -259,7 +261,6 @@ export const LANDING_PAGES = [
     "sector": "Home services",
     "sectorGroup": "Home services",
     "pageType": "Proof hub and gallery",
-    "year": "2026",
     "summary": "An asphalt paving gallery that helps homeowners find nearby projects, compare similar jobs, and request an estimate.",
     "intro": "Blacktop Concepts had a large library of paving photos. I built a gallery that pairs selected photos with the city, project type, and scope so visitors can find work that looks like their own.",
     "challenge": "The old gallery took a lot of scrolling. Someone comparing driveway contractors needed a faster way to find a local example, see what the job involved, and ask for an estimate. The rebuild also needed to stay easy for the client to update in Beaver Builder.",
@@ -373,7 +374,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/blacktop-gallery/section-3.webp",
         "caption": "New asphalt examples show what was paved and where."
       }
-    ]
+    ],
+    "built": "Jun 26, 2026",
+    "builtShort": "Jun 2026"
   },
   {
     "slug": "bank-five-nine",
@@ -384,7 +387,6 @@ export const LANDING_PAGES = [
     "sector": "Community banking",
     "sectorGroup": "Finance",
     "pageType": "Promotional landing page",
-    "year": "2026",
     "summary": "A promotional landing page that puts the $300 checking offer up front and explains how to qualify before applying.",
     "intro": "How do I earn the bonus, and what do I do next? Those are the two questions I built the page around. The reward comes first, followed by the qualifying steps.",
     "challenge": "Visitors can spot the dollar amount in seconds. The harder part is seeing exactly what qualifies. The page needed to make the requirements easy to scan, keep the application CTA easy to find, and sound like a local bank.",
@@ -486,7 +488,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/bank-five-nine/section-3.webp",
         "caption": "The offer terms sit directly under the final application prompt."
       }
-    ]
+    ],
+    "built": "Jan 23, 2026",
+    "builtShort": "Jan 2026"
   },
   {
     "slug": "five-star",
@@ -497,7 +501,6 @@ export const LANDING_PAGES = [
     "sector": "Manufacturing",
     "sectorGroup": "Manufacturing",
     "pageType": "Paid landing page",
-    "year": "2026",
     "summary": "A paid landing page that helps OEMs, fleets, and manufacturers check fit for custom polycarbonate windows before requesting a quote.",
     "intro": "Five Star makes custom polycarbonate windows for production runs. Buyers can see up front if their project fits, then check the specs and production process before asking for a quote.",
     "challenge": "Paid search can bring in buyers looking for a single replacement window as well as teams sourcing at scale. The page had to state who the offer serves up front and cover coatings, compliance, complex shapes, and prototype timing without making buyers hunt for the form.",
@@ -603,7 +606,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/five-star/section-3.webp",
         "caption": "The final quote request follows the production process."
       }
-    ]
+    ],
+    "built": "Feb 5, 2026",
+    "builtShort": "Feb 2026"
   },
   {
     "slug": "tde-divorce",
@@ -614,7 +619,6 @@ export const LANDING_PAGES = [
     "sector": "Legal",
     "sectorGroup": "Legal",
     "pageType": "Paid landing page",
-    "year": "2026",
     "summary": "A paid landing page that helps Atlanta-area visitors find the right divorce or separation information and request a consultation.",
     "intro": "TDE Family Law needed one page for people arriving with different questions about divorce. I used a clear opening message and jump links so visitors could go straight to the issue on their mind.",
     "challenge": "Someone looking into an uncontested divorce may have different questions from someone facing a high-asset divorce or considering legal separation. The page needed to match those search intents early, explain the firm’s approach, and keep the consultation CTA easy to find.",
@@ -724,7 +728,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/tde-divorce/section-3.webp",
         "caption": "The consultation prompt follows the FAQ."
       }
-    ]
+    ],
+    "built": "Jan 29, 2026",
+    "builtShort": "Jan 2026"
   },
   {
     "slug": "new-frontiers",
@@ -735,7 +741,6 @@ export const LANDING_PAGES = [
     "sector": "Education and coaching",
     "sectorGroup": "B2B",
     "pageType": "Service landing page",
-    "year": "2026",
     "summary": "A service page that shows what academic and career coaching have in common and helps visitors find the right starting point.",
     "intro": "New Frontiers offers coaching for students and working professionals. I brought both services onto one page by showing how executive function skills apply in class, early in a career, and at work.",
     "challenge": "Planning, prioritizing, getting started, staying organized, and following through matter in school and at work. The page had to explain those skills in everyday terms, speak to four audiences, and show what a free discovery call is for.",
@@ -844,7 +849,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/new-frontiers/section-3.webp",
         "caption": "Results and testimonials lead into how coaching works."
       }
-    ]
+    ],
+    "built": "Apr 10, 2026",
+    "builtShort": "Apr 2026"
   },
   {
     "slug": "ljp-industrial",
@@ -855,7 +862,6 @@ export const LANDING_PAGES = [
     "sector": "Waste and compliance",
     "sectorGroup": "B2B",
     "pageType": "Service landing page",
-    "year": "2026",
     "summary": "A service page that shows how LJP’s six waste services fit together and gives operations teams a clear way to request a consultation.",
     "intro": "LJP offers waste audits, recycling, zero-landfill programs, waste-to-energy, secure destruction, and program management. The page brings those services together so buyers can see what a full program could look like and ask for a review of their own.",
     "challenge": "A buyer might start with a recycling stream, a landfill reduction goal, or a secure destruction project. The page needed to help them find that service and show how it could fit into a broader program. Case studies give buyers examples of how the services work together.",
@@ -957,7 +963,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/ljp-industrial/section-3.webp",
         "caption": "Industry cards help operations and sustainability teams find their sector."
       }
-    ]
+    ],
+    "built": "Apr 22, 2026",
+    "builtShort": "Apr 2026"
   },
   {
     "slug": "elkus-construction",
@@ -968,7 +976,6 @@ export const LANDING_PAGES = [
     "sector": "Legal",
     "sectorGroup": "Legal",
     "pageType": "Paid landing page",
-    "year": "2026",
     "wide": true,
     "summary": "A paid landing page that introduces the firm’s construction defect trial experience and helps Colorado property owners request a case review.",
     "intro": "Property owners often start with the problem they can see, like a roof that keeps leaking or cracks they’re worried about. From there, the page helps them find the relevant defect category, learn about the firm’s trial work, and request a case review.",
@@ -1067,7 +1074,9 @@ export const LANDING_PAGES = [
         "src": "/landing-pages/elkus-construction/section-3.webp",
         "caption": "The closing section offers a case review form and a phone number."
       }
-    ]
+    ],
+    "built": "Mar 24, 2026",
+    "builtShort": "Mar 2026"
   }
 ];
 

@@ -57,7 +57,7 @@ export default function LandingGallery() {
                 <span className="lp-card__client">{page.client}</span>
                 <span className="lp-card__title">{page.title}</span>
                 <span className="lp-card__type">
-                  {page.pageType} <span aria-hidden="true">/</span> {page.year}
+                  {page.pageType} <span aria-hidden="true">/</span> {page.builtShort}
                 </span>
               </span>
               <span className="lp-card__arrow" aria-hidden="true">
