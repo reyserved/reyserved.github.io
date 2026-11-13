@@ -4,7 +4,7 @@ import { LANDING_PAGES } from "../../../data/landingPages";
 export const metadata = {
   title: "Landing page gallery | Reymart",
   description:
-    "Explore nine responsive landing pages, service pages, and project galleries built for Rocket Clicks clients across paid search and organic SEO.",
+    "Explore ten responsive landing pages, service pages, and project galleries built for Rocket Clicks clients across paid search and organic SEO.",
   robots: { index: false, follow: false, nocache: true },
 };
 

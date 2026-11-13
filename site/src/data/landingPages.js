@@ -976,7 +976,6 @@ export const LANDING_PAGES = [
     "sector": "Legal",
     "sectorGroup": "Legal",
     "pageType": "Paid landing page",
-    "wide": true,
     "summary": "A paid landing page that introduces the firm’s construction defect trial experience and helps Colorado property owners request a case review.",
     "intro": "Property owners often start with the problem they can see, like a roof that keeps leaking or cracks they’re worried about. From there, the page helps them find the relevant defect category, learn about the firm’s trial work, and request a case review.",
     "challenge": "Someone dealing with a roof leak, window issue, or structural concern may already be juggling repairs and conversations with a contractor or insurer. The page needed to cover six types of defects in plain language and make it easy for visitors arriving from paid search to ask about their situation.",
@@ -1077,6 +1076,133 @@ export const LANDING_PAGES = [
     ],
     "built": "Mar 24, 2026",
     "builtShort": "Mar 2026"
+  },
+  {
+    "slug": "moran-wealth",
+    "index": "10",
+    "client": "Moran Wealth Management",
+    "title": "The Disciplined Investor's Bear Market Guide",
+    "shortTitle": "Bear Market Guide",
+    "sector": "Wealth management",
+    "sectorGroup": "Finance",
+    "pageType": "Lead magnet landing page",
+    "built": "Feb 14, 2026",
+    "builtShort": "Feb 2026",
+    "summary": "A lead magnet landing page that shows investors what’s inside Moran’s bear market guide before they share their details to download it.",
+    "intro": "Moran Wealth Management had a guide for investors who wanted a plan for periods of market volatility. I built the page around what readers could use right away, from checklists and worksheets to questions they could bring to an advisor.",
+    "challenge": "When markets get volatile, it’s easy to get caught up in predictions. This page had to show what goes into a plan, from reviewing cash needs to deciding when to act. It also needed to explain what visitors would get for filling out the form and keep the download CTA easy to find within the constraints of financial marketing copy.",
+    "brief": [
+      [
+        "Audience",
+        "Investors and families with significant assets who want a process they can return to when markets get volatile."
+      ],
+      [
+        "Goal",
+        "Encourage guide downloads and give readers a starting point for a planning conversation."
+      ],
+      [
+        "Constraint",
+        "Keep the copy focused on planning and make it clear that downloading the guide requires a form."
+      ]
+    ],
+    "execution": [
+      {
+        "title": "Guide preview and form",
+        "body": "The hero puts the guide cover, a short description, and the download form above the fold."
+      },
+      {
+        "title": "Who it’s for and what’s inside",
+        "body": "Two sections help visitors decide if the guide fits their situation and preview what they’ll get when they download it."
+      },
+      {
+        "title": "Four-step planning framework",
+        "body": "The page walks through liquidity, risk, taxes and cash flow, and guardrails for making decisions under pressure."
+      },
+      {
+        "title": "Checklists and decision filter",
+        "body": "The checklists show what to review before, during, and after a volatile period. A decision filter helps readers think through whether to act or wait."
+      },
+      {
+        "title": "Prep for an advisor or CPA meeting",
+        "body": "The guide gives readers questions to ask and documents to gather before a planning conversation."
+      },
+      {
+        "title": "Firm credentials and closing CTA",
+        "body": "The page introduces Moran’s credentials and ends with another chance to download the guide."
+      }
+    ],
+    "architecture": [
+      [
+        "Hero and form",
+        "Guide overview, cover image, and download form."
+      ],
+      [
+        "Who it’s for",
+        "Three situations the guide is written for."
+      ],
+      [
+        "What’s inside",
+        "Planning framework, checklists, worksheets, and an action plan."
+      ],
+      [
+        "Planning for volatility",
+        "What investors can review when markets are unsettled."
+      ],
+      [
+        "Four-step framework",
+        "Liquidity, risk, taxes and cash flow, and decision-making guardrails."
+      ],
+      [
+        "Checklists",
+        "What to review before, during, and after a volatile period."
+      ],
+      [
+        "Decision filter",
+        "A check on whether to act or wait, plus a one-page plan."
+      ],
+      [
+        "Advisor and CPA prep",
+        "Questions to ask and documents to bring."
+      ],
+      [
+        "About Moran",
+        "Firm credentials."
+      ],
+      [
+        "Closing CTA",
+        "Download the guide."
+      ]
+    ],
+    "outcome": [
+      "Visitors can see the planning steps the guide covers, from reviewing cash needs to setting rules for decisions under pressure.",
+      "The page shows readers what they’ll get when they submit the download form.",
+      "The questions and document list give readers something concrete to bring to their next advisor or CPA meeting."
+    ],
+    "tools": [
+      "HTML/CSS",
+      "Lead magnet landing page",
+      "Form design",
+      "Financial compliance",
+      "Responsive layout"
+    ],
+    "accent": "#2f5a73",
+    "heroAccent": "#a9c7d8",
+    "heroFrom": "#102a3f",
+    "heroTo": "#2f5a73",
+    "images": [
+      {
+        "src": "/landing-pages/moran-wealth/section-1.webp",
+        "caption": "The four-step framework covers liquidity, risk, taxes and cash flow, and decision-making guardrails."
+      },
+      {
+        "src": "/landing-pages/moran-wealth/section-2.webp",
+        "caption": "The guide includes checklists for before, during, and after market volatility."
+      },
+      {
+        "src": "/landing-pages/moran-wealth/section-3.webp",
+        "caption": "A download CTA closes the page after the guide preview and firm credentials."
+      }
+    ]
   }
 ];
 

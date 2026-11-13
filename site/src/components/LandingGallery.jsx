@@ -36,7 +36,7 @@ export default function LandingGallery() {
       <div className="lp-grid">
         {LANDING_PAGES.map((page) => (
           <a
-            className={`lp-card${page.wide ? " lp-card--wide" : ""}`}
+            className="lp-card"
             href={`/work/landing-pages/${page.slug}/`}
             key={page.slug}
             data-sector={page.sectorGroup}

@@ -277,18 +277,6 @@ a.lp-card:focus-visible {
   transform: translateX(4px) rotate(-8deg);
 }
 
-.lp-card--wide {
-  grid-column: span 2;
-}
-
-.lp-card--wide .lp-card__media {
-  aspect-ratio: 21 / 9;
-}
-
-.lp-card--wide .lp-card__title {
-  font-size: clamp(1.35rem, 2.1vw, 1.9rem);
-}
-
 .lp-disclaimer {
   max-width: 760px;
   margin: 42px 0 0;
@@ -879,14 +867,6 @@ a.lp-next:focus-visible {
   .lp-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 44px;
-  }
-
-  .lp-card--wide {
-    grid-column: auto;
-  }
-
-  .lp-card--wide .lp-card__media {
-    aspect-ratio: 4 / 3;
   }
 
   .lp-detail__hero {
