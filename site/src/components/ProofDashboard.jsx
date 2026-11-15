@@ -14,12 +14,12 @@ export default function ProofDashboard() {
       renderStemChart(citationChart.current, {
         label: "Cited prompts by Service Credit Union page",
         items: [
-          { short: "Vehicle", previous: 65, current: 49 },
+          { short: "Auto new", previous: 8, current: 26 },
           { short: "Member", previous: 40, current: 63 },
           { short: "APR", previous: 54, current: 62 },
-          { short: "Auto", previous: 8, current: 26 },
           { short: "CU 101", previous: 8, current: 22 },
           { short: "Military", previous: 8, current: 15 },
+          { short: "Auto old", previous: 65, current: 49 },
         ],
       });
     }
@@ -51,7 +51,7 @@ export default function ProofDashboard() {
         <div className="proof__ribbon reveal-group" aria-label="Portfolio results scope">
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="654">654</div>
-            <div className="ribbon-label">AI Overview-exposed queries mapped · 3 clients only</div>
+            <div className="ribbon-label">AI Overview-exposed queries mapped</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="3">3</div>
@@ -68,14 +68,13 @@ export default function ProofDashboard() {
             <div className="card__head">
               <div>
                 <h3 className="card__title" id="card-ai"><span className="card__icon" aria-hidden="true">◔</span>AI feature visibility</h3>
-                <p className="card__subtitle">Service Credit Union · GSC, July – August 2026</p>
+                <p className="card__subtitle">Service Credit Union · July deck + GSC Aug 2026</p>
               </div>
               <span className="card__top-metric">+7.1% MoM</span>
             </div>
-            <div className="metric-big"><span data-count="180938">180,938</span></div>
-            <p className="metric-caption">Generative AI feature impressions · August 2026</p>
+            <div className="metric-big metric-big--range">169,000 → 180,938</div>
+            <p className="metric-caption">Generative AI feature impressions · July → August 2026</p>
             <div className="submetrics">
-              <div><div className="submetric-value">169,000</div><div className="submetric-label">July 2026</div></div>
               <div><div className="submetric-value">363 → 382</div><div className="submetric-label">Cited pages</div></div>
               <div><div className="submetric-value">888 → 892</div><div className="submetric-label">Citations</div></div>
             </div>
@@ -90,7 +89,7 @@ export default function ProofDashboard() {
               <span className="card__top-metric">888 → 892 total</span>
             </div>
             <div ref={citationChart}></div>
-            <p className="chart-summary">Become a member <strong>40 → 63</strong> · Auto loans <strong>8 → 26</strong> · Vehicle hub <strong>65 → 49</strong></p>
+            <p className="chart-summary">Auto new URL <strong>8 → 26</strong> · Old URL <strong>65 → 49</strong> · Family <strong>73 → 75</strong></p>
           </article>
 
           <article className="card reveal" aria-labelledby="card-local">

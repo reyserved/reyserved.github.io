@@ -89,6 +89,31 @@ export default function CaseStudy({ data }) {
 
 
 
+      <section className="case-section">
+        <div className="container">
+          <span className="case-section__label">Claim ledger</span>
+          <h2>What this proves, and what it does not</h2>
+          <div className="claim-ledger">
+            <div className="claim-box">
+              <h3>What the evidence supports</h3>
+              <ul>
+                {data.proves.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+            <div className="claim-box claim-box--limits">
+              <h3>What it does not support</h3>
+              <ul>
+                {data.limits.map((item) => (
+                  <li key={item}>{item}</li>
+                ))}
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <div className="container case-nav">
         <a className="case-nav__link" href="/work/">
           <span className="case-nav__label">← All case studies</span>

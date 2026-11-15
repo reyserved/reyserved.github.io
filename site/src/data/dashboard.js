@@ -9,7 +9,12 @@ export const DASHBOARD_DATA = {
     "aiVisibilityTarget": 44,
     "citations": [
       {
-        "page": "Vehicle loans hub",
+        "page": "Auto-loans new URL",
+        "previous": 8,
+        "current": 26
+      },
+      {
+        "page": "Auto-loans old URL",
         "previous": 65,
         "current": 49
       },
@@ -22,11 +27,6 @@ export const DASHBOARD_DATA = {
         "page": "Credit card APR blog",
         "previous": 54,
         "current": 62
-      },
-      {
-        "page": "Auto loans page",
-        "previous": 8,
-        "current": 26
       },
       {
         "page": "What is a credit union",
