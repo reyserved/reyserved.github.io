@@ -6,7 +6,7 @@ export const CASES =   {
       "heroImage": "/images/heroes/scu.jpg",
       "pill": "Credit union · Financial services",
       "title": "How we measured Service Credit Union's visibility in AI answers",
-      "lede": "I audited eight priority pages and used Semrush and Google Search Console to see which pages AI tools cited, how often the site appeared in Google's AI features, and where the data ran out.",
+      "lede": "I audited eight priority pages and used Semrush and Google Search Console to see which pages AI tools cited and how often the site appeared in Google's AI features.",
       "meta": [
         [
           "Client",
