@@ -1,190 +1,254 @@
-export const CASES = {
-  "service-credit-union": {
-    slug: "service-credit-union",
-    clientName: "Service Credit Union",
-    logo: "/logos/clients/servicecu.png",
-    heroImage: "/images/heroes/scu.jpg",
-    pill: "Credit union · Financial services",
-    title: "Building and measuring an AI-answer visibility program",
-    lede: "How Service Credit Union's product and membership pages earned citations in AI Overviews and LLM answers, and what the data still cannot prove.",
-    meta: [
-      ["Client", "Service Credit Union<br>servicecu.org · New Hampshire"],
-      ["My role", "Strategy and page audits with SEO leads"],
-      ["Period", "Jul 12 – Sep 7, 2026 (Semrush)<br>August 2026 (GSC)"],
-      ["Data", "Semrush AI Visibility<br>GSC Generative AI Features"],
-    ],
-    sections: [
-      {
-        label: "01 · Objective",
-        heading: "Make credit union content citable in AI answers",
-        body: "<p>The goal was to turn Service Credit Union's product, membership, and educational pages into sources that AI Overviews and conversational engines would actually cite, while continuing to improve traditional click-through performance on high-intent pages.</p><p>That required two things at once: content that is easy for an answer engine to extract, and a measurement model that separates <strong>being cited</strong> from simply <strong>ranking</strong>.</p>",
-      },
-      {
-        label: "02 · Insight",
-        heading: "AI Overview was the strongest AI surface",
-        body: "<p>In the July to August Semrush snapshot, AI Overview led ChatGPT, Gemini, and AI Mode. The useful signal was at page level: citations moved from <strong>888 to 892</strong> and cited pages from <strong>363 to 382</strong> between the two rolling windows, with gains concentrated in definitional, membership, and product content.</p><p>Google Generative AI feature impressions rose from <strong>169,000 in July to 180,938 in August (+7.1%)</strong>. The July figure is from the July 2026 performance deck; the August figure is from the GSC Generative AI Features export.</p>",
-      },
-      {
-        label: "03 · Strategy",
-        heading: "Answer-first, question-led, source-backed content",
-        body: "<p>The strategy was to make each priority page extractable before trying to make it more visible:</p><ul><li>Define the query in the opening paragraph rather than easing into it.</li><li>Use question-led H2 and H3 sections that mirror real follow-up questions.</li><li>Keep fact-dense copy with named, authoritative sources.</li><li>Use FAQ blocks and appropriate structured data where they help extraction.</li><li>Measure page-level citations instead of relying on brand-level mentions.</li></ul>",
-      },
-      {
-        label: "04 · Execution",
-        heading: "Page audits plus a two-source measurement model",
-        body: "<p>I helped shape the strategy with SEO leads, directors, and account managers, then audited eight priority pages, reviewing metadata, H1 to H4 structure, body copy, tables, FAQ content, JSON-LD, canonicals, robots, and llms.txt. Recommendations covered definitional intros, question headings, source citations, and FAQPage markup gaps.</p><p>Measurement paired <strong>Semrush Cited Pages</strong> with <strong>GSC Generative AI Features</strong>, so a page had to show citations in one system and AI feature visibility in the other before it counted as a strong asset.</p>",
-      },
-    ],
-    metricCards: [
-      ["169,000 → 180,938", "Generative AI feature impressions, +7.1% MoM", "July 2026 deck + GSC Aug 2026"],
-      ["888 → 892", "Citations across AI platforms", "Semrush · Jul 12–Aug 11 vs Aug 8–Sep 7"],
-      ["363 → 382", "Pages cited in AI answers", "Semrush · same windows"],
-      ["8 → 26", "Cited prompts for the new auto-loans URL", "Semrush Cited Pages"],
-      ["40 → 63", "Cited prompts for become-a-member", "Semrush Cited Pages"],
-      ["54 → 62", "Cited prompts for the credit card APR guide", "Semrush Cited Pages"],
-    ],
-    proves: [
-      "Page-level citation breadth increased for several product and membership pages.",
-      "AI Overview was Service Credit Union's strongest AI surface in the measured windows.",
-      "The old auto-loan URL carried 69,144 Google AI feature impressions in August, and the URL family held 73 to 75 combined citations across the old and new URLs.",
-      "Become-a-member citations rose from 40 to 63, the credit card APR guide from 54 to 62, and the credit union explainer from 8 to 22 on unchanged URLs.",
-      "Google AI feature impressions rose from 169,000 in July to 180,938 in August, plus 7.1%.",
-    ],
-    limits: [
-      "Overall AI Visibility stayed at 17/100 against a 44 target; this is not a completed GEO win.",
-      "No clicks, calls, or leads are attributed to AI surfaces in the source data.",
-      "The old auto-loan URL (/borrow/vehicle-loans/) fell from 65 to 49 cited prompts while the new URL (/vehicle-loans/auto-loans/) rose from 8 to 26. Combined, the family stayed flat at 73 to 75.",
-      "Only become-a-member, the credit card APR guide, and the credit union explainer have clean page-level gains on unchanged URLs.",
-      "The July 169,000 baseline is from the July 2026 performance deck; the August 180,938 is from the GSC export.",
-      "The two Semrush windows overlap by three days; changes are directional, not exact.",
-      "Page-level GSC AI-feature impression shares are withheld pending reconciliation of the source export.",
-    ],
-    next: "tde-family-law",
-    nextTitle: "TDE Family Law",
-  },
-
-  "tde-family-law": {
-    slug: "tde-family-law",
-    clientName: "TDE Family Law",
-    logo: "/logos/clients/tde.webp",
-    heroImage: "/images/heroes/tde.jpg",
-    pill: "Family law · Legal services",
-    title: "An answer-first content system for a family law firm",
-    lede: "Mapping 151 family-law queries to AI Overview exposure, then rebuilding content so each page answers the query in its first paragraph.",
-    meta: [
-      ["Client", "TDE Family Law<br>tdefamilylaw.com · Georgia"],
-      ["My role", "Content and local strategy with SEO leads"],
-      ["Period", "Mar 7 – Apr 3, 2026<br>vs Feb 7 – Mar 6, 2026"],
-      ["Data", "GSC, GA4, CallRail, GBP<br>AI Overview content map"],
-    ],
-    sections: [
-      {
-        label: "01 · Objective",
-        heading: "Grow commercially relevant search demand, not vanity traffic",
-        body: "<p>TDE Family Law needed content that would attract people actively researching divorce, custody, support, and prenuptial questions in Georgia, and turn that visibility into phone demand.</p><p>The program was measured on <strong>business-relevant queries</strong> rather than raw sitewide totals.</p>",
-      },
-      {
-        label: "02 · Insight",
-        heading: "Two-thirds of the tracked query set already triggered AI Overviews",
-        body: "<p>The content map flagged <strong>67 of 151 tracked terms</strong> as AI Overview queries. That made answer extraction a first-order requirement, not an experiment.</p><p>After filtering out celebrity and news noise, query impressions rose <strong>19.5%</strong> and query clicks <strong>14.5%</strong>, while the homepage's average position improved from <strong>18.05 to 13.68</strong>.</p>",
-      },
-      {
-        label: "03 · Strategy",
-        heading: "Answer-first briefs, question-led pages, and local demand capture",
-        body: "<p>The strategy combined AEO content structure with local SEO:</p><ul><li>Map each priority query to the page that should own the answer.</li><li>Open with a direct definition or answer before expanding into detail.</li><li>Structure follow-ups as question headings with concise, citable answers.</li><li>Cite authoritative sources for legal statements rather than asserting them.</li><li>Strengthen Google Business Profile and location signals to convert demand into calls.</li></ul>",
-      },
-      {
-        label: "04 · Execution",
-        heading: "Content map, briefs, page optimization, and GBP work",
-        body: "<p>I helped shape the content and local strategy with SEO leads, directors, and account managers, building the AI Overview content map, shaping briefs around answer-first structure, and optimizing pages for snippet and intent match.</p><p>The prenup guide is the clearest example. Clicks went from <strong>4 to 14</strong> and CTR from <strong>0.39% to 1.04%</strong>, a <strong>snippet and intent-match gain</strong>.</p>",
-      },
-    ],
-    metricCards: [
-      ["+19.5%", "Filtered query impressions, 19,783 → 23,637", "GSC · Mar 7–Apr 3 vs Feb 7–Mar 6"],
-      ["+14.5%", "Filtered query clicks, 166 → 190", "GSC · same periods"],
-      ["+45.0%", "Homepage impressions, 10,433 → 15,129", "GSC page export"],
-      ["4 → 14", "Prenup guide clicks, CTR 0.39% → 1.04%", "GSC page export"],
-      ["+51.5%", "GBP calls, 130 → 197", "CallRail"],
-      ["+28.9%", "Website Pool first-time callers, 45 → 58", "CallRail"],
-    ],
-    proves: [
-      "Business-relevant search exposure grew after removing celebrity and news distortion.",
-      "A single content page earned substantially more clicks through better snippet performance.",
-      "Local search demand produced more calls and more first-time callers.",
-      "The query set has significant AI Overview exposure, making answer-first structure commercially relevant.",
-    ],
-    limits: [
-      "Branded search carried most of the click growth; this is not proof of non-brand click growth.",
-      "Qualified Website Pool calls stayed flat at 2 and qualified GBP calls fell from 24 to 16.",
-      "The prenup result is a small base of 14 clicks and should not be generalized to the whole blog.",
-      "Homepage CTR fell from 2.26% to 1.69% as impressions broadened.",
-      "GA4 engagement figures are all-users, not organic-only.",
-    ],
-    next: "dream-assurance",
-    nextTitle: "Dream Assurance",
-  },
-
-  "dream-assurance": {
-    slug: "dream-assurance",
-    clientName: "Dream Assurance Group",
-    logo: "/logos/clients/dream-assurance.png",
-    heroImage: "/images/heroes/da.jpg",
-    pill: "Insurance · Independent agency",
-    title: "Migration-led growth for an independent insurance agency",
-    lede: "A site migration, architecture rebuild, and answer-first SEO and GEO program that preceded a 63% lift in organic clicks and a 104.8% lift in impressions.",
-    meta: [
-      ["Client", "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"],
-      ["My role", "Part-time, project-to-project<br>Dec 2023 – Dec 2025"],
-      ["Period", "Optimization Oct 2025 · Migration Nov 2025<br>GSC results Sep 2025 – Mar 2026"],
-      ["Data", "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"],
-    ],
-    sections: [
-      {
-        label: "01 · Objective",
-        heading: "Migrate and restructure without losing search equity",
-        body: "<p>Dream Assurance is an independent insurance agency in Overland Park, Kansas. Between November 2024 and December 2025, I worked with the CEO on strategy and led the day-to-day execution of the site migration, information architecture, brand intelligence, and answer-first SEO and GEO work for the business. The migration went live in November 2025.</p><p>The goal was not just to preserve rankings during the migration. It was to rebuild the site so that service pages and blogs could rank for featured snippets and become a primary source or recommendation in LLM answers.</p>",
-      },
-      {
-        label: "02 · Insight",
-        heading: "AI Overviews touched most of the query set",
-        body: "<p>In the February 2026 Semrush snapshot, <strong>561 of 685 tracked queries (81.9%)</strong> triggered AI Overviews. <strong>107</strong> of those AI Overview terms also ranked in the top 10.</p><p>The Semrush SERP Features Trend shows AI Overview keyword coverage growing from <strong>4 in July 2025 to 21 in December 2025 and 65 in March 2026</strong>, with the inflection beginning immediately after the October optimization and November migration. A separate GSC Generative AI features report records <strong>78.3K impressions</strong>.</p><p>That made the rebuild a two-surface problem: traditional rankings and answer extraction. The pages with the most AI Overview coverage were indemnity-insurance (99 queries), average-semi-insurance-cost (79), professional-indemnity-insurance (43), employment-practices-liability-insurance (32), and media-liability-insurance (23).</p>",
-      },
-      {
-        label: "03 · Strategy",
-        heading: "Migration, architecture, brand intelligence, and answer-first content",
-        body: "<p>The strategy joined four layers:</p><ul><li><strong>Migration and architecture:</strong> URL mapping, 301 redirects, internal linking, and a cleaner page hierarchy.</li><li><strong>Brand and entity intelligence:</strong> positioning, tone of voice, audience personas, and brand inputs that make the business easier for answer engines to describe accurately.</li><li><strong>Answer-first content:</strong> definitional intros, question-led sections, sourced claims, and FAQ blocks built for featured snippets and LLM extraction.</li><li><strong>Technical extractability:</strong> JSON-LD schema graphs, FAQ parity, indexation checks, and AI-assisted content operations with human QA.</li></ul>",
-      },
-      {
-        label: "04 · Execution",
-        heading: "Migration work plus page-level optimization",
-        body: "<p>Execution included the November 2025 site migration and redirect mapping, architecture and internal-link updates, schema graphs and validation, FAQ and schema parity checks, and answer-first rewrites across service pages and blogs.</p><p>I also built the contractor hub with 18 child pages, produced AI supporting content calendars and briefs using brand-intelligence and persona inputs, and maintained GTM/GA4 conversion tracking throughout.</p>",
-      },
-    ],
-    metricCards: [
-      ["+63.0%", "Organic clicks, 324 → 528", "GSC · Dec 2025 – Feb 2026 vs Sep–Nov 2025"],
-      ["+104.8%", "Impressions, 116,744 → 239,084", "GSC · same periods"],
-      ["4 → 65", "AI Overview keywords, July 2025 → March 2026", "Semrush SERP Features Trend"],
-      ["78.3K", "Generative AI feature impressions", "GSC · data available from May 2026 onward"],
-      ["107", "AI Overview queries also ranking top 10", "Semrush · February 2026"],
-      ["18", "Contractor child pages in the cluster", "Program implementation"],
-    ],
-    proves: [
-      "Organic clicks and impressions grew materially after the migration and optimization work.",
-      "The growth continued into the following quarter rather than being a one-month spike.",
-      "The site has extensive AI Overview exposure, making answer-first structure commercially relevant.",
-      "The program combined migration, architecture, schema, content, and measurement in one coordinated workstream.",
-    ],
-    limits: [
-      "CTR fell from 0.27% to 0.20% as impressions broadened; this is not a CTR win.",
-      "GSC cannot attribute growth to a single change; this is migration-led evidence, not proof that every tactic worked.",
-      "The February 2026 keyword snapshot is a point-in-time export, not a growth metric.",
-      "The Semrush trend has no quantified values for April–November 2026 in the source screenshots.",
-      "AI Overview presence is not a citation; no clean before-and-after AI citation trend is available for Dream Assurance.",
-    ],
-    next: "service-credit-union",
-    nextTitle: "Service Credit Union",
-  },
-};
+export const CASES =   {
+    "service-credit-union": {
+      "slug": "service-credit-union",
+      "clientName": "Service Credit Union",
+      "logo": "/logos/clients/servicecu.png",
+      "heroImage": "/images/heroes/scu.jpg",
+      "pill": "Credit union · Financial services",
+      "title": "How we measured Service Credit Union's visibility in AI answers",
+      "lede": "I audited eight priority pages and used Semrush and Google Search Console to see which pages AI tools cited, how often the site appeared in Google's AI features, and where the data ran out.",
+      "meta": [
+        [
+          "Client",
+          "Service Credit Union<br>servicecu.org · New Hampshire"
+        ],
+        [
+          "My role",
+          "AI visibility strategy and page audits with SEO leads"
+        ],
+        [
+          "Period",
+          "Jul 12 – Sep 7, 2026 (Semrush)<br>August 2026 (GSC)"
+        ],
+        [
+          "Data",
+          "Semrush AI Visibility<br>GSC Generative AI Features"
+        ]
+      ],
+      "sections": [
+        {
+          "label": "01 · Objective",
+          "heading": "Help AI tools cite the right pages",
+          "body": "<p>We wanted Service Credit Union's product, membership, and educational pages to give AI Overviews and conversational tools clear answers they could cite. We also wanted more people who were ready to compare products or apply to click through from regular search. We tracked citations and search click-through rate (CTR) separately so we could see how each was moving.</p>"
+        },
+        {
+          "label": "02 · Insight",
+          "heading": "Google AI Overviews led in Semrush",
+          "body": "<p>In the Semrush snapshot, Google AI Overviews led ChatGPT, Gemini, and AI Mode. Citations edged up from <strong>888 to 892</strong>, while the number of cited pages rose from <strong>363 to 382</strong>. Most of the gains came from explainers, membership pages, and product pages. The two reporting windows overlap, so these figures show the direction of change.</p><p>Reported impressions in Google's AI features rose <strong>7.1%</strong>, from <strong>169,000 in July to 180,938 in August</strong>. The July figure came from the July 2026 performance deck. The August figure came from the Google Search Console (GSC) Generative AI Features export. The reports measure visibility. Clicks, calls, and leads from AI features would need separate attribution.</p>"
+        },
+        {
+          "label": "03 · Strategy",
+          "heading": "Put the answer where readers can find it",
+          "body": "<ul><li>Answer the main question or define the term in the opening paragraph.</li><li>Use H2s and H3s for the follow-up questions readers are likely to ask.</li><li>Name authoritative sources so readers can check important facts.</li><li>Add useful FAQ content and use structured data where it fits the page.</li><li>Measure citations by URL so it's clear which pages AI tools use as sources.</li></ul>"
+        },
+        {
+          "label": "04 · Execution",
+          "heading": "Audit the pages and compare the reports",
+          "body": "<p>I helped shape the strategy with SEO leads, directors, and account managers. I then audited eight priority pages, checking metadata, H1 through H4 headings, copy, tables, FAQs, JSON-LD, canonicals, robots directives, and <code>llms.txt</code>. I recommended clearer openings, headings based on reader questions, stronger sourcing, and fixes for gaps in FAQPage markup.</p><p>I used Semrush Cited Pages to see which URLs AI tools cited and GSC Generative AI Features to see where Google recorded impressions.</p><p>The auto loan URLs show why we checked page by page. In Semrush, the new URL went from <strong>8 to 26</strong> cited prompts while the old URL fell from <strong>65 to 49</strong>. Across both URLs, the combined count only moved from <strong>73 to 75</strong>. The membership page and credit card APR guide each gained cited prompts on the same URL.</p>"
+        }
+      ],
+      "metricCards": [
+        [
+          "169,000 → 180,938",
+          "Generative AI feature impressions (+7.1% month over month)",
+          "July 2026 performance deck and August 2026 GSC Generative AI Features export"
+        ],
+        [
+          "888 → 892",
+          "Citations across AI platforms",
+          "Semrush · Jul 12–Aug 11 vs. Aug 8–Sep 7, 2026"
+        ],
+        [
+          "363 → 382",
+          "Pages cited in AI answers",
+          "Semrush · Jul 12–Aug 11 vs. Aug 8–Sep 7, 2026"
+        ],
+        [
+          "8 → 26",
+          "Prompts that cited the new auto loans URL",
+          "Semrush Cited Pages"
+        ],
+        [
+          "40 → 63",
+          "Prompts that cited the Become a Member page",
+          "Semrush Cited Pages"
+        ],
+        [
+          "54 → 62",
+          "Prompts that cited the credit card APR guide",
+          "Semrush Cited Pages"
+        ]
+      ],
+      "next": "tde-family-law",
+      "nextTitle": "TDE Family Law"
+    },
+    "tde-family-law": {
+      "slug": "tde-family-law",
+      "clientName": "TDE Family Law",
+      "logo": "/logos/clients/tde.webp",
+      "heroImage": "/images/heroes/tde.jpg",
+      "pill": "Family law · Legal services",
+      "title": "Helping Georgia families find clearer answers in search",
+      "lede": "I mapped 151 family law queries and used that research to shape content briefs, page updates, and local SEO for TDE Family Law.",
+      "meta": [
+        [
+          "Client",
+          "TDE Family Law<br>tdefamilylaw.com · Georgia"
+        ],
+        [
+          "My role",
+          "Content strategy and local SEO with SEO leads"
+        ],
+        [
+          "Period",
+          "Mar 7 – Apr 3, 2026<br>vs Feb 7 – Mar 6, 2026"
+        ],
+        [
+          "Data",
+          "GSC, GA4, CallRail, GBP<br>AI Overview content map"
+        ]
+      ],
+      "sections": [
+        {
+          "label": "01 · Objective",
+          "heading": "Reach people looking for family law help in Georgia",
+          "body": "<p>TDE needed to reach people with questions about divorce, custody, support, and prenups. We wanted those readers to find an answer they could use and know how to reach the firm if they needed help. To track that goal, we looked at search queries related to the firm's services and monitored calls.</p>"
+        },
+        {
+          "label": "02 · Insight",
+          "heading": "AI Overviews appeared on 67 of 151 tracked queries",
+          "body": "<p>About <strong>44%</strong> of the queries in our content map triggered an AI Overview. That gave us a reason to make the answer easy to find in the opening paragraph and use headings for common follow-up questions.</p><p>After excluding celebrity and news queries, impressions rose <strong>19.5%</strong> and clicks rose <strong>14.5%</strong>. The homepage's average position improved from <strong>18.05 to 13.68</strong>. Branded searches accounted for most of the click growth.</p>"
+        },
+        {
+          "label": "03 · Strategy",
+          "heading": "Give each search question a clear home",
+          "body": "<ul><li>Assign each priority query to the page best suited to answer it.</li><li>Open with a direct answer or definition, then explain the details.</li><li>Use question headings and short answers for common follow-ups.</li><li>Cite authoritative sources for legal claims.</li><li>Support the content work with Google Business Profile and location updates so people nearby can find and call the firm.</li></ul>"
+        },
+        {
+          "label": "04 · Execution",
+          "heading": "Put the query map to work in briefs and page updates",
+          "body": "<p>I worked with SEO leads, directors, and account managers on the content and local strategy. I built the AI Overview query map, used it to shape content briefs, and updated pages to better match what people were searching for. On the prenup guide, clicks went from <strong>4 to 14</strong> and CTR went from <strong>0.39% to 1.04%</strong>. That was a promising result for one page with a small number of clicks.</p><p>CallRail recorded more calls from Google Business Profile and more first-time callers through the Website Pool. Qualified calls told a different story. Website Pool qualified calls held at <strong>2</strong>, while qualified Google Business Profile calls fell from <strong>24 to 16</strong>.</p>"
+        }
+      ],
+      "metricCards": [
+        [
+          "+19.5%",
+          "Impressions from the filtered query set (19,783 → 23,637)",
+          "Google Search Console · Mar 7–Apr 3 vs. Feb 7–Mar 6, 2026"
+        ],
+        [
+          "+14.5%",
+          "Clicks from the filtered query set (166 → 190)",
+          "Google Search Console · Mar 7–Apr 3 vs. Feb 7–Mar 6, 2026"
+        ],
+        [
+          "+45.0%",
+          "Homepage impressions (10,433 → 15,129)",
+          "Google Search Console · page export"
+        ],
+        [
+          "4 → 14",
+          "Prenup guide clicks (CTR 0.39% → 1.04%)",
+          "Google Search Console · page export"
+        ],
+        [
+          "+51.5%",
+          "Google Business Profile calls (130 → 197)",
+          "CallRail"
+        ],
+        [
+          "+28.9%",
+          "First-time callers through the Website Pool (45 → 58)",
+          "CallRail"
+        ]
+      ],
+      "next": "dream-assurance",
+      "nextTitle": "Dream Assurance"
+    },
+    "dream-assurance": {
+      "slug": "dream-assurance",
+      "clientName": "Dream Assurance Group",
+      "logo": "/logos/clients/dream-assurance.png",
+      "heroImage": "/images/heroes/da.jpg",
+      "pill": "Insurance · Independent agency",
+      "title": "Rebuilding Dream Assurance's site for search",
+      "lede": "I led the site migration and SEO work for an independent insurance agency. From December 2025 through February 2026, organic clicks rose 63% and impressions rose 104.8% compared with September through November.",
+      "meta": [
+        [
+          "Client",
+          "Dream Assurance Group<br>dreamassurancegroup.com · Kansas"
+        ],
+        [
+          "My role",
+          "Part-time project work<br>Dec 2023 – Dec 2025"
+        ],
+        [
+          "Period",
+          "Optimization Oct 2025 · Migration Nov 2025<br>GSC results Sep 2025 – Mar 2026"
+        ],
+        [
+          "Data",
+          "Google Search Console<br>Semrush keyword export, schema validators, GTM/GA4"
+        ]
+      ],
+      "sections": [
+        {
+          "label": "01 · Objective",
+          "heading": "Protect search visibility during the move",
+          "body": "<p>Dream Assurance Group is an independent insurance agency in Overland Park, Kansas. From November 2024 through December 2025, I worked with the CEO on strategy and led the day-to-day work on the migration, site structure, brand research, and SEO. The rebuilt site went live in November 2025.</p><p>We wanted to protect existing rankings during the move and make it easier for people to find the right service page or guide. We also wrote those pages to give search engines and AI tools clear passages they could use for featured snippets and answers.</p>"
+        },
+        {
+          "label": "02 · Insight",
+          "heading": "AI Overviews appeared on most of the tracked queries",
+          "body": "<p>In Semrush's February 2026 snapshot, <strong>561 of 685</strong> tracked queries (<strong>81.9%</strong>) triggered AI Overviews. Of those queries, <strong>107</strong> also had a top-10 ranking for the site. The pages with the most AI Overview exposure covered indemnity insurance (99 queries), average semi insurance cost (79), professional indemnity insurance (43), employment practices liability insurance (32), and media liability insurance (23).</p><p>Semrush's SERP Features Trend tracked <strong>4</strong> AI Overview keywords in July 2025, <strong>21</strong> in December, and <strong>65</strong> in March 2026. A separate Google Search Console report recorded <strong>78.3K</strong> Generative AI feature impressions, with data available from May 2026 onward. These reports show keyword coverage and impressions. Citation trends would require separate data.</p>"
+        },
+        {
+          "label": "03 · Strategy",
+          "heading": "Plan the redirects, site structure, and content together",
+          "body": "<ul><li>Map old URLs to their new destinations with 301 redirects. Make the page hierarchy clearer and update internal links to match.</li><li>Use audience research, brand positioning, and voice guidelines to explain who the agency serves and what it offers.</li><li>Open service pages and blog posts with direct answers. Use question headings, cite sources for important claims, and add FAQs where they help readers.</li><li>Validate JSON-LD, check that FAQ markup matches the visible text, and review indexation. Keep human review in the AI-assisted publishing workflow.</li></ul>"
+        },
+        {
+          "label": "04 · Execution",
+          "heading": "Launch the migration and update the pages",
+          "body": "<p>I handled redirect mapping, page hierarchy, and internal links for the November 2025 migration. I also rewrote service pages and blog posts to answer questions sooner, built and validated JSON-LD schema graphs, and checked that the FAQ markup matched the on-page answers.</p><p>I built the contractor insurance hub and its 18 child pages, used audience and brand research to develop supporting content calendars and briefs, and maintained conversion tracking in Google Tag Manager and GA4 throughout the work.</p><p>The Search Console comparison shows how the site performed after the migration and optimization work. Several changes went live over that period, so the data doesn't isolate the contribution of any single change.</p>"
+        }
+      ],
+      "metricCards": [
+        [
+          "+63.0%",
+          "Organic search clicks (324 → 528)",
+          "Google Search Console · Dec 2025–Feb 2026 vs. Sep–Nov 2025"
+        ],
+        [
+          "+104.8%",
+          "Organic search impressions (116,744 → 239,084)",
+          "Google Search Console · Dec 2025–Feb 2026 vs. Sep–Nov 2025"
+        ],
+        [
+          "4 → 65",
+          "AI Overview keywords (July 2025 → March 2026)",
+          "Semrush SERP Features Trend"
+        ],
+        [
+          "78.3K",
+          "Generative AI feature impressions",
+          "Google Search Console · data available from May 2026 onward"
+        ],
+        [
+          "107",
+          "Queries that triggered an AI Overview and had a top-10 ranking for the site",
+          "Semrush · February 2026"
+        ],
+        [
+          "18",
+          "Child pages in the contractor insurance hub",
+          "Project implementation"
+        ]
+      ],
+      "next": "service-credit-union",
+      "nextTitle": "Service Credit Union"
+    }
+  };
 
 export const CASE_LIST = [
   {
