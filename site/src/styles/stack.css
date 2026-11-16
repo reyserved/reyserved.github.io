@@ -122,7 +122,16 @@
   }
 
   .stack-card {
-    min-height: 170px;
+    min-height: 220px;
+  }
+
+  .stack-card__face {
+    padding: 14px;
+  }
+
+  .stack-card__desc {
+    font-size: 12px;
+    line-height: 1.5;
   }
 }
 

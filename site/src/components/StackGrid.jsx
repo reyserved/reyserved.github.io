@@ -54,9 +54,31 @@ const TOOLS = [
     desc: "Where I implement most client content, schema, and page-structure changes, including Divi, Elementor, Yoast, and RankMath.",
   },
   {
+    name: "Shopify",
+    logo: "/logos/tools/shopify.svg",
+    desc: "Client CMS for ecommerce builds. I update product and collection content, metadata, and on-page SEO directly in the theme, then check templates and indexation.",
+  },
+  {
+    name: "Wix",
+    logo: "/logos/tools/wix.svg",
+    logoWide: true,
+    desc: "Client CMS for smaller business sites. I make page copy, metadata, and on-page SEO changes directly in Wix and verify what renders live.",
+  },
+  {
     name: "Elementor",
     logo: "/logos/tools/elementor.svg",
     desc: "A WordPress builder for service pages and landing page sections. I use it for responsive layouts, reusable sections, and client-friendly edits.",
+  },
+  {
+    name: "Yoast",
+    logo: "/logos/tools/yoast.svg",
+    logoWide: true,
+    desc: "WordPress SEO plugin I configure for titles, meta descriptions, sitemaps, canonical settings, and schema output before validating the live page.",
+  },
+  {
+    name: "Rank Math",
+    logo: "/logos/tools/rankmath.png",
+    desc: "The other WordPress SEO plugin I work in. I set up titles, schema, redirects, and sitemap controls, then test the output against the rendered page.",
   },
   {
     name: "Google Business Profile",
