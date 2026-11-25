@@ -234,6 +234,10 @@ export default function AutomationSection() {
               aria-selected={active === index}
               aria-controls={`automation-panel-${item.id}`}
               aria-label={`${item.tab}, ${item.client}`}
+              data-automation-tab="true"
+              data-automation={item.id}
+              data-client={item.client}
+              data-automation-label={item.tab}
               tabIndex={active === index ? 0 : -1}
               onClick={() => setActive(index)}
               onKeyDown={(event) => handleTabKey(event, index)}
@@ -281,6 +285,9 @@ export default function AutomationSection() {
                   type="button"
                   onClick={() => setLightbox({ src: output.image, alt: output.alt })}
                   aria-label="Open full SCU audit screenshot"
+                  data-automation-output="workbook"
+                  data-automation={workflow.id}
+                  data-client={workflow.client}
                 >
                   <img src={output.image} alt={output.alt} />
                 </button>
@@ -293,6 +300,9 @@ export default function AutomationSection() {
                       type="button"
                       onClick={() => setLightbox({ src: output.image, alt: output.alt })}
                       aria-label="Open full desktop content preview"
+                      data-automation-output="desktop_preview"
+                      data-automation={workflow.id}
+                      data-client={workflow.client}
                     >
                       <img src={output.image} alt={output.alt} />
                     </button>
@@ -303,6 +313,9 @@ export default function AutomationSection() {
                       type="button"
                       onClick={() => setLightbox({ src: output.mobileImage, alt: output.mobileAlt })}
                       aria-label="Open full mobile content preview"
+                      data-automation-output="mobile_preview"
+                      data-automation={workflow.id}
+                      data-client={workflow.client}
                     >
                       <img src={output.mobileImage} alt={output.mobileAlt} />
                     </button>
@@ -316,7 +329,7 @@ export default function AutomationSection() {
               {output.meta.map((item) => <span key={item}>{item}</span>)}
             </div>
             <div className="run-row">
-              <button className="run-btn" type="button" onClick={run} disabled={running}>
+              <button className="run-btn" type="button" onClick={run} disabled={running} data-automation-run="true" data-automation={workflow.id} data-client={workflow.client}>
                 {running ? "Running" : "Run workflow"}
               </button>
               <span className={`run-status${!running && done.length === workflow.steps.length ? " is-live" : ""}`}>

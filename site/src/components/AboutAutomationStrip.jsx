@@ -35,7 +35,7 @@ export default function AboutAutomationStrip() {
           sites. Scripts handle the repetitive checks so I can focus on fact-checking, prioritizing fixes, and reviewing
           pages before they go live.
         </p>
-        <a className="about-auto__cta" href="/#automation">
+        <a className="about-auto__cta" href="/#automation" data-automation-cta="about_strip">
           See how each one runs <span aria-hidden="true">→</span>
         </a>
       </div>

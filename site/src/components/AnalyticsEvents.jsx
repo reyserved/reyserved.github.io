@@ -26,6 +26,41 @@ export default function AnalyticsEvents() {
         }
       }
 
+
+      const automationTab = target.closest("[data-automation-tab]");
+      if (automationTab) {
+        track("automation_tab_select", {
+          automation: automationTab.dataset.automation || "",
+          client: automationTab.dataset.client || "",
+          tab_label: automationTab.dataset.automationLabel || "",
+        });
+      }
+
+      const automationRun = target.closest("[data-automation-run]");
+      if (automationRun) {
+        track("automation_run", {
+          automation: automationRun.dataset.automation || "",
+          client: automationRun.dataset.client || "",
+        });
+      }
+
+      const automationOutput = target.closest("[data-automation-output]");
+      if (automationOutput) {
+        track("automation_output_view", {
+          automation: automationOutput.dataset.automation || "",
+          client: automationOutput.dataset.client || "",
+          output: automationOutput.dataset.automationOutput || "",
+        });
+      }
+
+      const automationCta = target.closest("[data-automation-cta]");
+      if (automationCta) {
+        track("automation_cta_click", {
+          location: automationCta.dataset.automationCta || "",
+          destination: automationCta.getAttribute("href") || "",
+        });
+      }
+
       const caseToggle = target.closest(".case-tile__summary");
       if (caseToggle) {
         track("case_study_toggle", {
