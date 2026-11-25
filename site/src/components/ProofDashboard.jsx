@@ -50,8 +50,8 @@ export default function ProofDashboard() {
 
         <div className="proof__ribbon reveal-group" aria-label="Portfolio results scope">
           <div className="ribbon-item">
-            <div className="ribbon-value" data-count="654">654</div>
-            <div className="ribbon-label">AI Overview-exposed queries mapped</div>
+            <div className="ribbon-value" data-count="685">685</div>
+            <div className="ribbon-label">Dream Assurance queries mapped for AI Overview exposure</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="3">3</div>
