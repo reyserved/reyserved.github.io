@@ -51,7 +51,7 @@ export default function HeroSplit() {
             </p>
             <div className="hero-split__ctas reveal">
               <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
-              <a className="btn btn--light" href="/Reymart-Sarigumba-Resume.pdf">Download CV</a>
+              <a className="btn btn--light" href="/Reymart-Sarigumba-Resume.pdf?v=2026-11-26">Download CV</a>
             </div>
             <div className="hero-split__kpi reveal" aria-label="Portfolio at a glance">
               <div><strong>6</strong><span>years in SEO</span></div>

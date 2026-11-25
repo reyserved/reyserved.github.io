@@ -5,6 +5,7 @@ import "../styles/home.css";
 import "../styles/case-study.css";
 import "../styles/charts.css";
 import "../styles/stack.css";
+import "../styles/automation.css";
 import "../styles/home-v2.css";
 import "../styles/landing-pages.css";
 import Script from "next/script";
@@ -24,6 +25,7 @@ export default function RootLayout({ children }) {
     <html lang="en">
       <head>
         <meta name="robots" content="noindex, nofollow, noarchive" />
+        <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
         <link

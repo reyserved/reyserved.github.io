@@ -1,5 +1,6 @@
 import HeroSplit from "../components/HeroSplit";
 import ProofDashboard from "../components/ProofDashboard";
+import AutomationSection from "../components/AutomationSection";
 import StackSection from "../components/StackSection";
 
 export default function Home() {
@@ -7,6 +8,7 @@ export default function Home() {
     <>
       <HeroSplit />
       <ProofDashboard />
+      <AutomationSection />
       <StackSection />
     </>
   );

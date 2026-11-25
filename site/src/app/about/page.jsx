@@ -51,7 +51,7 @@ export default function AboutPage() {
               Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that ties SEO and GEO results to calls, leads, and pipeline.
             </p>
             <div className="hero__ctas" style={{ marginTop: "28px", justifyContent: "flex-start" }}>
-              <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf">Download CV <span className="arrow" aria-hidden="true">→</span></a>
+              <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf?v=2026-11-26">Download CV <span className="arrow" aria-hidden="true">→</span></a>
               <a className="btn btn--light" href="#contact">Contact</a>
             </div>
           </div>
