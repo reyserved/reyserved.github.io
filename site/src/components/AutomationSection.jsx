@@ -211,9 +211,9 @@ export default function AutomationSection() {
               Automating the <em>repeatable work</em>
             </h2>
             <p className="auto-sub">
-              I automate the repetitive parts of SEO and GEO so I can focus on the calls that actually need a human:
-              fact-checking sources, setting priorities, and signing off before anything goes live. Here are real
-              outputs from the workflows I run for clients.
+              I automate the repetitive parts of SEO and GEO so I can spend more time on strategy: fact-checking
+              sources, prioritizing SEO and dev fixes, and reviewing pages before they go live. Here are real outputs
+              from the workflows I run for clients.
             </p>
           </div>
           <div className="auto-badge"><i aria-hidden="true" /> Human-checked before anything ships</div>
