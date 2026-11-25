@@ -350,10 +350,6 @@ export default function AutomationSection() {
             </div>
           ))}
         </div>
-        <p className="auto-foot">
-          Real outputs from Service Credit Union, Dream Assurance Group, and NeuroEndoMKE. I use AI to speed up
-          drafting and triage, while automated checks and human review make the final call.
-        </p>
       </div>
 
       {lightbox && (
