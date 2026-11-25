@@ -43,11 +43,11 @@ export default function HeroSplit() {
             </div>
             <span className="hero-split__pill reveal">SEO &amp; GEO Specialist</span>
             <h1 className="hero-split__title reveal" id="hero-split-title">
-              I develop <span className="hero-split__nowrap">search-optimized</span> content that AI answer engines can{" "}
+              I build <span className="hero-split__nowrap">search-optimized</span> content that AI answer engines can{" "}
               <span className="hero-split__dynamic">{text}<span className="hero-split__cursor" aria-hidden="true">|</span></span>
             </h1>
             <p className="hero-split__bio reveal">
-              From research and strategy to writing and building pages in the CMS, I help businesses get discovered and recommended in AI-generated answers.
+              From keyword research and content strategy to writing and building pages in the CMS, I help businesses rank in organic search and get cited in AI-generated answers.
             </p>
             <div className="hero-split__ctas reveal">
               <a className="btn btn--dark" href="/work/">View case studies <span className="arrow" aria-hidden="true">→</span></a>
@@ -67,7 +67,7 @@ export default function HeroSplit() {
               <div>
                 <span className="hero-card__badge-label">Availability</span>
                 <span className="hero-card__badge-title">Open to SEO roles</span>
-                <span className="hero-card__badge-copy">Content strategy, AI search visibility, and hands-on page development.</span>
+                <span className="hero-card__badge-copy">AEO/GEO strategy, technical SEO, and hands-on CMS page builds.</span>
               </div>
               <a className="hero-card__badge-arrow" href="/about/#contact" aria-label="Contact me about SEO roles">
                 <span aria-hidden="true">↗</span>

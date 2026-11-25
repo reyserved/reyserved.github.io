@@ -16,7 +16,7 @@ import AnalyticsEvents from "../components/AnalyticsEvents";
 export const metadata = {
   title: "Reymart — SEO & GEO Specialist",
   description:
-    "Reymart Sarigumba builds answer-first SEO and GEO programs. Case studies cover AI citation measurement, answer-first content, local SEO, and technical SEO.",
+    "Reymart Sarigumba is a Senior SEO & GEO Specialist building answer-first content, technical SEO workflows, and AI visibility programs. View client case studies, landing pages, and live automations.",
   robots: { index: false, follow: false, nocache: true },
 };
 

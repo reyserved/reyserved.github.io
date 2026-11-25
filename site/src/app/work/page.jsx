@@ -24,7 +24,7 @@ export default function WorkIndex() {
         <div className="container">
           <span className="eyebrow">Case studies</span>
           <h1 className="case-title">Client work and SEO wins</h1>
-          <p className="case-lede">Three detailed case studies, plus a wider set of documented client results. Every entry is dated and attributed.</p>
+          <p className="case-lede">Three in-depth case studies, plus a broader set of client SEO wins with exact dates and data sources.</p>
         </div>
       </section>
 
@@ -34,11 +34,11 @@ export default function WorkIndex() {
         <h2 className="work-group-label">Rocket Clicks wins</h2>
         <WinCards items={ROCKET_WINS} />
 
-        <h2 className="work-group-label">Earlier-role wins</h2>
+        <h2 className="work-group-label">Earlier client wins</h2>
         <WinCards items={EARLIER_WINS} />
 
         <h2 className="work-group-label">Business outcomes</h2>
-        <p className="work-group-note">Pipeline and conversion results, shown separately from the SEO wins above.</p>
+        <p className="work-group-note">Lead and signed-case outcomes tracked in client CRMs, shown separately from organic search metrics.</p>
         <WinCards items={BUSINESS_IMPACT} />
       </div>
 

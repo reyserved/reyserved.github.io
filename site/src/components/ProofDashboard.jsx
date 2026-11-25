@@ -43,7 +43,7 @@ export default function ProofDashboard() {
           <div>
             <span className="eyebrow">Results</span>
             <h2 className="proof__title" id="proof-title">Proof, not promises</h2>
-            <p className="proof__subtitle">Selected results from client SEO and AI-visibility programs, dated and attributed.</p>
+            <p className="proof__subtitle">Selected results from client SEO and GEO programs, with exact dates and data sources.</p>
           </div>
           <a className="proof__link" href="/work/">All case studies →</a>
         </div>
@@ -55,7 +55,7 @@ export default function ProofDashboard() {
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="3">3</div>
-            <div className="ribbon-label">Deep case studies · role, period, results</div>
+            <div className="ribbon-label">Deep case studies · strategy, execution, and results</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="6" data-suffix="+">6+</div>
@@ -68,7 +68,7 @@ export default function ProofDashboard() {
             <div className="card__head">
               <div>
                 <h3 className="card__title" id="card-ai"><span className="card__icon" aria-hidden="true">◔</span>AI feature visibility</h3>
-                <p className="card__subtitle">Service Credit Union · July deck + GSC Aug 2026</p>
+                <p className="card__subtitle">Service Credit Union · GSC & monthly reporting, Jul–Aug 2026</p>
               </div>
               <span className="card__top-metric">+7.1% MoM</span>
             </div>
@@ -89,7 +89,7 @@ export default function ProofDashboard() {
               <span className="card__top-metric">888 → 892 total</span>
             </div>
             <div ref={citationChart}></div>
-            <p className="chart-summary">Auto new URL <strong>8 → 26</strong> · Old URL <strong>65 → 49</strong> · Family <strong>73 → 75</strong></p>
+            <p className="chart-summary">Auto loans new URL <strong>8 → 26</strong> · Old URL <strong>65 → 49</strong> · Combined <strong>73 → 75</strong></p>
           </article>
 
           <article className="card reveal" aria-labelledby="card-local">
@@ -104,7 +104,7 @@ export default function ProofDashboard() {
             <p className="metric-caption">Impressions, Dec 2025 – Feb 2026 vs the previous quarter</p>
             <div className="submetrics">
               <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks</div></div>
-              <div><div className="submetric-value">324 → 528</div><div className="submetric-label">Clicks by quarter</div></div>
+              <div><div className="submetric-value">324 → 528</div><div className="submetric-label">Quarterly clicks</div></div>
               <div><div className="submetric-value">239,084</div><div className="submetric-label">Impressions, Dec 2025 – Feb 2026</div></div>
             </div>
           </article>
@@ -122,7 +122,7 @@ export default function ProofDashboard() {
               <p className="metric-caption">AI Overview keywords in March 2026, up from 4 in July 2025 and 21 in December 2025</p>
               <div className="submetrics">
                 <div><div className="submetric-value">+63.0%</div><div className="submetric-label">Clicks, Dec 2025 – Feb 2026</div></div>
-                <div><div className="submetric-value">78.3K</div><div className="submetric-label">AI feature impressions, May–Nov 2026</div></div>
+                <div><div className="submetric-value">78.3K</div><div className="submetric-label">Post-migration AI impressions, May–Nov 2026</div></div>
                 <div><div className="submetric-value">11 → 194</div><div className="submetric-label">People also ask</div></div>
               </div>
             </div>

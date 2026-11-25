@@ -12,31 +12,31 @@ const ROLES = [
     role: "Senior SEO & GEO Specialist",
     company: "Rocket Clicks",
     period: "Dec 2024 – Nov 2026",
-    detail: "Partners with SEO leads, directors, and account managers on client SEO strategy, AEO/GEO content systems, technical audits, local SEO, and AI visibility measurement.",
+    detail: "Partner with SEO leads, directors, and account managers on client SEO strategy, AEO/GEO content systems, technical audits, local SEO, and AI visibility tracking.",
   },
   {
     role: "SEO & GEO Specialist",
     company: "Dream Assurance Group",
     period: "2023 – 2025 · Part-time, project-to-project",
-    detail: "End-to-end in-house SEO, partnering with the CEO on strategy: technical, content, schema, internal linking, local, tracking, and AI content operations.",
+    detail: "Led end-to-end in-house SEO alongside the CEO, covering site migration, technical SEO, content, JSON-LD schema, internal linking, local SEO, GTM/GA4 tracking, and AI-assisted content workflows.",
   },
   {
     role: "SEO & SGE Specialist",
     company: "First Page",
     period: "2022 – 2023",
-    detail: "Technical audits, keyword research, content optimization, schema, and SERP-feature-focused content across APAC.",
+    detail: "Ran technical SEO audits, keyword research, content optimization, schema markup, and SERP-feature updates for client sites across APAC.",
   },
   {
     role: "SEO Specialist / Media Buyer",
     company: "INITIA Group",
     period: "2020 – 2022",
-    detail: "Local, on-page, and off-page SEO alongside paid campaign management.",
+    detail: "Managed local, on-page, and off-page SEO alongside paid media campaigns for ecommerce and local service brands.",
   },
   {
     role: "Content Strategist / Senior SEO Content Writer",
     company: "iPrice Group",
     period: "2017 – 2020",
-    detail: "SEO content, keyword research, and on-page experiments across product and editorial pages.",
+    detail: "Wrote and optimized short- and long-form SEO content across product landing pages and editorial blogs.",
   },
 ];
 
@@ -49,7 +49,7 @@ export default function AboutPage() {
             <span className="eyebrow">About</span>
             <h1 className="case-title">SEO and GEO, tied to business outcomes</h1>
             <p className="case-lede">
-              Reymart Sarigumba is an SEO &amp; GEO specialist with 6+ years across agency and in-house roles in the US and APAC. The focus is answer-first content, technical SEO, local search, and measurement that ties SEO and GEO results to calls, leads, and pipeline.
+              I'm an SEO and GEO specialist with 6+ years in SEO (9+ years in search and digital content) across agency and in-house roles in the US and APAC. I focus on answer-first content, technical SEO, local search, and reporting that ties organic visibility to calls, leads, and pipeline.
             </p>
             <div className="hero__ctas" style={{ marginTop: "28px", justifyContent: "flex-start" }}>
               <a className="btn btn--dark" href="/Reymart-Sarigumba-Resume.pdf?v=2026-11-26">Download CV <span className="arrow" aria-hidden="true">→</span></a>

@@ -40,7 +40,7 @@ export const LANDING_PAGES = [
         "body": "A production photo shows the work, and a single Request a Quote CTA sits above the fold."
       },
       {
-        "title": "What Omnipress handles",
+        "title": "Production and fulfillment support",
         "body": "Six points cover deadline planning, color printing, proofing, fulfillment, CATALYST integration, and dedicated project support."
       },
       {
@@ -95,7 +95,7 @@ export const LANDING_PAGES = [
       ]
     ],
     "outcome": [
-      "One page gives branded search visitors, paid traffic, and event planners the same overview of conference printing.",
+      "Gives organic search, paid traffic, and association planners one dedicated landing page for conference printing.",
       "Teams can check formats and pricing factors before reaching out.",
       "The quote CTA appears up front and returns after the production details."
     ],
@@ -162,7 +162,7 @@ export const LANDING_PAGES = [
         "body": "Anchor links take buyers straight to Benefits, Applications, Technologies, or Products."
       },
       {
-        "title": "What the data helps teams do",
+        "title": "Why accurate flow data matters",
         "body": "Three cards explain how to get dependable readings, choose a meter that fits the install, and spot problems earlier."
       },
       {
@@ -223,7 +223,7 @@ export const LANDING_PAGES = [
     "outcome": [
       "HVAC teams can compare meter options on the same page.",
       "Paid search visitors can reach the expert CTA from the first screen and find engineering details farther down.",
-      "The application and technology sections also give teams a reference for the HVAC product line."
+      "Doubles as a technical reference page for comparing inline, clamp-on, and hydronic meter options."
     ],
     "tools": [
       "HTML/CSS",
@@ -347,7 +347,7 @@ export const LANDING_PAGES = [
       ]
     ],
     "outcome": [
-      "Visitors can jump to the type of paving they need.",
+      "Homeowners and commercial buyers can jump straight to driveway replacements, new paving, or parking lot examples without endless scrolling.",
       "City and scope details make it easier to compare projects with similar work nearby.",
       "The client can add future photos in Beaver Builder."
     ],
@@ -463,7 +463,7 @@ export const LANDING_PAGES = [
     "outcome": [
       "Visitors see the offer on the first screen and can review the requirements before applying.",
       "The page explains how to qualify and gives visitors a way to find a branch.",
-      "The local banking details sit near the close, leaving the offer easy to spot up top."
+      "Keeps the $300 bonus and qualifying steps front and center above the fold, while reinforcing local FDIC credentials right before the closing CTA."
     ],
     "tools": [
       "HTML/CSS",
@@ -823,7 +823,7 @@ export const LANDING_PAGES = [
       ]
     ],
     "outcome": [
-      "The page explains the connection between academic and career coaching.",
+      "Connects academic and career coaching under shared executive function skills instead of splitting visitors across disconnected pages.",
       "Students and professionals can find examples relevant to their stage on the same page.",
       "The free discovery call gives people a place to ask questions about fit."
     ],
@@ -889,7 +889,7 @@ export const LANDING_PAGES = [
         "body": "The cards cover waste audits, recycling, zero landfill, waste-to-energy, secure destruction, and LJP 360 program management."
       },
       {
-        "title": "What the services support",
+        "title": "Operational and compliance benefits",
         "body": "The Why LJP section explains what the combined services can do for an operations team."
       },
       {
@@ -938,7 +938,7 @@ export const LANDING_PAGES = [
     "outcome": [
       "Operations teams can start with the service they need and see how it fits into a broader program.",
       "The industry cards and case studies give buyers examples to explore before reaching out.",
-      "The closing CTA gives visitors a way to discuss their own waste program."
+      "Pairs case-study proof and FAQs with a direct consultation CTA for custom waste program reviews."
     ],
     "tools": [
       "HTML/CSS",

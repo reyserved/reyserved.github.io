@@ -42,10 +42,10 @@ export default function CaseAccordion() {
               <div className="case-tile__detail">
                 <span className="case-pill">{item.pill}</span>
                 <h3>{item.title}</h3>
-                <p>{item.lede}</p>
+                <p>{detail.lede}</p>
                 <ul>
                   {detail.metricCards.slice(0, 3).map(([value, label, source]) => (
-                    <li key={label}><strong>{value}</strong> — {label} <span>({source})</span></li>
+                    <li key={label}><strong>{value}</strong> · {label} <span>({source})</span></li>
                   ))}
                 </ul>
                 <a className="btn btn--dark btn--sm" href={`/work/${item.slug}/`}>Read full case study <span className="arrow" aria-hidden="true">→</span></a>

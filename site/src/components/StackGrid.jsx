@@ -11,12 +11,12 @@ const TOOLS = [
   {
     name: "Google Search Console",
     logo: "/logos/tools/googlesearchconsole.svg",
-    desc: "My source of truth for queries, pages, CTR, and Generative AI feature impressions. I use it to separate business-relevant demand from noise.",
+    desc: "My source of truth for queries, pages, CTR, and Generative AI feature impressions. I use it to separate high-intent commercial queries from non-relevant traffic.",
   },
   {
     name: "Google Analytics 4",
     logo: "/logos/tools/googleanalytics.svg",
-    desc: "Where I validate engagement, landing-page performance, and key events, always checking whether the data is organic-only or all traffic.",
+    desc: "Where I check engagement, landing-page performance, and key events, isolating organic search from total traffic so reporting stays accurate.",
   },
   {
     name: "Google Tag Manager",
@@ -41,7 +41,7 @@ const TOOLS = [
   {
     name: "Surfer SEO",
     logo: "/logos/tools/surfer.png",
-    desc: "Content optimization support for coverage and on-page structure, always secondary to intent and source quality.",
+    desc: "I use it to check topical coverage and on-page structure, while letting search intent and primary sources drive the copy.",
   },
   {
     name: "Figma",
@@ -51,7 +51,7 @@ const TOOLS = [
   {
     name: "WordPress",
     logo: "/logos/tools/wordpress.svg",
-    desc: "Where I implement most client content, schema, and page-structure changes, including Divi, Elementor, Yoast, and RankMath.",
+    desc: "Where I implement most client content, schema, and page-structure changes, including Divi, Elementor, Yoast, and Rank Math.",
   },
   {
     name: "Shopify",
@@ -104,7 +104,7 @@ const TOOLS = [
   {
     name: "ChatGPT",
     logo: "/logos/tools/openai.png",
-    desc: "Content ideation, prompt libraries, and workflow design. I build AI-assisted systems with human QA rather than raw output.",
+    desc: "Content ideation, prompt libraries, and workflow prototypes. I pair every AI-assisted workflow with human QA instead of publishing raw output.",
   },
 ];
 

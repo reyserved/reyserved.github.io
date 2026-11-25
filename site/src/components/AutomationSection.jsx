@@ -11,15 +11,15 @@ const WORKFLOWS = [
     kicker: "Technical SEO workflow",
     title: "Turn a massive site crawl into a prioritized fix list",
     goal:
-      "A raw Screaming Frog export isn't an action plan. This workflow cleans up the crawl data, separates server access blocks from real tech SEO issues, and packages everything into one workbook the team can actually work from.",
+      "A raw Screaming Frog export isn't an action plan. This workflow cleans up the crawl data, separates server access blocks from real tech SEO issues, and groups everything into one prioritized workbook ready for SEO and dev tickets.",
     steps: [
       ["Crawl the sitemap", "Run Screaming Frog in list mode while keeping internal URL discovery on."],
       ["Clean up and verify", "Double-check 403s, untangle 3xx redirect chains, and verify the crawl data."],
       ["Sort by priority", "Split findings into 68 issue sheets, separating access blocks, sitemaps, orphan pages, and metadata."],
-      ["Hand off to the team", "Deliver a prioritized workbook and ClickUp tickets, while leaving owners and fix paths to the team."],
+      ["Hand off to the team", "Deliver a prioritized workbook and ClickUp tickets, while owners and dev implementation stay with the team."],
     ],
     manual:
-      "Still human-led: deciding what gets fixed first, assigning owners, factoring in client context, and signing off on what ships.",
+      "Still human-led: deciding what gets fixed first, assigning SEO and dev owners, factoring in client context, and reviewing fixes before they go live.",
     log: [
       "sitemap fetched · 2,881 URLs",
       "403 revalidation · 152 active 3xx actions",
@@ -48,7 +48,7 @@ const WORKFLOWS = [
       ["Pull the live page", "Grab the existing post, images, author details, and related-query data."],
       ["Generate page previews", "Localize the images and render the article alongside its related-content blocks."],
       ["Run preflight QA", "Generate 82 QA artifacts covering heading hierarchy, internal links, CTAs, related queries, and edge cases."],
-      ["Package for sign-off", "Export 390px, 1440px, and 3840px previews, leaving fact-checking and editorial sign-off to humans."],
+      ["Package for sign-off", "Export 390px, 1440px, and 3840px previews so I can fact-check claims and review the copy before publishing."],
     ],
     manual:
       "Still human-led: checking sources and claims, dialing in the brand voice, and making the final call to publish.",
@@ -82,7 +82,7 @@ const WORKFLOWS = [
       ["Map the page entities", "Pull the page topic, medical condition, audience, procedures, and related URLs."],
       ["Build the JSON-LD graph", "Assemble one clean MedicalWebPage @graph with zero duplicate script blocks."],
       ["Validate everything", "Run schema.org, structural, and URL checks with 0 errors before handoff."],
-      ["Hand off a release checklist", "Medical facts and final sign-off stay with the client team."],
+      ["Hand off a release checklist", "The client team reviews the medical facts and approves the release."],
     ],
     manual:
       "Still human-led: verifying medical and business facts, confirming entity accuracy, and approving the release.",

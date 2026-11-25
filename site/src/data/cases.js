@@ -34,7 +34,7 @@ export const CASES =   {
         {
           "label": "02 · Insight",
           "heading": "Google AI Overviews led in Semrush",
-          "body": "<p>In the Semrush snapshot, Google AI Overviews led ChatGPT, Gemini, and AI Mode. Citations edged up from <strong>888 to 892</strong>, while the number of cited pages rose from <strong>363 to 382</strong>. Most of the gains came from explainers, membership pages, and product pages. The two reporting windows overlap, so these figures show the direction of change.</p><p>Reported impressions in Google's AI features rose <strong>7.1%</strong>, from <strong>169,000 in July to 180,938 in August</strong>. The July figure came from the July 2026 performance deck. The August figure came from the Google Search Console (GSC) Generative AI Features export. The reports measure visibility. Clicks, calls, and leads from AI features would need separate attribution.</p>"
+          "body": "<p>In the Semrush snapshot, Google AI Overviews led ChatGPT, Gemini, and AI Mode. Citations edged up from <strong>888 to 892</strong>, while the number of cited pages rose from <strong>363 to 382</strong>. Most of the gains came from explainers, membership pages, and product pages. Because the two Semrush windows overlap slightly, these numbers show directional momentum rather than a strict before-and-after split.</p><p>Reported impressions in Google's AI features rose <strong>7.1%</strong>, from <strong>169,000 in July to 180,938 in August</strong>. The July figure came from the July 2026 monthly performance report. The August figure came from the Google Search Console (GSC) Generative AI Features export. These exports measure visibility only; tying AI features directly to clicks, calls, and applications requires separate attribution.</p>"
         },
         {
           "label": "03 · Strategy",
@@ -51,7 +51,7 @@ export const CASES =   {
         [
           "169,000 → 180,938",
           "Generative AI feature impressions (+7.1% month over month)",
-          "July 2026 performance deck and August 2026 GSC Generative AI Features export"
+          "July 2026 monthly performance report and August 2026 GSC Generative AI Features export"
         ],
         [
           "888 → 892",
@@ -112,7 +112,7 @@ export const CASES =   {
         {
           "label": "01 · Objective",
           "heading": "Reach people looking for family law help in Georgia",
-          "body": "<p>TDE needed to reach people with questions about divorce, custody, support, and prenups. We wanted those readers to find an answer they could use and know how to reach the firm if they needed help. To track that goal, we looked at search queries related to the firm's services and monitored calls.</p>"
+          "body": "<p>TDE needed to reach people with questions about divorce, custody, support, and prenups. We wanted those readers to find an answer they could use and know how to reach the firm if they needed help. We measured progress by isolating service-related queries in Google Search Console and tracking phone leads in CallRail.</p>"
         },
         {
           "label": "02 · Insight",
@@ -127,7 +127,7 @@ export const CASES =   {
         {
           "label": "04 · Execution",
           "heading": "Put the query map to work in briefs and page updates",
-          "body": "<p>I worked with SEO leads, directors, and account managers on the content and local strategy. I built the AI Overview query map, used it to shape content briefs, and updated pages to better match what people were searching for. On the prenup guide, clicks went from <strong>4 to 14</strong> and CTR went from <strong>0.39% to 1.04%</strong>. That was a promising result for one page with a small number of clicks.</p><p>CallRail recorded more calls from Google Business Profile and more first-time callers through the Website Pool. Qualified calls told a different story. Website Pool qualified calls held at <strong>2</strong>, while qualified Google Business Profile calls fell from <strong>24 to 16</strong>.</p>"
+          "body": "<p>I worked with SEO leads, directors, and account managers on the content and local strategy. I built the AI Overview query map, used it to shape content briefs, and updated pages to better match what people were searching for. On the prenup guide, clicks went from <strong>4 to 14</strong> and CTR went from <strong>0.39% to 1.04%</strong>. It's still a low-volume page, but the CTR lift was an early sign that the rewrite matched what searchers wanted.</p><p>CallRail logged more calls from Google Business Profile and more first-time callers through the website call-tracking pool. Qualified calls were more mixed: website-pool qualified calls held steady at <strong>2</strong>, while qualified GBP calls dipped from <strong>24 to 16</strong>.</p>"
         }
       ],
       "metricCards": [
@@ -195,12 +195,12 @@ export const CASES =   {
         {
           "label": "01 · Objective",
           "heading": "Protect search visibility during the move",
-          "body": "<p>Dream Assurance Group is an independent insurance agency in Overland Park, Kansas. From November 2024 through December 2025, I worked with the CEO on strategy and led the day-to-day work on the migration, site structure, brand research, and SEO. The rebuilt site went live in November 2025.</p><p>We wanted to protect existing rankings during the move and make it easier for people to find the right service page or guide. We also wrote those pages to give search engines and AI tools clear passages they could use for featured snippets and answers.</p>"
+          "body": "<p>Dream Assurance Group is an independent insurance agency in Overland Park, Kansas. I supported the agency from December 2023 through December 2025, leading the full site migration, information architecture, brand research, and SEO rebuild from November 2024 onward. The rebuilt site went live in November 2025.</p><p>We wanted to protect existing rankings during the move and make it easier for people to find the right service page or guide. We also wrote those pages to give search engines and AI tools clear passages they could use for featured snippets and answers.</p>"
         },
         {
           "label": "02 · Insight",
           "heading": "AI Overviews appeared on most of the tracked queries",
-          "body": "<p>In Semrush's February 2026 snapshot, <strong>561 of 685</strong> tracked queries (<strong>81.9%</strong>) triggered AI Overviews. Of those queries, <strong>107</strong> also had a top-10 ranking for the site. The pages with the most AI Overview exposure covered indemnity insurance (99 queries), average semi insurance cost (79), professional indemnity insurance (43), employment practices liability insurance (32), and media liability insurance (23).</p><p>Semrush's SERP Features Trend tracked <strong>4</strong> AI Overview keywords in July 2025, <strong>21</strong> in December, and <strong>65</strong> in March 2026. A separate Google Search Console report recorded <strong>78.3K</strong> Generative AI feature impressions, with data available from May 2026 onward. These reports show keyword coverage and impressions. Citation trends would require separate data.</p>"
+          "body": "<p>In Semrush's February 2026 snapshot, <strong>561 of 685</strong> tracked queries (<strong>81.9%</strong>) triggered AI Overviews. Of those queries, <strong>107</strong> also had a top-10 ranking for the site. The pages with the most AI Overview exposure covered indemnity insurance (99 queries), average semi insurance cost (79), professional indemnity insurance (43), employment practices liability insurance (32), and media liability insurance (23).</p><p>Semrush's SERP Features Trend tracked <strong>4</strong> AI Overview keywords in July 2025, <strong>21</strong> in December, and <strong>65</strong> in March 2026. A separate Google Search Console report recorded <strong>78.3K</strong> Generative AI feature impressions, with data available from May 2026 onward. These exports track keyword coverage and impressions; measuring actual AI citation trends requires a separate monitoring setup.</p>"
         },
         {
           "label": "03 · Strategy",
@@ -210,7 +210,7 @@ export const CASES =   {
         {
           "label": "04 · Execution",
           "heading": "Launch the migration and update the pages",
-          "body": "<p>I handled redirect mapping, page hierarchy, and internal links for the November 2025 migration. I also rewrote service pages and blog posts to answer questions sooner, built and validated JSON-LD schema graphs, and checked that the FAQ markup matched the on-page answers.</p><p>I built the contractor insurance hub and its 18 child pages, used audience and brand research to develop supporting content calendars and briefs, and maintained conversion tracking in Google Tag Manager and GA4 throughout the work.</p><p>The Search Console comparison shows how the site performed after the migration and optimization work. Several changes went live over that period, so the data doesn't isolate the contribution of any single change.</p>"
+          "body": "<p>I handled redirect mapping, page hierarchy, and internal links for the November 2025 migration. I also rewrote service pages and blog posts to answer questions sooner, built and validated JSON-LD schema graphs, and checked that the FAQ markup matched the on-page answers.</p><p>I built the contractor insurance hub and its 18 child pages, used audience and brand research to develop supporting content calendars and briefs, and maintained conversion tracking in Google Tag Manager and GA4 throughout the work.</p><p>Because the migration, redirects, content rewrites, and schema updates rolled out together, the Search Console lift reflects the combined program rather than any single tactic.</p>"
         }
       ],
       "metricCards": [
@@ -260,7 +260,7 @@ export const CASE_LIST = [
     tint: "radial-gradient(circle at 18% 50%, rgba(59, 130, 246, 0.45), transparent 62%)",
     year: "//2026",
     title: "Building and measuring an AI-answer visibility program",
-    desc: "180,938 AI feature impressions; clean citation gains on membership and product pages.",
+    desc: "180,938 AI feature impressions and page-level citation gains on membership and product URLs.",
   },
   {
     slug: "tde-family-law",
@@ -271,7 +271,7 @@ export const CASE_LIST = [
     tint: "radial-gradient(circle at 18% 50%, rgba(31, 157, 143, 0.45), transparent 62%)",
     year: "//2026",
     title: "An answer-first content system for a family law firm",
-    desc: "Filtered impressions +19.5%; prenup guide clicks 4 → 14; GBP calls +51.5%.",
+    desc: "Service-relevant impressions +19.5%, prenup guide clicks 4 → 14, and GBP calls +51.5%.",
   },
   {
     slug: "dream-assurance",
@@ -280,8 +280,8 @@ export const CASE_LIST = [
     logo: "/logos/clients/dream-assurance.png",
     logoWide: true,
     tint: "radial-gradient(circle at 18% 50%, rgba(229, 169, 60, 0.5), transparent 62%)",
-    year: "//2026",
-    title: "An in-house SEO and GEO operating system",
+    year: "//2025",
+    title: "Site migration and answer-first SEO and GEO rebuild",
     desc: "685 tracked queries; 561 with AI Overviews; 107 top-10 AI Overview terms.",
   },
 ];

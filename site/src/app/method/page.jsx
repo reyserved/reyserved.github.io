@@ -7,37 +7,37 @@ const STAGES = [
   {
     label: "//01",
     title: "Intent and question discovery",
-    body: "Map queries, AI Overview exposure, and page ownership before writing. Know which questions the page must answer and which surface should quote it.",
+    body: "Map search intent, AI Overview exposure, and URL ownership before writing so every page targets clear questions without cannibalizing existing URLs.",
     output: "Query and question map",
   },
   {
     label: "//02",
     title: "Brand and entity intelligence",
-    body: "Positioning, audiences, personas, and voice inputs that keep content consistent with the business and recognizable to answer engines.",
+    body: "Document brand positioning, target audiences, and voice guidelines so every page sounds like the client and sends clear entity signals to search and AI engines.",
     output: "Entity and voice brief",
   },
   {
     label: "//03",
     title: "Answer-first content architecture",
-    body: "Definitional intros, question-led sections, sourced claims, and FAQ structure. The opening paragraph answers the query before the page expands.",
+    body: "Lead with a direct answer in the opening paragraph, follow up with question-led H2s and H3s, cite primary sources, and structure FAQs for easy extraction.",
     output: "Answer-first page architecture",
   },
   {
     label: "//04",
     title: "Technical extractability",
-    body: "Schema, semantic HTML, internal links, indexation, and fast pages. Content cannot be cited if it cannot be parsed and reached.",
+    body: "Implement validated JSON-LD schema, clean semantic HTML, strategic internal links, and fast-loading layouts. Great content won't rank or get cited if crawlers can't parse it.",
     output: "Schema and technical spec",
   },
   {
     label: "//05",
     title: "AI-assisted production with human QA",
-    body: "Content calendars, briefs, and prompt libraries, with claim-level human review of sources, tone, and accuracy before publication.",
+    body: "Use AI to speed up content calendars, briefs, and first drafts, then run human QA on every claim, citation, and brand-voice detail before publishing.",
     output: "Reviewed content batch",
   },
   {
     label: "//06",
     title: "Measurement and reporting",
-    body: "Semrush AI Visibility, GSC Generative AI Features, citation logs, GA4, and CRM context, reported with dates and attribution.",
+    body: "Track rankings, citations, and leads across Semrush AI Visibility, GSC Generative AI Features, GA4, and client CRMs with clear date ranges and channel attribution.",
     output: "Monthly performance report",
   },
 ];
@@ -49,7 +49,7 @@ export default function MethodPage() {
         <div className="container">
           <span className="eyebrow">Method</span>
           <h1 className="case-title">How the work gets done</h1>
-          <p className="case-lede">A six-stage operating model for SEO, AEO, and GEO programs, from intent discovery to measurement and reporting.</p>
+          <p className="case-lede">My six-stage process for SEO, AEO, and GEO programs, from intent research through page builds and performance tracking.</p>
         </div>
       </section>
 

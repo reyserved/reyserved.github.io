@@ -25,9 +25,9 @@ export default function LandingPagesIndex() {
             Landing pages, <em>from brief to build</em>
           </h1>
           <p className="lp-hero__lede">
-            I wrote, designed, and built these responsive pages for Rocket Clicks clients. Each project started with who
-            the page was for, what visitors were looking for, and what they needed to do next. Open any project to see
-            how search intent and conversion goals shaped the page.
+            I wrote, designed, and built these responsive pages for Rocket Clicks clients. Each build started with the target
+            audience, their search intent, and the exact action the page needed to drive. Open any project to see how SEO
+            intent and CRO shaped the layout.
           </p>
           <div className="lp-hero__meta" aria-label="Page types in this gallery">
             <span>Paid search</span>
@@ -41,7 +41,7 @@ export default function LandingPagesIndex() {
       <div className="container">
         <LandingGallery />
         <p className="lp-disclaimer">
-          These desktop screenshots show a mix of live client pages and mockups prepared for client implementation.
+          Screenshots include both live client builds and dev-ready mockups delivered for CMS handoff.
         </p>
       </div>
 

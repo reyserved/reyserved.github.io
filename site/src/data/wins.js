@@ -18,7 +18,7 @@ export const ROCKET_WINS = [
   {
     client: "Kalish",
     metric: "37",
-    desc: "Top-3 terms and 44 top-10 terms at the latest snapshot; 32.98% visibility.",
+    desc: "37 top-3 terms and 44 top-10 terms in the latest Semrush snapshot, with 33.0% visibility.",
     source: "Semrush Position Tracking · Apr – Nov 2026",
     tags: ["Local SEO"],
     visual: { type: "bars", items: [{ label: "Top-3 terms", previous: 36, current: 37 }, { label: "Top-10 terms", previous: 42, current: 44 }] },
@@ -35,7 +35,7 @@ export const ROCKET_WINS = [
     client: "Michael Ireland Law",
     metric: "+378.7%",
     desc: "San Antonio divorce page new users 47 → 225; engaged sessions 24 → 93.",
-    source: "GA4 landing pages · Dec 15, 2025 – Mar 15, 2026 vs prior",
+    source: "GA4 landing pages · Dec 15, 2025 – Mar 15, 2026 vs. prior 90 days",
     tags: ["Local SEO"],
     visual: { type: "bars", items: [{ label: "New users", previous: 47, current: 225 }, { label: "Engaged sessions", previous: 24, current: 93 }] },
   },
@@ -50,7 +50,7 @@ export const ROCKET_WINS = [
   {
     client: "LJP Zero-Landfill",
     metric: "4 → 8",
-    desc: "Contact forms doubled; session key-event rate 0.58% → 1.42%.",
+    desc: "Contact form submissions doubled; key-event rate climbed from 0.58% to 1.42%.",
     source: "GA4 key-event ledger · Apr 5 – May 5 vs Mar 5 – Apr 4, 2026",
     tags: ["On-page SEO"],
     visual: { type: "bars", items: [{ label: "Contact forms", previous: 4, current: 8 }, { label: "Key-event rate", previous: 0.58, current: 1.42 }] },
@@ -60,8 +60,8 @@ export const ROCKET_WINS = [
 export const EARLIER_WINS = [
   {
     client: "Walking On Sunshine",
-    metric: "+17.59%",
-    desc: "Organic traffic in 2 months; +13.35% new users; +7.18% bounce-rate improvement.",
+    metric: "+17.6%",
+    desc: "Organic traffic growth in 2 months and +13.4% new users.",
     source: "Landing-page content, metadata, and Google Business Profile optimization",
     tags: ["Local SEO"],
     visual: { type: "image", src: "/images/wins/wos-1.png" },
@@ -101,7 +101,7 @@ export const EARLIER_WINS = [
   {
     client: "New Concept Mandarin",
     metric: "+70%",
-    desc: "More target keywords on page 1 after content strategy.",
+    desc: "More target keywords on page 1 after rolling out a new content strategy.",
     source: "First Page case study",
     tags: ["Content SEO"],
     visual: { type: "image", src: "/images/wins/ncm-1.png" },
@@ -128,7 +128,7 @@ export const BUSINESS_IMPACT = [
   {
     client: "Johnson Law Group",
     metric: "+76.9%",
-    desc: "Hires 13 → 23; leads +27.1%; hired-to-lead rate 7.18% → 10.00%.",
+    desc: "Hires grew from 13 to 23, leads rose 27.1%, and the hired-to-lead rate climbed from 7.2% to 10.0%.",
     source: "Clio and CallRail · September vs August 2026",
     tags: ["Business outcome"],
     visual: { type: "bars", items: [{ label: "Hires", previous: 13, current: 23 }, { label: "Leads", previous: 181, current: 230 }] },
