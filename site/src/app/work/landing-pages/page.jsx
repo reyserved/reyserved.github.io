@@ -22,7 +22,7 @@ export default function LandingPagesIndex() {
             </span>
           </div>
           <h1 className="lp-hero__title">
-            Landing pages, <em>from brief to build.</em>
+            Landing pages, <em>from brief to build</em>
           </h1>
           <p className="lp-hero__lede">
             I wrote, designed, and built these responsive pages for Rocket Clicks clients. Each project started with who

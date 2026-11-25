@@ -42,7 +42,7 @@ export default function ProofDashboard() {
         <div className="proof__header reveal">
           <div>
             <span className="eyebrow">Results</span>
-            <h2 className="proof__title" id="proof-title">Proof, not promises.</h2>
+            <h2 className="proof__title" id="proof-title">Proof, not promises</h2>
             <p className="proof__subtitle">Selected results from client SEO and AI-visibility programs, dated and attributed.</p>
           </div>
           <a className="proof__link" href="/work/">All case studies →</a>
@@ -51,7 +51,7 @@ export default function ProofDashboard() {
         <div className="proof__ribbon reveal-group" aria-label="Portfolio results scope">
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="685">685</div>
-            <div className="ribbon-label">Dream Assurance queries mapped for AI Overview exposure</div>
+            <div className="ribbon-label">Dream Assurance queries mapped for AI Overviews - February 2026 Post-Project Analysis</div>
           </div>
           <div className="ribbon-item">
             <div className="ribbon-value" data-count="3">3</div>

@@ -1,5 +1,6 @@
 import StackGrid from "../../components/StackGrid";
 import AboutPageCarousel from "../../components/AboutPageCarousel";
+import AboutAutomationStrip from "../../components/AboutAutomationStrip";
 
 export const metadata = {
   title: "About — Reymart",
@@ -74,10 +75,12 @@ export default function AboutPage() {
           ))}
         </div>
 
+        <AboutAutomationStrip />
+
         <section className="about-pages">
           <div className="about-pages__copy">
             <h2 className="work-group-label">Page builds</h2>
-            <p className="about-pages__statement">I build the pages, not just the brief.</p>
+            <p className="about-pages__statement">I build the pages, not just the brief</p>
             <p className="about-pages__lede">
               Ten client builds across legal, finance, manufacturing, home services, and B2B. I write the page, build
               the responsive layout, and hand it off in the client's CMS.

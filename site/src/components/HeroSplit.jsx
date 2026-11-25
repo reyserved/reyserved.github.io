@@ -3,7 +3,7 @@
 import { useEffect, useState } from "react";
 import SkillsCarousel from "./SkillsCarousel";
 
-const WORDS = ["cite.", "surface.", "recommend."];
+const WORDS = ["cite", "surface", "recommend"];
 
 export default function HeroSplit() {
   const [index, setIndex] = useState(0);
