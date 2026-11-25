@@ -19,7 +19,7 @@ const WORKFLOWS = [
       ["Hand off to the team", "Deliver a prioritized workbook and ClickUp tickets, while owners and dev implementation stay with the team."],
     ],
     manual:
-      "Still human-led: deciding what gets fixed first, assigning SEO and dev owners, factoring in client context, and reviewing fixes before they go live.",
+      "setting fix priorities, assigning SEO and dev tickets, aligning with client goals, and reviewing changes before they go live.",
     log: [
       "sitemap fetched · 2,881 URLs",
       "403 revalidation · 152 active 3xx actions",
@@ -51,7 +51,7 @@ const WORKFLOWS = [
       ["Package for sign-off", "Export 390px, 1440px, and 3840px previews so I can fact-check claims and review the copy before publishing."],
     ],
     manual:
-      "Still human-led: checking sources and claims, dialing in the brand voice, and making the final call to publish.",
+      "checking sources and claims, editing for brand voice, and approving pages before they go live.",
     log: [
       "live post fetched · assets localized",
       "related-query block rendered",
@@ -85,7 +85,7 @@ const WORKFLOWS = [
       ["Hand off a release checklist", "The client team reviews the medical facts and approves the release."],
     ],
     manual:
-      "Still human-led: verifying medical and business facts, confirming entity accuracy, and approving the release.",
+      "verifying medical and business facts, confirming entity accuracy, and approving schema changes before release.",
     log: [
       "entities mapped · 1 MedicalWebPage graph",
       "JSON-LD built · 0 duplicate scripts",
@@ -273,7 +273,7 @@ export default function AutomationSection() {
                 </li>
               ))}
             </ol>
-            <p className="manual">{workflow.manual}</p>
+            <p className="manual"><b>What stays manual:</b> {workflow.manual}</p>
           </div>
 
           <div className={`output${done.length === workflow.steps.length ? " is-ready" : ""}`}>
